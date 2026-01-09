@@ -108,8 +108,8 @@ const TermsOfService = () => {
                 <div className="mt-3 text-muted-foreground">
                   <p><strong>Plumbing Help Desk</strong></p>
                   <p>123 Main St, Fort Worth, TX 76102</p>
-                  <p>Phone: (817) 555-1234</p>
-                  <p>Email: support@txtrustedplumbers.com</p>
+                  <p>Phone: (469) 581-3414</p>
+                  <p>Email: support@plumbinghelpdesk.com</p>
                 </div>
               </div>
 

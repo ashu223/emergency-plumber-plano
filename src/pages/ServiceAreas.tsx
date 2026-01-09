@@ -2,7 +2,7 @@ import { MapPin, Phone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_LINK = "tel:+14695813414";
 
 const regions = [
   {
@@ -42,7 +42,7 @@ const ServiceAreas = () => {
     <>
       <SEO 
         title="Service Areas - Plumbing Services Across Texas"
-        description="Plumbing Help Desk serves all major Texas cities: Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and more. Call (817) 555-1234."
+        description="Plumbing Help Desk serves all major Texas cities: Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and more. Call (469) 581-3414."
       />
 
       {/* Hero */}
@@ -58,7 +58,7 @@ const ServiceAreas = () => {
             <Button variant="cta" size="xl" asChild>
               <a href={PHONE_LINK}>
                 <Phone className="h-5 w-5" />
-                Check Your Area: (817) 555-1234
+                Check Your Area: (469) 581-3414
               </a>
             </Button>
           </div>
@@ -162,7 +162,7 @@ const ServiceAreas = () => {
           <Button variant="phone" size="xl" asChild>
             <a href={PHONE_LINK}>
               <Phone className="h-5 w-5" />
-              Call (817) 555-1234
+              Call (469) 581-3414
             </a>
           </Button>
         </div>

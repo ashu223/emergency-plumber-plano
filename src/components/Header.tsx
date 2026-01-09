@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-const PHONE_NUMBER = "(817) 555-1234";
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_NUMBER = "(469) 581-3414";
+const PHONE_LINK = "tel:+14695813414";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -29,9 +29,9 @@ export const Header = () => {
               <Phone className="h-4 w-4" />
               <span className="font-semibold">{PHONE_NUMBER}</span>
             </a>
-            <a href="mailto:support@txtrustedplumbers.com" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:support@plumbinghelpdesk.com" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="h-4 w-4" />
-              <span>support@txtrustedplumbers.com</span>
+              <span>support@plumbinghelpdesk.com</span>
             </a>
           </div>
           <div className="flex items-center gap-2">
