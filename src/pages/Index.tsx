@@ -61,7 +61,7 @@ const Index = () => {
     <>
       <SEO
         title="Emergency Plumber Texas | 24/7 Local Plumbing Services"
-        description="Trusted Texas plumbers available 24/7. Fast response, licensed, affordable. Call (817) 555-1234 now!"
+        description="Trusted Texas plumbers available 24/7. Fast response, licensed. Call (817) 555-1234 now!"
       />
 
       {/* Hero Section */}
