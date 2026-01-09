@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
 
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_LINK = "tel:+14695813414";
 
 const faqs = [
   {
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "What should I do if I have a burst pipe?",
-    answer: "First, locate your main water shut-off valve and turn it off to stop the water flow. Then call us immediately at (817) 555-1234. While waiting, try to move valuables away from the water and use towels or buckets to contain the water if safe to do so."
+    answer: "First, locate your main water shut-off valve and turn it off to stop the water flow. Then call us immediately at (469) 581-3414. While waiting, try to move valuables away from the water and use towels or buckets to contain the water if safe to do so."
   },
   {
     question: "Do you install tankless water heaters?",
@@ -53,7 +53,7 @@ const FAQ = () => {
     <>
       <SEO 
         title="FAQ - Common Plumbing Questions Answered"
-        description="Get answers to common plumbing questions: service areas, emergency response, pricing, and more. Plumbing Help Desk - Call (817) 555-1234."
+        description="Get answers to common plumbing questions: service areas, emergency response, pricing, and more. Plumbing Help Desk - Call (469) 581-3414."
       />
 
       {/* Hero */}
@@ -106,7 +106,7 @@ const FAQ = () => {
           <Button variant="phone" size="xl" asChild>
             <a href={PHONE_LINK}>
               <Phone className="h-5 w-5" />
-              Call (817) 555-1234
+              Call (469) 581-3414
             </a>
           </Button>
         </div>

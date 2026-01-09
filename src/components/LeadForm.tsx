@@ -39,10 +39,10 @@ export const LeadForm = () => {
           Need immediate help? Call us now:
         </p>
         <a
-          href="tel:+18175551234"
+          href="tel:+14695813414"
           className="text-accent font-bold text-lg hover:underline"
         >
-          (817) 555-1234
+          (469) 581-3414
         </a>
       </div>
     );
@@ -112,9 +112,9 @@ export const LeadForm = () => {
           Or call us directly:
         </p>
         <Button variant="phone" size="lg" asChild>
-          <a href="tel:+18175551234">
+          <a href="tel:+14695813414">
             <Phone className="h-5 w-5" />
-            (817) 555-1234
+            (469) 581-3414
           </a>
         </Button>
       </div>

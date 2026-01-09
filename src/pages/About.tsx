@@ -2,7 +2,7 @@ import { Shield, Award, Clock, Users, CheckCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_LINK = "tel:+14695813414";
 
 const About = () => {
   return (
@@ -133,7 +133,7 @@ const About = () => {
           <Button variant="phone" size="xl" asChild>
             <a href={PHONE_LINK}>
               <Phone className="h-5 w-5" />
-              Call (817) 555-1234
+              Call (469) 581-3414
             </a>
           </Button>
         </div>

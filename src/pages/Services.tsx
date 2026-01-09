@@ -2,7 +2,7 @@ import { Droplets, Wrench, Thermometer, PipetteIcon, Building2, Search, Phone, C
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_LINK = "tel:+14695813414";
 
 const services = [
   {
@@ -54,7 +54,7 @@ const Services = () => {
     <>
       <SEO 
         title="Plumbing Services - Emergency Repairs, Drain Cleaning & More"
-        description="Full-service plumbing in Texas: emergency repairs, leak detection, drain cleaning, water heater service, and more. Call (817) 555-1234 for service."
+        description="Full-service plumbing in Texas: emergency repairs, leak detection, drain cleaning, water heater service, and more. Call (469) 581-3414 for service."
       />
 
       {/* Hero */}
@@ -136,7 +136,7 @@ const Services = () => {
           <Button variant="cta" size="xl" asChild>
             <a href={PHONE_LINK}>
               <Phone className="h-5 w-5" />
-              (817) 555-1234
+              (469) 581-3414
             </a>
           </Button>
         </div>

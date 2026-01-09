@@ -29,7 +29,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us - Get in Touch with Texas Plumbers"
-        description="Contact Plumbing Help Desk for fast plumbing service. Call (817) 555-1234 or fill out our form. Available 24/7 for emergencies."
+        description="Contact Plumbing Help Desk for fast plumbing service. Call (469) 581-3414 or fill out our form. Available 24/7 for emergencies."
       />
 
       {/* Hero */}
@@ -65,13 +65,13 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <a href="mailto:support@txtrustedplumbers.com" className="flex items-start gap-4 group">
+                <a href="mailto:support@plumbinghelpdesk.com" className="flex items-start gap-4 group">
                   <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <p className="font-semibold group-hover:text-accent transition-colors">Email</p>
-                    <p className="text-foreground">support@txtrustedplumbers.com</p>
+                    <p className="text-foreground">support@plumbinghelpdesk.com</p>
                     <p className="text-sm text-muted-foreground">Response within 24 hours</p>
                   </div>
                 </a>
