@@ -1,4 +1,17 @@
-import { Phone, Shield, Clock, Award, Star, Droplets, Wrench, Thermometer, PipetteIcon, Building2, CheckCircle, MapPin } from "lucide-react";
+import {
+  Phone,
+  Shield,
+  Clock,
+  Award,
+  Star,
+  Droplets,
+  Wrench,
+  Thermometer,
+  PipetteIcon,
+  Building2,
+  CheckCircle,
+  MapPin,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LeadForm } from "@/components/LeadForm";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -12,33 +25,33 @@ const services = [
   {
     icon: Droplets,
     title: "Emergency Leak Repair",
-    description: "Fast response to water leaks 24/7. We stop the damage and fix it right the first time."
+    description: "Fast response to water leaks 24/7. We stop the damage and fix it right the first time.",
   },
   {
     icon: Wrench,
     title: "Drain Cleaning",
-    description: "Professional drain unclogging and cleaning services for sinks, toilets, and main lines."
+    description: "Professional drain unclogging and cleaning services for sinks, toilets, and main lines.",
   },
   {
     icon: Thermometer,
     title: "Water Heater Repair",
-    description: "Expert water heater repair and replacement. Tankless and traditional systems."
+    description: "Expert water heater repair and replacement. Tankless and traditional systems.",
   },
   {
     icon: PipetteIcon,
     title: "Pipe Replacement",
-    description: "Complete pipe repair and repiping services for aging or damaged plumbing systems."
+    description: "Complete pipe repair and repiping services for aging or damaged plumbing systems.",
   },
   {
     icon: Building2,
     title: "Commercial Plumbing",
-    description: "Full-service commercial plumbing for businesses, restaurants, and office buildings."
+    description: "Full-service commercial plumbing for businesses, restaurants, and office buildings.",
   },
   {
     icon: Wrench,
     title: "Sewer Line Services",
-    description: "Sewer inspection, repair, and replacement using the latest technology."
-  }
+    description: "Sewer inspection, repair, and replacement using the latest technology.",
+  },
 ];
 
 const cities = ["Houston", "Dallas", "Austin", "San Antonio", "Fort Worth", "El Paso", "Corpus Christi", "Lubbock"];
@@ -46,20 +59,17 @@ const cities = ["Houston", "Dallas", "Austin", "San Antonio", "Fort Worth", "El 
 const Index = () => {
   return (
     <>
-      <SEO 
+      <SEO
         title="Emergency Plumber Texas | 24/7 Local Plumbing Services"
         description="Trusted Texas plumbers available 24/7. Fast response, licensed, affordable. Call (817) 555-1234 now!"
       />
 
       {/* Hero Section */}
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }}>
           <div className="absolute inset-0 hero-gradient opacity-90"></div>
         </div>
-        
+
         <div className="container relative z-10 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-primary-foreground">
@@ -67,15 +77,16 @@ const Index = () => {
                 <Clock className="h-4 w-4" />
                 <span className="text-sm font-medium">24/7 Emergency Service Available</span>
               </div>
-              
+
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 24/7 Emergency Plumber in Texas
               </h1>
-              
+
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Fast, Licensed & Affordable plumbing services across Texas. Serving Houston, Dallas, Austin, San Antonio, Fort Worth and all Texas cities.
+                Fast, Licensed & Affordable plumbing services across Texas. Serving Houston, Dallas, Austin, San
+                Antonio, Fort Worth and all Texas cities.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button variant="cta" size="xl" asChild>
                   <a href={PHONE_LINK}>
@@ -83,11 +94,16 @@ const Index = () => {
                     CALL NOW: {PHONE_NUMBER}
                   </a>
                 </Button>
-                <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10 hover:text-white" asChild>
+                <Button
+                  variant="outline"
+                  size="xl"
+                  className="border-white/30 text-white hover:bg-white/10 hover:text-white"
+                  asChild
+                >
                   <a href="#lead-form">Get Free Quote</a>
                 </Button>
               </div>
-              
+
               <div className="flex flex-wrap gap-4">
                 <div className="trust-badge">
                   <Shield className="h-4 w-4" />
@@ -103,10 +119,8 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="hidden lg:block">
-              {/* Space for hero image showing through */}
-            </div>
+
+            <div className="hidden lg:block">{/* Space for hero image showing through */}</div>
           </div>
         </div>
       </section>
@@ -115,20 +129,18 @@ const Index = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Why Choose Plumbing Help Desk?
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why Choose Plumbing Help Desk?</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               We're the trusted choice for thousands of Texas homeowners and businesses.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: Clock, title: "Fast Response", desc: "Average 30-minute response time" },
               { icon: Shield, title: "Licensed & Bonded", desc: "Fully licensed Texas plumbers" },
               { icon: Award, title: "Guaranteed Work", desc: "100% satisfaction guarantee" },
-              { icon: CheckCircle, title: "Upfront Pricing", desc: "No hidden fees, ever" }
+              { icon: CheckCircle, title: "Upfront Pricing", desc: "No hidden fees, ever" },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft card-hover">
                 <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -146,14 +158,12 @@ const Index = () => {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Our Plumbing Services
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Our Plumbing Services</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               From emergency repairs to full installations, we handle all your plumbing needs.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, i) => (
               <ServiceCard key={i} {...service} />
@@ -166,14 +176,12 @@ const Index = () => {
       <section className="py-16 lg:py-20 hero-gradient text-primary-foreground">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Serving All of Texas
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Serving All of Texas</h2>
             <p className="opacity-90 text-lg max-w-2xl mx-auto">
               From the Panhandle to the Gulf Coast, we provide fast, reliable plumbing services statewide.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             {cities.map((city) => (
               <div key={city} className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-3">
@@ -182,7 +190,7 @@ const Index = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="text-center">
             <Button variant="cta" size="lg" asChild>
               <a href="/service-areas">View All Service Areas</a>
@@ -196,19 +204,18 @@ const Index = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-                Need a Plumber? We'll Call You Back!
-              </h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Need a Plumber? We'll Call You Back!</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Fill out the form and one of our licensed plumbers will contact you within 15 minutes. Available 24/7 for emergencies.
+                Fill out the form and one of our licensed plumbers will contact you within 15 minutes. Available 24/7
+                for emergencies.
               </p>
-              
+
               <div className="space-y-4">
                 {[
                   "Free estimates on all services",
                   "No hidden fees or surprise charges",
                   "Same-day service available",
-                  "Licensed and insured technicians"
+                  "Licensed and insured technicians",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-trust" />
@@ -217,7 +224,7 @@ const Index = () => {
                 ))}
               </div>
             </div>
-            
+
             <LeadForm />
           </div>
         </div>
