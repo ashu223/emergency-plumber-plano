@@ -137,8 +137,8 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Clock, title: "Fast Response", desc: "Quick connection to available plumbers" },
-              { icon: Shield, title: "Licensed & Bonded", desc: "Fully licensed Texas plumbers" },
+              { icon: Clock, title: "Fast Response", desc: "Average 30-minute response time" },
+              { icon: Shield, title: "Licensed & Bonded", desc: "Independent, third-party providers" },
               { icon: Award, title: "Guaranteed Work", desc: "100% satisfaction guarantee" },
               { icon: CheckCircle, title: "Upfront Pricing", desc: "No hidden fees, ever" },
             ].map((item, i) => (
