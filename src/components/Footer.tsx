@@ -1,8 +1,8 @@
 import { Phone, Mail, MapPin, Clock, Shield, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const PHONE_NUMBER = "(817) 555-1234";
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_NUMBER = "(469) 581-3414";
+const PHONE_LINK = "tel:+14695813414";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -104,7 +104,10 @@ export const Footer = () => {
                 <Phone className="h-5 w-5 text-accent" />
                 <span className="font-semibold">{PHONE_NUMBER}</span>
               </a>
-              <a href="mailto:support@txtrustedplumbers.com" className="flex items-center gap-3 hover:text-accent transition-colors">
+              <a
+                href="mailto:support@txtrustedplumbers.com"
+                className="flex items-center gap-3 hover:text-accent transition-colors"
+              >
                 <Mail className="h-5 w-5 text-accent" />
                 <span className="text-sm">support@txtrustedplumbers.com</span>
               </a>
@@ -125,9 +128,7 @@ export const Footer = () => {
       <div className="border-t border-white/10">
         <div className="container py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm opacity-80">
-              © {currentYear} Plumbing Help Desk. All rights reserved.
-            </p>
+            <p className="text-sm opacity-80">© {currentYear} Plumbing Help Desk. All rights reserved.</p>
             <div className="flex items-center gap-4">
               {legalLinks.map((link) => (
                 <Link
