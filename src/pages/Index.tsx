@@ -83,7 +83,8 @@ const Index = () => {
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Get instantly connected with licensed, independent plumbers near you. Fast response. Available 24/7.
+                Fast, Licensed & Affordable plumbing services across Texas. Serving Houston, Dallas, Austin, San
+                Antonio, Fort Worth and all Texas cities.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -99,7 +100,7 @@ const Index = () => {
                   className="border-white/30 text-white hover:bg-white/10 hover:text-white"
                   asChild
                 >
-                  <a href="#lead-form">Get Free Quote</a>
+                  <a href="#lead-form">Get Connected Now</a>
                 </Button>
               </div>
 
