@@ -80,6 +80,7 @@ const PrivacyPolicy = () => {
                   We may share your information with:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>Plumbing professionals or service providers who may receive your information in order to fulfill your service request</li>
                   <li>Service providers who assist in operating our business (payment processors, scheduling software)</li>
                   <li>Advertising partners for marketing purposes</li>
                   <li>Legal authorities when required by law</li>
