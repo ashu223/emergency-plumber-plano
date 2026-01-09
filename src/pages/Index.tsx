@@ -100,7 +100,7 @@ const Index = () => {
                   className="border-white/30 text-white hover:bg-white/10 hover:text-white"
                   asChild
                 >
-                  <a href="#lead-form">Get Free Quote</a>
+                  <a href="#lead-form">Get Connected Now</a>
                 </Button>
               </div>
 
