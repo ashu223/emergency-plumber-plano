@@ -98,6 +98,13 @@ const PrivacyPolicy = () => {
               </div>
 
               <div>
+                <h2 className="font-display text-xl font-bold mb-3">California Privacy Rights</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  California residents may have additional rights under the California Consumer Privacy Act (CCPA), including the right to request disclosure of data collection practices and the right to request deletion of personal information. We do not sell personal information as defined under the CCPA. Requests can be made using the contact details listed above.
+                </p>
+              </div>
+
+              <div>
                 <h2 className="font-display text-xl font-bold mb-3">Your Rights</h2>
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   Depending on your location, you may have the right to:
