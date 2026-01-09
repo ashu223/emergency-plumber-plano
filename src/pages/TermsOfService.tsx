@@ -43,10 +43,11 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Service Requests and Lead Generation</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  When you submit a service request through our website or by phone, you are requesting that we contact
-                  you regarding plumbing services. Submission of a request does not guarantee service completion. Actual
-                  services are subject to scheduling availability, assessment of the work required, and your acceptance
-                  of the quoted price.
+                  When you submit a service request through our website or by phone, you consent to being contacted by
+                  Plumbing Help Desk or a third-party plumbing service provider regarding your request. Submission of a
+                  request does not guarantee service availability or completion. All services are subject to provider
+                  availability, inspection, quoted pricing, and your acceptance of the terms offered by the service
+                  provider.
                 </p>
               </div>
 
