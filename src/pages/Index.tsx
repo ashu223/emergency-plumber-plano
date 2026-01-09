@@ -160,7 +160,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Our Plumbing Services</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Plumbing Help Desk connects customers with independent plumbing professionals for the following services:
+              From emergency repairs to full installations, we handle all your plumbing needs.
             </p>
           </div>
 
@@ -206,8 +206,8 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Need a Plumber? We'll Call You Back!</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Fill out the form and one of our licensed plumbers will contact you within 15 minutes. Available 24/7
-                for emergencies.
+                Fill out the form and a licensed, independent plumbing professional may contact you shortly. within 15
+                minutes. Available 24/7 for emergencies.
               </p>
 
               <div className="space-y-4">
