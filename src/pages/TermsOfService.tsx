@@ -12,7 +12,7 @@ const TermsOfService = () => {
       <section className="hero-gradient text-primary-foreground py-12 lg:py-16">
         <div className="container">
           <h1 className="font-display text-3xl md:text-4xl font-bold">Terms of Service</h1>
-          <p className="opacity-90 mt-2">Last Updated: January 2025</p>
+          <p className="opacity-90 mt-2">Last Updated: January 2026</p>
         </div>
       </section>
 
@@ -80,8 +80,7 @@ const TermsOfService = () => {
                   indirect, incidental, special, consequential, or punitive damages, including without limitation, loss
                   of profits, data, use, goodwill, or other intangible losses resulting from your use of our Site or
                   services. Our total liability for any claim arising from our services shall not exceed the amount paid
-                  for the specific service giving rise to the claim. Plumbing Help Desk is not liable for acts,
-                  omissions, negligence, or misconduct of third-party service providers.
+                  for the specific service giving rise to the claim.
                 </p>
               </div>
 
