@@ -68,6 +68,13 @@ const PrivacyPolicy = () => {
               </div>
 
               <div>
+                <h2 className="font-display text-xl font-bold mb-3">Call Information & Lead Generation Disclosure</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Plumbing Help Desk operates as a lead generation and referral service. When you call the phone number displayed on our website, your call may be routed to a third-party plumbing service provider or independent contractor who can assist with your request. Calls may be monitored or recorded for quality assurance, training, and compliance purposes.
+                </p>
+              </div>
+
+              <div>
                 <h2 className="font-display text-xl font-bold mb-3">Third-Party Disclosure</h2>
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   We may share your information with:
