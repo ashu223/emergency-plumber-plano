@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
           <h1 className="font-display text-3xl md:text-4xl font-bold">
             Privacy Policy
           </h1>
-          <p className="opacity-90 mt-2">Last Updated: January 2025</p>
+          <p className="opacity-90 mt-2">Last Updated: January 2026</p>
         </div>
       </section>
 
