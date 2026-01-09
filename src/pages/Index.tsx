@@ -18,8 +18,8 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { SEO } from "@/components/SEO";
 import heroImage from "@/assets/hero-plumber.jpg";
 
-const PHONE_NUMBER = "(817) 555-1234";
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_NUMBER = "(469) 581-3414";
+const PHONE_LINK = "tel:+14695813414";
 
 const services = [
   {
