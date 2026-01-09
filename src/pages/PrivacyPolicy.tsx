@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <>
       <SEO 
         title="Privacy Policy"
-        description="Privacy Policy for Texas Trusted Plumbers. Learn how we collect, use, and protect your personal information."
+        description="Privacy Policy for Plumbing Help Desk. Learn how we collect, use, and protect your personal information."
       />
 
       {/* Hero */}
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Introduction</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Texas Trusted Plumbers ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our plumbing services in the State of Texas.
+                  Plumbing Help Desk ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our plumbing services in the State of Texas.
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
                   If you have questions about this Privacy Policy or wish to exercise your rights, please contact us at:
                 </p>
                 <div className="mt-3 text-muted-foreground">
-                  <p><strong>Texas Trusted Plumbers</strong></p>
+                  <p><strong>Plumbing Help Desk</strong></p>
                   <p>123 Main St, Fort Worth, TX 76102</p>
                   <p>Phone: (817) 555-1234</p>
                   <p>Email: support@txtrustedplumbers.com</p>

@@ -33,7 +33,7 @@ const regions = [
   {
     name: "South Texas & Rio Grande Valley",
     cities: ["Corpus Christi", "McAllen", "Brownsville", "Laredo", "Harlingen", "Edinburg", "Mission", "Pharr", "Kingsville", "Victoria"],
-    description: "From the Gulf Coast to the Rio Grande Valley, our South Texas team delivers the same quality service you expect from Texas Trusted Plumbers."
+    description: "From the Gulf Coast to the Rio Grande Valley, our South Texas team delivers the same quality service you expect from Plumbing Help Desk."
   }
 ];
 
@@ -42,7 +42,7 @@ const ServiceAreas = () => {
     <>
       <SEO 
         title="Service Areas - Plumbing Services Across Texas"
-        description="Texas Trusted Plumbers serves all major Texas cities: Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and more. Call (817) 555-1234."
+        description="Plumbing Help Desk serves all major Texas cities: Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and more. Call (817) 555-1234."
       />
 
       {/* Hero */}
@@ -53,7 +53,7 @@ const ServiceAreas = () => {
               Service Areas Across Texas
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              From El Paso to Beaumont, Amarillo to Brownsville — Texas Trusted Plumbers provides fast, reliable service across the Lone Star State.
+              From El Paso to Beaumont, Amarillo to Brownsville — Plumbing Help Desk provides fast, reliable service across the Lone Star State.
             </p>
             <Button variant="cta" size="xl" asChild>
               <a href={PHONE_LINK}>

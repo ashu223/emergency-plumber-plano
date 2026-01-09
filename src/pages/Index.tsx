@@ -2,7 +2,6 @@ import { Phone, Shield, Clock, Award, Star, Droplets, Wrench, Thermometer, Pipet
 import { Button } from "@/components/ui/button";
 import { LeadForm } from "@/components/LeadForm";
 import { ServiceCard } from "@/components/ServiceCard";
-import { TestimonialCard } from "@/components/TestimonialCard";
 import { SEO } from "@/components/SEO";
 import heroImage from "@/assets/hero-plumber.jpg";
 
@@ -39,39 +38,6 @@ const services = [
     icon: Wrench,
     title: "Sewer Line Services",
     description: "Sewer inspection, repair, and replacement using the latest technology."
-  }
-];
-
-const testimonials = [
-  {
-    name: "Mike Johnson",
-    location: "Houston, TX",
-    rating: 5,
-    text: "Called at 2 AM with a burst pipe. They were at my door in 30 minutes and fixed it fast. Lifesavers!"
-  },
-  {
-    name: "Sarah Williams",
-    location: "Dallas, TX",
-    rating: 5,
-    text: "Professional, on time, and fair pricing. They installed our new water heater perfectly. Highly recommend!"
-  },
-  {
-    name: "Robert Garcia",
-    location: "Austin, TX",
-    rating: 5,
-    text: "Best plumbing service in Texas. They fixed our sewer line issue that other companies couldn't figure out."
-  },
-  {
-    name: "Jennifer Martinez",
-    location: "San Antonio, TX",
-    rating: 5,
-    text: "Quick, clean, and affordable. They cleared our clogged drain in no time. Will use again!"
-  },
-  {
-    name: "David Thompson",
-    location: "Fort Worth, TX",
-    rating: 5,
-    text: "Excellent emergency service. The technician was knowledgeable and explained everything clearly."
   }
 ];
 
@@ -150,7 +116,7 @@ const Index = () => {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Why Choose Texas Trusted Plumbers?
+              Why Choose Plumbing Help Desk?
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               We're the trusted choice for thousands of Texas homeowners and businesses.
@@ -220,37 +186,6 @@ const Index = () => {
           <div className="text-center">
             <Button variant="cta" size="lg" asChild>
               <a href="/service-areas">View All Service Areas</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container">
-          <div className="text-center mb-12">
-            <div className="flex justify-center gap-1 mb-4">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-8 w-8 fill-warning text-warning" />
-              ))}
-            </div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              5-Star Rated by Texas Homeowners
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Don't just take our word for it. See what our customers have to say.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.slice(0, 3).map((testimonial, i) => (
-              <TestimonialCard key={i} {...testimonial} />
-            ))}
-          </div>
-          
-          <div className="text-center mt-8">
-            <Button variant="outline" size="lg" asChild>
-              <a href="/reviews">Read More Reviews</a>
             </Button>
           </div>
         </div>
