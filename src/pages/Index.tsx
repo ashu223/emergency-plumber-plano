@@ -61,7 +61,7 @@ const Index = () => {
     <>
       <SEO
         title="Emergency Plumber Texas | 24/7 Local Plumbing Services"
-        description="Trusted Texas plumbers available 24/7. Fast response, licensed. Call (817) 555-1234 now!"
+        description="Trusted Texas plumbers available 24/7. Fast response, licensed, affordable. Call (817) 555-1234 now!"
       />
 
       {/* Hero Section */}
@@ -83,8 +83,8 @@ const Index = () => {
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Fast, Licensed & Affordable plumbing services across Texas. Serving Houston, Dallas, Austin, San
-                Antonio, Fort Worth and all Texas cities.
+                Fast & Licensed plumbing services across Texas. Serving Houston, Dallas, Austin, San Antonio, Fort Worth
+                and all Texas cities.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
