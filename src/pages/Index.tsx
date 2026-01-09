@@ -79,12 +79,11 @@ const Index = () => {
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                24/7 Emergency Plumbing Help in Texas
+                24/7 Emergency Plumber in Texas
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Fast, Licensed & Affordable plumbing services across Texas. Serving Houston, Dallas, Austin, San
-                Antonio, Fort Worth and all Texas cities.
+                Get instantly connected with licensed, independent plumbers near you. Fast response. Available 24/7.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
