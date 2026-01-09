@@ -53,16 +53,12 @@ const TermsOfService = () => {
 
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Pricing and Payment</h2>
-                <p className="text-muted-foreground leading-relaxed mb-3">
-                  All pricing discussed on our website is for informational purposes only. Actual pricing will be
-                  provided after a professional assessment of the work required. By engaging our services:
+                <p className="text-muted-foreground leading-relaxed">
+                  All pricing discussed on our website is for informational purposes only. Pricing, payment terms, and
+                  service fees are determined solely by the third-party plumbing service provider after assessing the
+                  work required. Plumbing Help Desk does not set pricing or collect payment for services unless
+                  explicitly stated.
                 </p>
-                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li>You agree to pay the quoted price upon completion of services</li>
-                  <li>Additional work discovered during service will require your approval before proceeding</li>
-                  <li>Emergency or after-hours services may incur additional fees</li>
-                  <li>Payment is due upon completion unless other arrangements are made</li>
-                </ul>
               </div>
 
               <div>
