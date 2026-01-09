@@ -11,7 +11,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import ServiceAreas from "./pages/ServiceAreas";
-import Reviews from "./pages/Reviews";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -35,7 +34,6 @@ const App = () => (
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/service-areas" element={<ServiceAreas />} />
-                <Route path="/reviews" element={<Reviews />} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
