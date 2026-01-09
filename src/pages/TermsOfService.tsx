@@ -77,7 +77,8 @@ const TermsOfService = () => {
                   indirect, incidental, special, consequential, or punitive damages, including without limitation, loss
                   of profits, data, use, goodwill, or other intangible losses resulting from your use of our Site or
                   services. Our total liability for any claim arising from our services shall not exceed the amount paid
-                  for the specific service giving rise to the claim.
+                  for the specific service giving rise to the claim. Plumbing Help Desk is not responsible for the acts,
+                  omissions, negligence, or misconduct of third-party service providers.
                 </p>
               </div>
 
