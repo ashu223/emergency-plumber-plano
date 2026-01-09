@@ -54,8 +54,7 @@ const TermsOfService = () => {
                 <h2 className="font-display text-xl font-bold mb-3">Pricing and Payment</h2>
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   All pricing discussed on our website is for informational purposes only. Actual pricing will be
-                  provided after a professional assessment of the work required. By engaging services through a
-                  third-party provider:
+                  provided after a professional assessment of the work required. By engaging our services:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                   <li>You agree to pay the quoted price upon completion of services</li>
@@ -68,10 +67,9 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Warranties and Guarantees</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Any warranties, guarantees, or service assurances are provided solely by the third-party plumbing
-                  professionals who perform the services. Plumbing Help Desk does not provide warranties for services
-                  performed by third parties and is not responsible for the quality, safety, or outcome of services
-                  rendered.
+                  We provide workmanship warranties on our services as described at the time of service. Manufacturer
+                  warranties on parts and equipment are honored according to the manufacturer's terms. Our satisfaction
+                  guarantee allows you to contact us if you're not happy with our work, and we will make it right.
                 </p>
               </div>
 
@@ -82,7 +80,8 @@ const TermsOfService = () => {
                   indirect, incidental, special, consequential, or punitive damages, including without limitation, loss
                   of profits, data, use, goodwill, or other intangible losses resulting from your use of our Site or
                   services. Our total liability for any claim arising from our services shall not exceed the amount paid
-                  for the specific service giving rise to the claim.
+                  for the specific service giving rise to the claim. Plumbing Help Desk is not liable for acts,
+                  omissions, negligence, or misconduct of third-party service providers.
                 </p>
               </div>
 
