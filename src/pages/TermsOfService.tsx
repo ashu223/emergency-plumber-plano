@@ -68,9 +68,10 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Warranties and Guarantees</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We provide workmanship warranties on our services as described at the time of service. Manufacturer
-                  warranties on parts and equipment are honored according to the manufacturer's terms. Our satisfaction
-                  guarantee allows you to contact us if you're not happy with our work, and we will make it right.
+                  Any warranties, guarantees, or service assurances are provided solely by the third-party plumbing
+                  professionals who perform the services. Plumbing Help Desk does not provide warranties for services
+                  performed by third parties and is not responsible for the quality, safety, or outcome of services
+                  rendered.
                 </p>
               </div>
 
