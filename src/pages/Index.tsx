@@ -158,9 +158,9 @@ const Index = () => {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Plumbing Services We Connect You With</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Our Plumbing Services</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              From emergency repairs to full installations, we handle all your plumbing needs.
+              Plumbing Help Desk connects customers with independent plumbing professionals for the following services:
             </p>
           </div>
 
