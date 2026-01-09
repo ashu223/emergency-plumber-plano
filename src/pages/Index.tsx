@@ -100,7 +100,7 @@ const Index = () => {
                   className="border-white/30 text-white hover:bg-white/10 hover:text-white"
                   asChild
                 >
-                  <a href="#lead-form">Get Connected Now</a>
+                  <a href="#lead-form">Get Free Quote</a>
                 </Button>
               </div>
 
@@ -137,7 +137,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Clock, title: "Fast Response", desc: "Average 30-minute response time" },
+              { icon: Clock, title: "Fast Response", desc: "Quick connection to available plumbers" },
               { icon: Shield, title: "Licensed & Bonded", desc: "Fully licensed Texas plumbers" },
               { icon: Award, title: "Guaranteed Work", desc: "100% satisfaction guarantee" },
               { icon: CheckCircle, title: "Upfront Pricing", desc: "No hidden fees, ever" },
