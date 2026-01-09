@@ -138,9 +138,9 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: Clock, title: "Fast Response", desc: "Average 30-minute response time" },
-              { icon: Shield, title: "Licensed Professionals", desc: "Fully licensed Texas plumbers" },
-              { icon: Award, title: "Guaranteed Work", desc: "100% satisfaction guarantee" },
-              { icon: CheckCircle, title: "Upfront Pricing", desc: "No hidden fees, ever" },
+              { icon: Shield, title: "Licensed & Bonded", desc: "Fully licensed Texas plumbers" },
+              { icon: Award, title: "Service Guarantees", desc: "Offered by service providers" },
+              { icon: CheckCircle, title: "Upfront Pricing", desc: "Provided by plumbers before work begins" },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft card-hover">
                 <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
