@@ -6,8 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { SEO } from "@/components/SEO";
 
-const PHONE_NUMBER = "(817) 555-1234";
-const PHONE_LINK = "tel:+18175551234";
+const PHONE_NUMBER = "(469) 581-3414";
+const PHONE_LINK = "tel:+14695813414";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Contact Us - Get in Touch with Texas Plumbers"
         description="Contact Plumbing Help Desk for fast plumbing service. Call (817) 555-1234 or fill out our form. Available 24/7 for emergencies."
       />
@@ -36,11 +36,10 @@ const Contact = () => {
       <section className="hero-gradient text-primary-foreground py-16 lg:py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Contact Us
-            </h1>
+            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-lg md:text-xl opacity-90">
-              Need plumbing help? We're just a phone call away. Contact us 24/7 for fast, reliable service anywhere in Texas.
+              Need plumbing help? We're just a phone call away. Contact us 24/7 for fast, reliable service anywhere in
+              Texas.
             </p>
           </div>
         </div>
@@ -52,10 +51,8 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="font-display text-3xl font-bold mb-6">
-                Get in Touch
-              </h2>
-              
+              <h2 className="font-display text-3xl font-bold mb-6">Get in Touch</h2>
+
               <div className="space-y-6 mb-8">
                 <a href={PHONE_LINK} className="flex items-start gap-4 group">
                   <div className="h-12 w-12 rounded-xl hero-gradient flex items-center justify-center flex-shrink-0">
@@ -67,7 +64,7 @@ const Contact = () => {
                     <p className="text-sm text-muted-foreground">Available 24/7</p>
                   </div>
                 </a>
-                
+
                 <a href="mailto:support@txtrustedplumbers.com" className="flex items-start gap-4 group">
                   <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-primary" />
@@ -78,7 +75,7 @@ const Contact = () => {
                     <p className="text-sm text-muted-foreground">Response within 24 hours</p>
                   </div>
                 </a>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-6 w-6 text-primary" />
@@ -89,7 +86,7 @@ const Contact = () => {
                     <p className="text-foreground">Fort Worth, TX 76102</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
                     <Clock className="h-6 w-6 text-primary" />
@@ -113,12 +110,8 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="bg-card rounded-xl p-6 md:p-8 shadow-elevated border border-border">
-              <h2 className="font-display text-2xl font-bold mb-2">
-                Send Us a Message
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                Fill out the form and we'll get back to you within 24 hours.
-              </p>
+              <h2 className="font-display text-2xl font-bold mb-2">Send Us a Message</h2>
+              <p className="text-muted-foreground mb-6">Fill out the form and we'll get back to you within 24 hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -141,14 +134,16 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className="text-sm font-medium mb-1 block">Message *</label>
-                  <Textarea 
+                  <Textarea
                     placeholder="Describe your plumbing issue..."
                     required
                     className="min-h-[120px] resize-none"
                   />
                 </div>
                 <Button type="submit" variant="cta" size="xl" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : (
+                  {isSubmitting ? (
+                    "Sending..."
+                  ) : (
                     <>
                       <Send className="h-5 w-5" />
                       Send Message
@@ -158,9 +153,7 @@ const Contact = () => {
               </form>
 
               <div className="mt-6 pt-6 border-t border-border text-center">
-                <p className="text-sm text-muted-foreground mb-2">
-                  Need immediate help? Call now:
-                </p>
+                <p className="text-sm text-muted-foreground mb-2">Need immediate help? Call now:</p>
                 <Button variant="phone" size="lg" asChild>
                   <a href={PHONE_LINK}>
                     <Phone className="h-5 w-5" />
