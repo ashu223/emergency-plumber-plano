@@ -33,10 +33,10 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Services Overview</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Plumbing Help Desk provides plumbing services across the State of Texas, including but not limited to
-                  emergency repairs, drain cleaning, water heater services, pipe repair, and commercial plumbing. Our
-                  website facilitates service requests and provides information about our offerings. Actual service
-                  delivery is subject to availability and separate service agreements.
+                  Plumbing Help Desk operates as a lead generation and referral service. We do not perform plumbing
+                  services directly. Our role is to connect consumers with independent third-party plumbing
+                  professionals and service providers operating in the State of Texas. Any plumbing services are
+                  performed solely by third-party providers, not by Plumbing Help Desk.
                 </p>
               </div>
 
