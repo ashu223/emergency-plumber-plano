@@ -79,7 +79,7 @@ const Index = () => {
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                24/7 Emergency Plumber in Texas
+                24/7 Emergency Plumbing Help in Texas
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
