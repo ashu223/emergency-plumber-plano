@@ -40,11 +40,11 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="h-10 w-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-xl font-bold">TX</span>
+                <span className="text-xl font-bold">PH</span>
               </div>
               <div>
-                <span className="font-display font-bold text-lg">Texas Trusted</span>
-                <span className="block text-sm opacity-80 -mt-1">Plumbers</span>
+                <span className="font-display font-bold text-lg">Plumbing</span>
+                <span className="block text-sm opacity-80 -mt-1">Help Desk</span>
               </div>
             </div>
             <p className="text-sm opacity-80 mb-4">
@@ -126,7 +126,7 @@ export const Footer = () => {
         <div className="container py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm opacity-80">
-              © {currentYear} Texas Trusted Plumbers. All rights reserved.
+              © {currentYear} Plumbing Help Desk. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               {legalLinks.map((link) => (

@@ -53,7 +53,7 @@ const FAQ = () => {
     <>
       <SEO 
         title="FAQ - Common Plumbing Questions Answered"
-        description="Get answers to common plumbing questions: service areas, emergency response, pricing, and more. Texas Trusted Plumbers - Call (817) 555-1234."
+        description="Get answers to common plumbing questions: service areas, emergency response, pricing, and more. Plumbing Help Desk - Call (817) 555-1234."
       />
 
       {/* Hero */}

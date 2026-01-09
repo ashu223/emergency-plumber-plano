@@ -40,7 +40,7 @@ const testimonials = [
     name: "Amanda Chen",
     location: "Plano, TX",
     rating: 5,
-    text: "We've used Texas Trusted Plumbers for three different jobs now. Always reliable, always fair. They're our go-to plumbers for any issue."
+    text: "We've used Plumbing Help Desk for three different jobs now. Always reliable, always fair. They're our go-to plumbers for any issue."
   },
   {
     name: "James Wilson",
@@ -166,7 +166,7 @@ const Reviews = () => {
             Join Our Satisfied Customers
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Experience the Texas Trusted Plumbers difference for yourself. Call now for fast, reliable service.
+            Experience the Plumbing Help Desk difference for yourself. Call now for fast, reliable service.
           </p>
           <Button variant="phone" size="xl" asChild>
             <a href={PHONE_LINK}>

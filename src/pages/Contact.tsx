@@ -29,7 +29,7 @@ const Contact = () => {
     <>
       <SEO 
         title="Contact Us - Get in Touch with Texas Plumbers"
-        description="Contact Texas Trusted Plumbers for fast plumbing service. Call (817) 555-1234 or fill out our form. Available 24/7 for emergencies."
+        description="Contact Plumbing Help Desk for fast plumbing service. Call (817) 555-1234 or fill out our form. Available 24/7 for emergencies."
       />
 
       {/* Hero */}

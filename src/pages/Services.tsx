@@ -65,7 +65,7 @@ const Services = () => {
               Our Plumbing Services
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              From emergency repairs to complete installations, Texas Trusted Plumbers provides comprehensive plumbing services for homes and businesses across Texas.
+              From emergency repairs to complete installations, Plumbing Help Desk provides comprehensive plumbing services for homes and businesses across Texas.
             </p>
             <Button variant="cta" size="xl" asChild>
               <a href={PHONE_LINK}>

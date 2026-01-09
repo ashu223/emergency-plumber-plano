@@ -9,7 +9,7 @@ const About = () => {
     <>
       <SEO 
         title="About Us - Licensed Texas Plumbers"
-        description="Texas Trusted Plumbers: Licensed, insured, and serving Texas for over 15 years. Learn about our team and commitment to quality plumbing service."
+        description="Plumbing Help Desk: Licensed, insured, and serving Texas for over 15 years. Learn about our team and commitment to quality plumbing service."
       />
 
       {/* Hero */}
@@ -17,7 +17,7 @@ const About = () => {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              About Texas Trusted Plumbers
+              About Plumbing Help Desk
             </h1>
             <p className="text-lg md:text-xl opacity-90">
               For over 15 years, we've been the trusted name in Texas plumbing. Our mission is simple: deliver exceptional service at fair prices, every time.
@@ -57,7 +57,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Texas Trusted Plumbers was founded with a simple belief: every Texan deserves access to honest, reliable plumbing service. What started as a family operation in Fort Worth has grown into one of Texas's most trusted plumbing companies.
+                  Plumbing Help Desk was founded with a simple belief: every Texan deserves access to honest, reliable plumbing service. What started as a family operation in Fort Worth has grown into one of Texas's most trusted plumbing companies.
                 </p>
                 <p>
                   Our team of licensed professionals brings decades of combined experience to every job. Whether it's a midnight emergency or a planned renovation, we treat every customer's home like our own.

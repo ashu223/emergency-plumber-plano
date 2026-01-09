@@ -5,7 +5,7 @@ const TermsOfService = () => {
     <>
       <SEO 
         title="Terms of Service"
-        description="Terms of Service for Texas Trusted Plumbers website. Read our terms and conditions for using our plumbing services."
+        description="Terms of Service for Plumbing Help Desk website. Read our terms and conditions for using our plumbing services."
       />
 
       {/* Hero */}
@@ -27,14 +27,14 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Agreement to Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By accessing and using the Texas Trusted Plumbers website ("Site"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Site or services. These Terms apply to all visitors, users, and others who access or use the Site.
+                  By accessing and using the Plumbing Help Desk website ("Site"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Site or services. These Terms apply to all visitors, users, and others who access or use the Site.
                 </p>
               </div>
 
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Services Overview</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Texas Trusted Plumbers provides plumbing services across the State of Texas, including but not limited to emergency repairs, drain cleaning, water heater services, pipe repair, and commercial plumbing. Our website facilitates service requests and provides information about our offerings. Actual service delivery is subject to availability and separate service agreements.
+                  Plumbing Help Desk provides plumbing services across the State of Texas, including but not limited to emergency repairs, drain cleaning, water heater services, pipe repair, and commercial plumbing. Our website facilitates service requests and provides information about our offerings. Actual service delivery is subject to availability and separate service agreements.
                 </p>
               </div>
 
@@ -68,7 +68,7 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Limitation of Liability</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To the maximum extent permitted by applicable law, Texas Trusted Plumbers shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses resulting from your use of our Site or services. Our total liability for any claim arising from our services shall not exceed the amount paid for the specific service giving rise to the claim.
+                  To the maximum extent permitted by applicable law, Plumbing Help Desk shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses resulting from your use of our Site or services. Our total liability for any claim arising from our services shall not exceed the amount paid for the specific service giving rise to the claim.
                 </p>
               </div>
 
@@ -82,7 +82,7 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Intellectual Property</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  All content on this Site, including text, graphics, logos, images, and software, is the property of Texas Trusted Plumbers and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without express written permission.
+                  All content on this Site, including text, graphics, logos, images, and software, is the property of Plumbing Help Desk and is protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without express written permission.
                 </p>
               </div>
 
@@ -106,7 +106,7 @@ const TermsOfService = () => {
                   If you have questions about these Terms of Service, please contact us at:
                 </p>
                 <div className="mt-3 text-muted-foreground">
-                  <p><strong>Texas Trusted Plumbers</strong></p>
+                  <p><strong>Plumbing Help Desk</strong></p>
                   <p>123 Main St, Fort Worth, TX 76102</p>
                   <p>Phone: (817) 555-1234</p>
                   <p>Email: support@txtrustedplumbers.com</p>
