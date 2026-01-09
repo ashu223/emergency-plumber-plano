@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, Clock, Shield, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const PHONE_NUMBER = "(817) 555-1234";
+const PHONE_NUMBER = "(469) 581-3414";
 const PHONE_LINK = "tel:+14695813414";
 
 const quickLinks = [
