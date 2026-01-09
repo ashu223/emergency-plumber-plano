@@ -126,19 +126,24 @@ export const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="container py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm opacity-80">© {currentYear} Plumbing Help Desk. All rights reserved.</p>
-            <div className="flex items-center gap-4">
-              {legalLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+              <p className="text-sm opacity-80">© {currentYear} Plumbing Help Desk. All rights reserved.</p>
+              <div className="flex items-center gap-4">
+                {legalLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
+            <p className="text-xs opacity-70 text-center">
+              Plumbing Help Desk is a referral and lead generation service. We do not perform plumbing services directly.
+            </p>
           </div>
         </div>
       </div>
