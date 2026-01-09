@@ -139,8 +139,8 @@ const Index = () => {
             {[
               { icon: Clock, title: "Fast Response", desc: "Average 30-minute response time" },
               { icon: Shield, title: "Licensed & Bonded", desc: "Fully licensed Texas plumbers" },
-              { icon: Award, title: "Service Guarantees", desc: "Offered by service providers" },
-              { icon: CheckCircle, title: "Upfront Pricing", desc: "Provided by plumbers before work begins" },
+              { icon: Award, title: "Guaranteed Work", desc: "100% satisfaction guarantee" },
+              { icon: CheckCircle, title: "Upfront Pricing", desc: "No hidden fees, ever" },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft card-hover">
                 <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -158,7 +158,7 @@ const Index = () => {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Our Plumbing Services</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Plumbing Services We Connect You With</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               From emergency repairs to full installations, we handle all your plumbing needs.
             </p>
