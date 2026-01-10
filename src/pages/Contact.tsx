@@ -38,8 +38,7 @@ const Contact = () => {
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-lg md:text-xl opacity-90">
-              Need plumbing help? We're just a phone call away. Contact us 24/7 for fast, reliable service anywhere in
-              Texas.
+              Need Plumbing Help? Get Connected 24/7. We help connect Texas homeowners and businesses with independent plumbing professionals. Call anytime to get connected.
             </p>
           </div>
         </div>
