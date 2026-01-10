@@ -8,19 +8,19 @@ const services = [
   {
     icon: AlertTriangle,
     title: "Emergency Plumbing Repairs",
-    description: "When disaster strikes, we're there. Our 24/7 emergency plumbing team responds fast to burst pipes, major leaks, overflowing toilets, and sewer backups. We understand that plumbing emergencies don't wait for business hours.",
+    description: "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
     features: ["30-minute average response", "Available 24/7/365", "Emergency leak containment", "Immediate repairs"]
   },
   {
     icon: Search,
     title: "Leak Detection & Repair",
-    description: "Hidden leaks can cause thousands in damage. Our advanced leak detection technology locates leaks behind walls, under slabs, and in hard-to-reach areas without destructive exploration.",
+    description: "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
     features: ["Non-invasive detection", "Electronic leak locators", "Slab leak specialists", "Insurance documentation"]
   },
   {
     icon: Droplets,
     title: "Drain Cleaning & Unclogging",
-    description: "From slow drains to complete blockages, we clear it all. Our professional drain cleaning services restore full flow to sinks, showers, toilets, and main sewer lines.",
+    description: "We help connect customers with plumbing professionals offering drain cleaning and unclogging services.",
     features: ["Hydro-jetting available", "Camera inspection", "Root removal", "Preventive maintenance"]
   },
   {
@@ -62,10 +62,10 @@ const Services = () => {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Our Plumbing Services
+              Plumbing Services Available Through Our Network
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              From emergency repairs to complete installations, Plumbing Help Desk provides comprehensive plumbing services for homes and businesses across Texas.
+              Plumbing Help Desk helps Texas homeowners get connected with independent, licensed plumbing professionals for a wide range of residential and commercial plumbing needs.
             </p>
             <Button variant="cta" size="xl" asChild>
               <a href={PHONE_LINK}>
@@ -109,7 +109,7 @@ const Services = () => {
                   <Button variant="cta" asChild>
                     <a href={PHONE_LINK}>
                       <Phone className="h-4 w-4" />
-                      Call Now for {service.title.split(' ')[0]} Service
+                      {service.title.includes('Commercial') ? 'Call for Plumbing Help' : 'Call to Get Connected'}
                     </a>
                   </Button>
                 </div>
@@ -131,7 +131,7 @@ const Services = () => {
             Need Plumbing Service Today?
           </h2>
           <p className="opacity-90 text-lg mb-8 max-w-2xl mx-auto">
-            Our licensed plumbers are standing by 24/7. Call now for fast, professional service anywhere in Texas.
+            Independent plumbing professionals in our network are available 24/7. Call now to get connected.
           </p>
           <Button variant="cta" size="xl" asChild>
             <a href={PHONE_LINK}>
@@ -139,6 +139,15 @@ const Services = () => {
               (469) 581-3414
             </a>
           </Button>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-6 bg-muted/50 border-t">
+        <div className="container">
+          <p className="text-xs text-muted-foreground text-center max-w-4xl mx-auto">
+            Plumbing Help Desk is a referral and lead generation service. We connect customers with independent plumbing professionals. We do not perform plumbing services directly and do not employ plumbers.
+          </p>
         </div>
       </section>
     </>
