@@ -36,7 +36,7 @@ const About = () => {
               { number: "24/7", label: "Emergency Service" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">{stat.number}</div>
+                <div className="font-display text-xl md:text-2xl font-bold text-accent mb-1">{stat.number}</div>
                 <div className="text-muted-foreground text-sm">{stat.label}</div>
               </div>
             ))}
