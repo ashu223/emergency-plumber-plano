@@ -25,7 +25,8 @@ const services = [
   {
     icon: Droplets,
     title: "Emergency Leak Repair",
-    description: "Fast response to water leaks 24/7. We stop the damage and fix it right the first time.",
+    description:
+      "Fast connection to plumbers for water leaks, 24/7. We stop the damage and fix it right the first time.",
   },
   {
     icon: Wrench,
