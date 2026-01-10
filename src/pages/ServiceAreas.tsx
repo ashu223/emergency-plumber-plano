@@ -115,7 +115,7 @@ const ServiceAreas = () => {
                 <Button variant="ctaOutline" size="sm" asChild>
                   <a href={PHONE_LINK}>
                     <Phone className="h-4 w-4" />
-                    Call for {region.cities[0]} Service
+                    Call to Get Connected
                   </a>
                 </Button>
               </div>
