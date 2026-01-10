@@ -89,6 +89,9 @@ const ServiceAreas = () => {
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               No matter where you are in Texas, professional plumbing help is just a call away.
             </p>
+            <p className="text-sm text-muted-foreground/70 mt-3 max-w-2xl mx-auto">
+              Availability and service details are determined by independent service providers.
+            </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
