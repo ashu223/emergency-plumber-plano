@@ -26,7 +26,7 @@ const services = [
   {
     icon: Thermometer,
     title: "Water Heater Repair & Replacement",
-    description: "No hot water? We repair and replace all types of water heaters including traditional tank, tankless, and hybrid systems. Fast diagnosis and same-day repairs available.",
+    description: "No hot water? We help connect customers with licensed plumbing professionals who handle repair and replacement of all types of water heaters…",
     features: ["All brands serviced", "Tankless specialists", "Energy-efficient options", "Same-day installation"]
   },
   {
@@ -70,9 +70,12 @@ const Services = () => {
             <Button variant="cta" size="xl" asChild>
               <a href={PHONE_LINK}>
                 <Phone className="h-5 w-5" />
-                Call for Service
+                Call for Plumbing Help
               </a>
             </Button>
+            <p className="text-sm opacity-60 mt-4">
+              Plumbing Help Desk does not perform plumbing services directly. We connect customers with independent service providers.
+            </p>
           </div>
         </div>
       </section>
