@@ -71,10 +71,10 @@ const About = () => {
               <h3 className="font-display text-2xl font-bold mb-6">Our Values</h3>
               <div className="space-y-4">
                 {[
-                  { icon: Shield, title: "Integrity", desc: "Honest pricing with no hidden fees" },
-                  { icon: Award, title: "Excellence", desc: "Top-quality work on every job" },
-                  { icon: Clock, title: "Reliability", desc: "On-time, every time" },
-                  { icon: Users, title: "Respect", desc: "Treating your home like our own" },
+                  { icon: Shield, title: "Integrity", desc: "Honest and transparent connection process with no hidden referral fees" },
+                  { icon: Award, title: "Excellence", desc: "Helping customers get matched with qualified plumbing professionals" },
+                  { icon: Clock, title: "Reliability", desc: "Fast response and consistent connection availability" },
+                  { icon: Users, title: "Respect", desc: "Customer-first approach when connecting homeowners with service providers" },
                 ].map((value, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="h-12 w-12 rounded-lg hero-gradient flex items-center justify-center flex-shrink-0">
@@ -105,9 +105,9 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "State Licensed", desc: "All plumbers hold valid Texas state plumbing licenses" },
-              { title: "Fully Insured", desc: "Comprehensive liability and worker's compensation coverage" },
-              { title: "Background Checked", desc: "Every technician passes thorough background screening" },
+              { title: "State Licensed", desc: "Service providers in our network maintain valid Texas state plumbing licenses" },
+              { title: "Fully Insured", desc: "Independent providers maintain their own liability and worker's compensation coverage" },
+              { title: "Background Checked", desc: "Providers are vetted before being added to the network" },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft">
                 <CheckCircle className="h-10 w-10 text-trust mx-auto mb-4" />
@@ -124,7 +124,7 @@ const About = () => {
         <div className="container text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready to Experience the Difference?</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied Texas homeowners. Get Connected with a Local Plumber.
+            Connect with independent plumbing professionals serving Texas.
           </p>
           <Button variant="phone" size="xl" asChild>
             <a href={PHONE_LINK}>
