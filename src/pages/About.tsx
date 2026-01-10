@@ -7,7 +7,7 @@ const PHONE_LINK = "tel:+14695813414";
 const About = () => {
   return (
     <>
-      <SEO 
+      <SEO
         title="About Us - Licensed Texas Plumbers"
         description="Plumbing Help Desk: Licensed, insured, and serving Texas for over 15 years. Learn about our team and commitment to quality plumbing service."
       />
@@ -16,11 +16,10 @@ const About = () => {
       <section className="hero-gradient text-primary-foreground py-16 lg:py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              About Plumbing Help Desk
-            </h1>
+            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">About Plumbing Help Desk</h1>
             <p className="text-lg md:text-xl opacity-90">
-              For over 15 years, we've been the trusted name in Texas plumbing. Our mission is simple: deliver exceptional service at fair prices, every time.
+              Plumbing Help Desk is a Texas-based plumbing referral and lead generation service that connects homeowners
+              and businesses with licensed, independent plumbing professionals.
             </p>
           </div>
         </div>
@@ -29,13 +28,18 @@ const About = () => {
       {/* Stats */}
       <section className="py-12 bg-secondary">
         <div className="container">
-          <div className="flex justify-center">
-            <div className="text-center">
-              <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">
-                24/7
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { number: "15+", label: "Years Experience" },
+              { number: "50,000+", label: "Jobs Completed" },
+              { number: "100%", label: "Satisfaction Rate" },
+              { number: "24/7", label: "Emergency Service" },
+            ].map((stat, i) => (
+              <div key={i} className="text-center">
+                <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">{stat.number}</div>
+                <div className="text-muted-foreground text-sm">{stat.label}</div>
               </div>
-              <div className="text-muted-foreground text-sm">Emergency Service</div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -45,22 +49,25 @@ const About = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-                Our Story
-              </h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Plumbing Help Desk was founded with a simple belief: every Texan deserves access to honest, reliable plumbing service. What started as a family operation in Fort Worth has grown into one of Texas's most trusted plumbing companies.
+                  Plumbing Help Desk was founded with a simple belief: every Texan deserves access to honest, reliable
+                  plumbing service. What started as a family operation in Fort Worth has grown into one of Texas's most
+                  trusted plumbing companies.
                 </p>
                 <p>
-                  Our team of licensed professionals brings decades of combined experience to every job. Whether it's a midnight emergency or a planned renovation, we treat every customer's home like our own.
+                  Our team of licensed professionals brings decades of combined experience to every job. Whether it's a
+                  midnight emergency or a planned renovation, we treat every customer's home like our own.
                 </p>
                 <p>
-                  Today, we serve communities across the entire state of Texas, from the bustling metros of Houston and Dallas to the smaller towns that make Texas great. Our commitment to quality workmanship and customer satisfaction has never wavered.
+                  Today, we serve communities across the entire state of Texas, from the bustling metros of Houston and
+                  Dallas to the smaller towns that make Texas great. Our commitment to quality workmanship and customer
+                  satisfaction has never wavered.
                 </p>
               </div>
             </div>
-            
+
             <div className="bg-secondary rounded-2xl p-8">
               <h3 className="font-display text-2xl font-bold mb-6">Our Values</h3>
               <div className="space-y-4">
@@ -68,7 +75,7 @@ const About = () => {
                   { icon: Shield, title: "Integrity", desc: "Honest pricing with no hidden fees" },
                   { icon: Award, title: "Excellence", desc: "Top-quality work on every job" },
                   { icon: Clock, title: "Reliability", desc: "On-time, every time" },
-                  { icon: Users, title: "Respect", desc: "Treating your home like our own" }
+                  { icon: Users, title: "Respect", desc: "Treating your home like our own" },
                 ].map((value, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="h-12 w-12 rounded-lg hero-gradient flex items-center justify-center flex-shrink-0">
@@ -90,19 +97,17 @@ const About = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Licensed & Insured
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Licensed & Insured</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Your protection is our priority. Every technician is fully licensed, insured, and background-checked.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: "State Licensed", desc: "All plumbers hold valid Texas state plumbing licenses" },
               { title: "Fully Insured", desc: "Comprehensive liability and worker's compensation coverage" },
-              { title: "Background Checked", desc: "Every technician passes thorough background screening" }
+              { title: "Background Checked", desc: "Every technician passes thorough background screening" },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft">
                 <CheckCircle className="h-10 w-10 text-trust mx-auto mb-4" />
@@ -117,9 +122,7 @@ const About = () => {
       {/* CTA */}
       <section className="py-16 lg:py-20">
         <div className="container text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Ready to Experience the Difference?
-          </h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready to Experience the Difference?</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             Join thousands of satisfied Texas homeowners. Call now for fast, professional plumbing service.
           </p>
