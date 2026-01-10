@@ -18,8 +18,7 @@ const About = () => {
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">About Plumbing Help Desk</h1>
             <p className="text-lg md:text-xl opacity-90">
-              For over 15 years, we've been the trusted name in Texas plumbing. Our mission is simple: deliver
-              exceptional service at fair prices, every time.
+              Plumbing Help Desk helps Texas homeowners get connected with independent, licensed plumbing professionals.
             </p>
           </div>
         </div>
@@ -30,13 +29,13 @@ const About = () => {
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { number: "Texas-Wide Coverage", label: "Serving major cities and surrounding areas" },
-              { number: "Always Available", label: "Plumbing help connections, 24/7" },
-              { number: "Quick Match System", label: "Matched with available plumbers fast" },
-              { number: "Emergency Ready", label: "Available day & night 24/7" },
+              { number: "15+", label: "Years Experience" },
+              { number: "50,000+", label: "Jobs Completed" },
+              { number: "100%", label: "Satisfaction Rate" },
+              { number: "24/7", label: "Emergency Service" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="font-display text-base md:text-lg font-bold text-accent mb-1">{stat.number}</div>
+                <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">{stat.number}</div>
                 <div className="text-muted-foreground text-sm">{stat.label}</div>
               </div>
             ))}
