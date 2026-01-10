@@ -18,7 +18,8 @@ const About = () => {
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">About Plumbing Help Desk</h1>
             <p className="text-lg md:text-xl opacity-90">
-              Plumbing Help Desk helps Texas homeowners get connected with independent, licensed plumbing professionals.
+              For over 15 years, we've been the trusted name in Texas plumbing. Our mission is simple: deliver
+              exceptional service at fair prices, every time.
             </p>
           </div>
         </div>
@@ -51,18 +52,18 @@ const About = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Plumbing Help Desk was founded with a simple belief: every Texan deserves access to honest, reliable
-                  plumbing service. What started as a family operation in Fort Worth has grown into one of Texas's most
-                  trusted plumbing companies.
+                  Plumbing Help Desk was created to simplify how Texas homeowners find reliable plumbing help. Instead
+                  of calling multiple companies, customers can submit one request and get connected with an available,
+                  independent plumbing professional in their area.
                 </p>
                 <p>
-                  Our team of licensed professionals brings decades of combined experience to every job. Whether it's a
-                  midnight emergency or a planned renovation, we treat every customer's home like our own.
+                  We operate as a referral and lead generation service and do not perform plumbing services directly.
+                  Service providers in our network are independent businesses that maintain their own licensing,
+                  insurance, pricing, and warranties.
                 </p>
                 <p>
-                  Today, we serve communities across the entire state of Texas, from the bustling metros of Houston and
-                  Dallas to the smaller towns that make Texas great. Our commitment to quality workmanship and customer
-                  satisfaction has never wavered.
+                  Our goal is to make the connection process fast, transparent, and stress-free—especially during urgent
+                  plumbing situations.
                 </p>
               </div>
             </div>
