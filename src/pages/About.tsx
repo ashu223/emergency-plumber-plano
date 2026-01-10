@@ -29,20 +29,13 @@ const About = () => {
       {/* Stats */}
       <section className="py-12 bg-secondary">
         <div className="container">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { number: "15+", label: "Years Experience" },
-              { number: "50,000+", label: "Jobs Completed" },
-              { number: "100%", label: "Satisfaction Rate" },
-              { number: "24/7", label: "Emergency Service" }
-            ].map((stat, i) => (
-              <div key={i} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">
-                  {stat.number}
-                </div>
-                <div className="text-muted-foreground text-sm">{stat.label}</div>
+          <div className="flex justify-center">
+            <div className="text-center">
+              <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">
+                24/7
               </div>
-            ))}
+              <div className="text-muted-foreground text-sm">Emergency Service</div>
+            </div>
           </div>
         </div>
       </section>
