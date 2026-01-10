@@ -8,32 +8,32 @@ const regions = [
   {
     name: "Dallas-Fort Worth Metroplex",
     cities: ["Dallas", "Fort Worth", "Arlington", "Plano", "Irving", "Garland", "McKinney", "Frisco", "Denton", "Richardson"],
-    description: "The DFW area is our home base. We provide fast response times throughout the Metroplex, from downtown Dallas to the growing suburbs of Frisco and McKinney."
+    description: "The DFW area is our home base. We connect customers with plumbing professionals throughout the Metroplex, from downtown Dallas to the growing suburbs of Frisco and McKinney."
   },
   {
     name: "Greater Houston Area",
     cities: ["Houston", "The Woodlands", "Sugar Land", "Pearland", "Katy", "League City", "Baytown", "Pasadena", "Galveston", "Conroe"],
-    description: "As Texas's largest metro, Houston demands reliable plumbing service. We serve the entire Greater Houston area including Galveston and The Woodlands."
+    description: "As Texas's largest metro, Houston demands reliable plumbing service. We help homeowners find local plumbers in the entire Greater Houston area including Galveston and The Woodlands."
   },
   {
     name: "Central Texas / Austin",
     cities: ["Austin", "San Marcos", "Round Rock", "Cedar Park", "Georgetown", "Pflugerville", "Kyle", "Leander", "Bastrop", "Taylor"],
-    description: "Keep Austin flowing! Our Central Texas team serves the capital region from Georgetown to San Marcos and everywhere in between."
+    description: "Keep Austin flowing! We connect with plumbing professionals in the capital region from Georgetown to San Marcos and everywhere in between."
   },
   {
     name: "San Antonio & Hill Country",
     cities: ["San Antonio", "New Braunfels", "Boerne", "Seguin", "Kerrville", "Fredericksburg", "Universal City", "Schertz", "Cibolo", "Helotes"],
-    description: "From the Alamo City to the beautiful Hill Country, we provide expert plumbing services throughout the San Antonio metro area."
+    description: "From the Alamo City to the beautiful Hill Country, We connect customers with plumbing professionals throughout the San Antonio metro area."
   },
   {
     name: "West Texas",
     cities: ["El Paso", "Midland", "Odessa", "Lubbock", "Amarillo", "Abilene", "San Angelo", "Wichita Falls", "Big Spring", "Sweetwater"],
-    description: "Even in the wide-open spaces of West Texas, quality plumbing service is just a phone call away. We serve communities across the region."
+    description: "Even in the wide-open spaces of West Texas, quality plumbing service is just a phone call away. Plumbing help is just a phone call away."
   },
   {
     name: "South Texas & Rio Grande Valley",
     cities: ["Corpus Christi", "McAllen", "Brownsville", "Laredo", "Harlingen", "Edinburg", "Mission", "Pharr", "Kingsville", "Victoria"],
-    description: "From the Gulf Coast to the Rio Grande Valley, our South Texas team delivers the same quality service you expect from Plumbing Help Desk."
+    description: "From the Gulf Coast to the Rio Grande Valley, We help homeowners find local plumbers."
   }
 ];
 
@@ -132,7 +132,7 @@ const ServiceAreas = () => {
               Local Plumbers Who Know Texas
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Our technicians live and work in the communities they serve. They understand local building codes, common plumbing issues in Texas homes, and how to get the job done right.
+              The service professionals we connect you with live and work in the communities they serve.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               {[
