@@ -117,6 +117,9 @@ const Index = () => {
                   5-Star Rated
                 </div>
               </div>
+              <p className="text-xs opacity-60 mt-3">
+                Credentials apply to independent service providers.
+              </p>
             </div>
 
             <div className="hidden lg:block">{/* Space for hero image showing through */}</div>
