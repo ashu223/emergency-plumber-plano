@@ -117,9 +117,7 @@ const Index = () => {
                   5-Star Rated
                 </div>
               </div>
-              <p className="text-xs opacity-60 mt-3">
-                Credentials apply to independent service providers.
-              </p>
+              <p className="text-xs opacity-60 mt-3">Credentials apply to independent service providers.</p>
             </div>
 
             <div className="hidden lg:block">{/* Space for hero image showing through */}</div>
@@ -142,7 +140,11 @@ const Index = () => {
               { icon: Clock, title: "Fast Response", desc: "Quick connection to available plumbers" },
               { icon: Shield, title: "Licensed Professionals", desc: "Independent, third-party providers" },
               { icon: Award, title: "Service Guarantees", desc: "Offered by service providers" },
-              { icon: CheckCircle, title: "Upfront Pricing", desc: "Provided by plumbers before work begins" },
+              {
+                icon: CheckCircle,
+                title: "Transparent Estimates",
+                desc: "Pricing shared by service providers before work begins",
+              },
             ].map((item, i) => (
               <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft card-hover">
                 <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
