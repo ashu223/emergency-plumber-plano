@@ -30,13 +30,13 @@ const About = () => {
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { number: "Texas-Wide Coverage", label: "Years Experience" },
-              { number: "Transparent Connections", label: "Jobs Completed" },
-              { number: "Emergency Ready", label: "Satisfaction Rate" },
+              { number: "15+", label: "Years Experience" },
+              { number: "Always Available", label: "Jobs Completed" },
+              { number: "100%", label: "Satisfaction Rate" },
               { number: "24/7", label: "Emergency Service" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="font-display text-xl md:text-2xl font-bold text-accent mb-1">{stat.number}</div>
+                <div className="font-display text-3xl md:text-4xl font-bold text-accent mb-1">{stat.number}</div>
                 <div className="text-muted-foreground text-sm">{stat.label}</div>
               </div>
             ))}
