@@ -18,8 +18,8 @@ const About = () => {
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">About Plumbing Help Desk</h1>
             <p className="text-lg md:text-xl opacity-90">
-              Plumbing Help Desk is a Texas-based plumbing referral and lead generation service that connects homeowners
-              and businesses with licensed, independent plumbing professionals.
+              For over 15 years, we've been the trusted name in Texas plumbing. Our mission is simple: deliver
+              exceptional service at fair prices, every time.
             </p>
           </div>
         </div>
@@ -97,9 +97,10 @@ const About = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Licensed & Insured</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Independent Plumbing Professionals</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Your protection is our priority. Every technician is fully licensed, insured, and background-checked.
+              Service providers in our network are independent businesses who maintain their own licensing and
+              insurance. Plumbing Help Desk does not employ or supervise plumbers.
             </p>
           </div>
 
