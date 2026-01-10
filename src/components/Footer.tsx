@@ -47,7 +47,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-sm opacity-80 mb-4">
-              Your trusted partner for all plumbing needs across Texas. Licensed, insured, and available 24/7.
+              Connecting customers with licensed and insured independent plumbers.
             </p>
             <div className="flex gap-3">
               <div className="flex items-center gap-1 text-xs bg-white/10 px-2 py-1 rounded">
