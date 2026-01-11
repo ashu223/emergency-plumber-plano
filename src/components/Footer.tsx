@@ -112,7 +112,7 @@ export const Footer = () => {
               </a>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-sm opacity-80">123 Main St, Fort Worth, TX 76102</span>
+                <span className="text-sm opacity-80">1617 Park Pl Ave, Fort Worth, TX 76110</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-accent" />

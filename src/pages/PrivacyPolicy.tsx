@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
                 </p>
                 <div className="mt-3 text-muted-foreground">
                   <p><strong>Plumbing Help Desk</strong></p>
-                  <p>123 Main St, Fort Worth, TX 76102</p>
+                  <p>1617 Park Pl Ave, Fort Worth, TX 76110</p>
                   <p>Phone: (469) 581-3414</p>
                   <p>Email: support@plumbinghelpdesk.com</p>
                 </div>
