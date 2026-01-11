@@ -104,11 +104,11 @@ export const Footer = () => {
                 <span className="font-semibold">{PHONE_NUMBER}</span>
               </a>
               <a
-                href="mailto:support@plumbinghelpdesk.com"
+                href="mailto:support@theplumbinghelpdesk.com"
                 className="flex items-center gap-3 hover:text-accent transition-colors"
               >
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-sm">support@plumbinghelpdesk.com</span>
+                <span className="text-sm">support@theplumbinghelpdesk.com</span>
               </a>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />

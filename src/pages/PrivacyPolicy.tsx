@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
                   <p><strong>Plumbing Help Desk</strong></p>
                   <p>1617 Park Pl Ave, Fort Worth, TX 76110</p>
                   <p>Phone: (469) 581-3414</p>
-                  <p>Email: support@plumbinghelpdesk.com</p>
+                  <p>Email: support@theplumbinghelpdesk.com</p>
                 </div>
               </div>
 
