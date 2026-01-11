@@ -81,8 +81,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold">Office Address</p>
-                    <p className="text-foreground">123 Main St</p>
-                    <p className="text-foreground">Fort Worth, TX 76102</p>
+                    <p className="text-foreground">1617 Park Pl Ave</p>
+                    <p className="text-foreground">Fort Worth, TX 76110</p>
                   </div>
                 </div>
 
