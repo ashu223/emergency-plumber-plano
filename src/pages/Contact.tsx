@@ -110,7 +110,8 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-card rounded-xl p-6 md:p-8 shadow-elevated border border-border">
               <h2 className="font-display text-2xl font-bold mb-2">Send Us a Message</h2>
-              <p className="text-muted-foreground mb-6">Fill out the form and we'll get back to you within 24 hours.</p>
+              <p className="text-muted-foreground mb-2">Fill out the form and we'll get back to you within 24 hours.</p>
+              <p className="text-xs text-muted-foreground/60 mb-6">By submitting this form, you agree to be contacted by Plumbing Help Desk or an independent plumbing professional regarding your request.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -145,7 +146,7 @@ const Contact = () => {
                   ) : (
                     <>
                       <Send className="h-5 w-5" />
-                      Send Message
+                      Request Plumbing Help
                     </>
                   )}
                 </Button>
