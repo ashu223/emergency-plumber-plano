@@ -80,11 +80,11 @@ const Index = () => {
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                24/7 Emergency Plumbing Help in Texas
+                Call Now for 24/7 Emergency Plumbing in Texas
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Get instantly connected with licensed, independent plumbers near you. Fast response. Available 24/7.
+                Speak with a licensed local plumber now. Fast emergency response, available 24/7.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
