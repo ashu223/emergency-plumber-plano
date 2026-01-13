@@ -87,7 +87,7 @@ const Index = () => {
                 Speak with a licensed local plumber now. Fast emergency response, available 24/7.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 mb-2">
                 <Button variant="cta" size="xl" asChild>
                   <a href={PHONE_LINK}>
                     <Phone className="h-5 w-5" />
@@ -104,7 +104,7 @@ const Index = () => {
                 </Button>
               </div>
 
-              <p className="text-sm opacity-80 mb-4">Calls answered 24/7 • No obligation</p>
+              <p className="text-sm opacity-80 mb-6 sm:text-left text-center sm:pl-0">Calls answered 24/7 • No obligation</p>
 
               <div className="flex flex-wrap gap-4">
                 <div className="trust-badge">
