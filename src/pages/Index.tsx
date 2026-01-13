@@ -104,6 +104,8 @@ const Index = () => {
                 </Button>
               </div>
 
+              <p className="text-sm opacity-80 mb-4">Calls answered 24/7 • No obligation</p>
+
               <div className="flex flex-wrap gap-4">
                 <div className="trust-badge">
                   <Shield className="h-4 w-4" />
