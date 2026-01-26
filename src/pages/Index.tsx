@@ -140,7 +140,7 @@ const Index = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why Choose Plumbing Help Desk?</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why Choose {siteConfig.primaryKeyword} in {siteConfig.city}, {siteConfig.state}?</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               We're the trusted choice for thousands of Texas homeowners and businesses.
             </p>
@@ -173,7 +173,7 @@ const Index = () => {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Plumbing Services We Connect You With</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.primaryKeyword} Services in {siteConfig.city}, {siteConfig.state}</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Plumbing Help Desk connects customers with independent plumbing professionals for the following services:
             </p>
@@ -191,7 +191,7 @@ const Index = () => {
       <section className="py-16 lg:py-20 hero-gradient text-primary-foreground">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Serving All of Texas</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.primaryKeyword} Near {siteConfig.city}, {siteConfig.state}</h2>
             <p className="opacity-90 text-lg max-w-2xl mx-auto">
               From the Panhandle to the Gulf Coast, we provide fast, reliable plumbing services statewide.
             </p>
@@ -219,7 +219,7 @@ const Index = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Need a Plumber? We'll Call You Back!</h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Need an {siteConfig.primaryKeyword}? We’ll Call You Back!</h2>
               <p className="text-muted-foreground text-lg mb-6">
                 Fill out the form and a licensed, independent plumbing professional may contact you shortly. within 15
                 minutes. Available 24/7 for emergencies.
