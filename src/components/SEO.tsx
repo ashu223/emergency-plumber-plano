@@ -3,16 +3,22 @@ import { siteConfig } from "@/lib/city.config";
 
 interface SEOProps {
   page?: string; // optional page modifier
+  title?: string; // full custom title override
+  description?: string; // full custom description override
   schema?: object;
 }
 
-export const SEO = ({ page, schema }: SEOProps) => {
+export const SEO = ({ page, title, description: customDescription, schema }: SEOProps) => {
   const titleBase = siteConfig.primaryKeyword;
-  const fullTitle = page
-    ? `${page} | ${titleBase}`
-    : `${titleBase} | ${siteConfig.secondaryKeyword}`;
+  const fullTitle = title 
+    ? title 
+    : page
+      ? `${page} | ${titleBase}`
+      : `${titleBase} | ${siteConfig.secondaryKeyword}`;
 
-  const description = `${siteConfig.primaryKeyword} – ${siteConfig.serviceDescription} Serving ${siteConfig.city}, ${siteConfig.state}. Call now.`;
+  const description = customDescription 
+    ? customDescription 
+    : `${siteConfig.primaryKeyword} – ${siteConfig.serviceDescription} Serving ${siteConfig.city}, ${siteConfig.state}. Call now.`;
 
   return (
     <Helmet>
