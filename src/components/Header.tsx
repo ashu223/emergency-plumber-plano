@@ -1,10 +1,8 @@
-import { Phone, Mail, MapPin, Clock, Menu, X } from "lucide-react";
+import { Phone, Mail, Clock, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
-const PHONE_NUMBER = "(469) 581-3414";
-const PHONE_LINK = "tel:+14695813414";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -25,18 +23,18 @@ export const Header = () => {
       <div className="hero-gradient text-primary-foreground py-2">
         <div className="container flex flex-wrap items-center justify-between gap-2 text-sm">
           <div className="flex items-center gap-4 md:gap-6">
-            <a href={PHONE_LINK} className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href={getPhoneLink()} className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="h-4 w-4" />
-              <span className="font-semibold">{PHONE_NUMBER}</span>
+              <span className="font-semibold">{siteConfig.displayPhone}</span>
             </a>
-            <a href="mailto:support@theplumbinghelpdesk.com" className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
+            <a href={`mailto:${siteConfig.email}`} className="hidden sm:flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="h-4 w-4" />
-              <span>support@theplumbinghelpdesk.com</span>
+              <span>{siteConfig.email}</span>
             </a>
           </div>
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4" />
-            <span>24/7 Emergency Service</span>
+            <span>{siteConfig.hoursDisplay}</span>
           </div>
         </div>
       </div>
@@ -47,11 +45,11 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-lg hero-gradient flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">PH</span>
+              <span className="text-xl font-bold text-primary-foreground">EP</span>
             </div>
             <div className="hidden sm:block">
-              <span className="font-display font-bold text-lg text-primary">Plumbing</span>
-              <span className="block text-sm text-muted-foreground -mt-1">Help Desk</span>
+              <span className="font-display font-bold text-lg text-primary">{siteConfig.primaryKeyword}</span>
+              <span className="block text-sm text-muted-foreground -mt-1">{siteConfig.city}, {siteConfig.state}</span>
             </div>
           </Link>
 
@@ -75,7 +73,7 @@ export const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="phone" size="lg" asChild>
-              <a href={PHONE_LINK}>
+              <a href={getPhoneLink()}>
                 <Phone className="h-5 w-5" />
                 Call Now
               </a>

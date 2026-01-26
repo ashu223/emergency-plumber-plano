@@ -1,11 +1,12 @@
 import { SEO } from "@/components/SEO";
+import { siteConfig } from "@/lib/city.config";
 
 const TermsOfService = () => {
   return (
     <>
       <SEO
-        title="Terms of Service"
-        description="Terms of Service for Plumbing Help Desk website. Read our terms and conditions for using our plumbing services."
+        title={`Terms of Service - ${siteConfig.businessName}`}
+        description={`Terms of Service for ${siteConfig.businessName}. Read our terms and conditions for using our plumbing services.`}
       />
 
       {/* Hero */}
@@ -24,7 +25,7 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Agreement to Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By accessing and using the Plumbing Help Desk website ("Site"), you agree to be bound by these Terms
+                  By accessing and using the {siteConfig.businessName} website ("Site"), you agree to be bound by these Terms
                   of Service ("Terms"). If you do not agree to these Terms, please do not use our Site or services.
                   These Terms apply to all visitors, users, and others who access or use the Site.
                 </p>
@@ -33,10 +34,10 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Services Overview</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Plumbing Help Desk operates as a lead generation and referral service. We do not perform plumbing
+                  {siteConfig.businessName} operates as a lead generation and referral service. We do not perform plumbing
                   services directly. Our role is to connect consumers with independent third-party plumbing
-                  professionals and service providers operating in the State of Texas. Any plumbing services are
-                  performed solely by third-party providers, not by Plumbing Help Desk.
+                  professionals and service providers operating in {siteConfig.city}, {siteConfig.state}. Any plumbing services are
+                  performed solely by third-party providers, not by {siteConfig.businessName}.
                 </p>
               </div>
 
@@ -44,7 +45,7 @@ const TermsOfService = () => {
                 <h2 className="font-display text-xl font-bold mb-3">Service Requests and Lead Generation</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   When you submit a service request through our website or by phone, you consent to being contacted by
-                  Plumbing Help Desk or a third-party plumbing service provider regarding your request. Submission of a
+                  {siteConfig.businessName} or a third-party plumbing service provider regarding your request. Submission of a
                   request does not guarantee service availability or completion. All services are subject to provider
                   availability, inspection, quoted pricing, and your acceptance of the terms offered by the service
                   provider.
@@ -56,7 +57,7 @@ const TermsOfService = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   All pricing discussed on our website is for informational purposes only. Pricing, payment terms, and
                   service fees are determined solely by the third-party plumbing service provider after assessing the
-                  work required. Plumbing Help Desk does not set pricing or collect payment for services unless
+                  work required. {siteConfig.businessName} does not set pricing or collect payment for services unless
                   explicitly stated.
                 </p>
               </div>
@@ -65,7 +66,7 @@ const TermsOfService = () => {
                 <h2 className="font-display text-xl font-bold mb-3">Warranties and Guarantees</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Any warranties, guarantees, or service assurances are provided solely by the third-party plumbing
-                  professionals who perform the services. Plumbing Help Desk does not provide warranties and is not
+                  professionals who perform the services. {siteConfig.businessName} does not provide warranties and is not
                   responsible for the quality, safety, or outcome of services performed by third-party providers.
                 </p>
               </div>
@@ -73,11 +74,11 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Limitation of Liability</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To the maximum extent permitted by applicable law, Plumbing Help Desk shall not be liable for any
+                  To the maximum extent permitted by applicable law, {siteConfig.businessName} shall not be liable for any
                   indirect, incidental, special, consequential, or punitive damages, including without limitation, loss
                   of profits, data, use, goodwill, or other intangible losses resulting from your use of our Site or
                   services. Our total liability for any claim arising from our services shall not exceed the amount paid
-                  for the specific service giving rise to the claim. Plumbing Help Desk is not responsible for the acts,
+                  for the specific service giving rise to the claim. {siteConfig.businessName} is not responsible for the acts,
                   omissions, negligence, or misconduct of third-party service providers.
                 </p>
               </div>
@@ -96,7 +97,7 @@ const TermsOfService = () => {
                 <h2 className="font-display text-xl font-bold mb-3">Intellectual Property</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   All content on this Site, including text, graphics, logos, images, and software, is the property of
-                  Plumbing Help Desk and is protected by intellectual property laws. You may not reproduce, distribute,
+                  {siteConfig.businessName} and is protected by intellectual property laws. You may not reproduce, distribute,
                   or create derivative works from our content without express written permission.
                 </p>
               </div>
@@ -104,9 +105,9 @@ const TermsOfService = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Governing Law</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  These Terms shall be governed by and construed in accordance with the laws of the State of Texas,
+                  These Terms shall be governed by and construed in accordance with the laws of the State of {siteConfig.state},
                   without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of
-                  our Site shall be resolved in the courts of Tarrant County, Texas.
+                  our Site shall be resolved in the courts of {siteConfig.city}, {siteConfig.state}.
                 </p>
               </div>
 
@@ -126,11 +127,11 @@ const TermsOfService = () => {
                 </p>
                 <div className="mt-3 text-muted-foreground">
                   <p>
-                    <strong>Plumbing Help Desk</strong>
+                    <strong>{siteConfig.businessName}</strong>
                   </p>
-                  <p>1617 Park Pl Ave, Fort Worth, TX 76110</p>
-                  <p>Phone: (469) 581-3414</p>
-                  <p>Email: support@theplumbinghelpdesk.com</p>
+                  <p>{siteConfig.address.full}</p>
+                  <p>Phone: {siteConfig.displayPhone}</p>
+                  <p>Email: {siteConfig.email}</p>
                 </div>
               </div>
             </div>

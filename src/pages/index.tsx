@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/city.config";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 import { plumberSchema } from "@/lib/plumberSchema";
 
 import {
@@ -55,19 +55,21 @@ const services = [
   },
 ];
 
-
-
 const Index = () => {
   return (
     <>
-      <SEO schema={plumberSchema()} />
+      <SEO 
+        title={siteConfig.metaTitle}
+        description={siteConfig.metaDescription}
+        schema={plumberSchema()} 
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center">
         <div className="absolute inset-0">
           <img 
             src={heroImage} 
-            alt="Professional plumber at work" 
+            alt={`${siteConfig.primaryKeyword} in ${siteConfig.city}`}
             fetchPriority="high"
             className="w-full h-full object-cover object-center"
           />
@@ -79,26 +81,24 @@ const Index = () => {
             <div className="text-primary-foreground">
               <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
                 <Clock className="h-4 w-4" />
-                <span className="text-sm font-medium">24/7 Emergency Service Available</span>
+                <span className="text-sm font-medium">{siteConfig.hoursDisplay}</span>
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                {siteConfig.primaryKeyword} in {siteConfig.city}, {siteConfig.state} – Available 24/7
+                {siteConfig.headings.homeH1}
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                {siteConfig.serviceDescription} Serving {siteConfig.city}, {siteConfig.state}.
+                {siteConfig.headings.homeSubtitle}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-2">
                 <Button variant="cta" size="xl" asChild>
-  <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-2">
-    <Phone className="h-5 w-5" />
-    <span>
-      Call {siteConfig.primaryKeyword}: {siteConfig.displayPhone}
-    </span>
-  </a>
-</Button>
+                  <a href={getPhoneLink()} className="flex items-center gap-2">
+                    <Phone className="h-5 w-5" />
+                    <span>Call Now: {siteConfig.displayPhone}</span>
+                  </a>
+                </Button>
                 <Button
                   variant="outline"
                   size="xl"
@@ -137,9 +137,9 @@ const Index = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why Choose {siteConfig.primaryKeyword} in {siteConfig.city}, {siteConfig.state}?</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.whyChooseH2}</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We're the trusted choice for thousands of Texas homeowners and businesses.
+              We're the trusted choice for homeowners and businesses in {siteConfig.city}, {siteConfig.state}.
             </p>
           </div>
 
@@ -170,9 +170,9 @@ const Index = () => {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.primaryKeyword} Services in {siteConfig.city}, {siteConfig.state}</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.servicesH2}</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Plumbing Help Desk connects customers with independent plumbing professionals for the following services:
+              We connect customers with independent plumbing professionals for the following services:
             </p>
           </div>
 
@@ -188,9 +188,9 @@ const Index = () => {
       <section className="py-16 lg:py-20 hero-gradient text-primary-foreground">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.primaryKeyword} Near {siteConfig.city}, {siteConfig.state}</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.serviceAreasH2}</h2>
             <p className="opacity-90 text-lg max-w-2xl mx-auto">
-              From the Panhandle to the Gulf Coast, we provide fast, reliable plumbing services statewide.
+              Serving {siteConfig.city} and surrounding areas with fast, reliable plumbing service connections.
             </p>
           </div>
 
@@ -216,9 +216,9 @@ const Index = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Need an {siteConfig.primaryKeyword}? We’ll Call You Back!</h2>
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.leadFormH2}</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Fill out the form and a licensed, independent plumbing professional may contact you shortly. within 15
+                Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15
                 minutes. Available 24/7 for emergencies.
               </p>
 

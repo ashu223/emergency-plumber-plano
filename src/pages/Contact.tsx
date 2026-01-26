@@ -5,9 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { SEO } from "@/components/SEO";
-
-const PHONE_NUMBER = "(469) 581-3414";
-const PHONE_LINK = "tel:+14695813414";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,17 +26,17 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us - Get in Touch with Texas Plumbers"
-        description="Contact Plumbing Help Desk for fast plumbing service. Call (469) 581-3414 or fill out our form. Available 24/7 for emergencies."
+        title={`Contact Us - ${siteConfig.businessName}`}
+        description={`Contact ${siteConfig.businessName} for fast plumbing service. Call ${siteConfig.displayPhone} or fill out our form. Available 24/7 for emergencies.`}
       />
 
       {/* Hero */}
       <section className="hero-gradient text-primary-foreground py-16 lg:py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">{siteConfig.headings.contactH1}</h1>
             <p className="text-lg md:text-xl opacity-90">
-              Need Plumbing Help? Get Connected 24/7. We help connect Texas homeowners and businesses with independent plumbing professionals. Call anytime to get connected.
+              {siteConfig.headings.contactSubtitle}
             </p>
           </div>
         </div>
@@ -53,24 +51,24 @@ const Contact = () => {
               <h2 className="font-display text-3xl font-bold mb-6">Get in Touch</h2>
 
               <div className="space-y-6 mb-8">
-                <a href={PHONE_LINK} className="flex items-start gap-4 group">
+                <a href={getPhoneLink()} className="flex items-start gap-4 group">
                   <div className="h-12 w-12 rounded-xl hero-gradient flex items-center justify-center flex-shrink-0">
                     <Phone className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
                     <p className="font-semibold group-hover:text-accent transition-colors">Phone</p>
-                    <p className="text-2xl font-display font-bold text-accent">{PHONE_NUMBER}</p>
+                    <p className="text-2xl font-display font-bold text-accent">{siteConfig.displayPhone}</p>
                     <p className="text-sm text-muted-foreground">Available 24/7</p>
                   </div>
                 </a>
 
-                <a href="mailto:support@theplumbinghelpdesk.com" className="flex items-start gap-4 group">
+                <a href={`mailto:${siteConfig.email}`} className="flex items-start gap-4 group">
                   <div className="h-12 w-12 rounded-xl bg-secondary flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <p className="font-semibold group-hover:text-accent transition-colors">Email</p>
-                    <p className="text-foreground">support@theplumbinghelpdesk.com</p>
+                    <p className="text-foreground">{siteConfig.email}</p>
                     <p className="text-sm text-muted-foreground">Response within 24 hours</p>
                   </div>
                 </a>
@@ -81,8 +79,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold">Office Address</p>
-                    <p className="text-foreground">1617 Park Pl Ave</p>
-                    <p className="text-foreground">Fort Worth, TX 76110</p>
+                    <p className="text-foreground">{siteConfig.address.street}</p>
+                    <p className="text-foreground">{siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</p>
                   </div>
                 </div>
 
@@ -102,7 +100,7 @@ const Contact = () => {
               <div className="bg-secondary rounded-xl h-64 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="h-12 w-12 text-primary/30 mx-auto mb-2" />
-                  <p className="text-muted-foreground text-sm">Map: Fort Worth, TX</p>
+                  <p className="text-muted-foreground text-sm">Map: {siteConfig.city}, {siteConfig.state}</p>
                 </div>
               </div>
             </div>
@@ -111,7 +109,7 @@ const Contact = () => {
             <div className="bg-card rounded-xl p-6 md:p-8 shadow-elevated border border-border">
               <h2 className="font-display text-2xl font-bold mb-2">Send Us a Message</h2>
               <p className="text-muted-foreground mb-2">Fill out the form and we'll get back to you within 24 hours.</p>
-              <p className="text-xs text-muted-foreground/60 mb-6">By submitting this form, you agree to be contacted by Plumbing Help Desk or an independent plumbing professional regarding your request.</p>
+              <p className="text-xs text-muted-foreground/60 mb-6">By submitting this form, you agree to be contacted by {siteConfig.businessName} or an independent plumbing professional regarding your request.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -155,9 +153,9 @@ const Contact = () => {
               <div className="mt-6 pt-6 border-t border-border text-center">
                 <p className="text-sm text-muted-foreground mb-2">Need immediate help? Call now:</p>
                 <Button variant="phone" size="lg" asChild>
-                  <a href={PHONE_LINK}>
+                  <a href={getPhoneLink()}>
                     <Phone className="h-5 w-5" />
-                    {PHONE_NUMBER}
+                    {siteConfig.displayPhone}
                   </a>
                 </Button>
               </div>
