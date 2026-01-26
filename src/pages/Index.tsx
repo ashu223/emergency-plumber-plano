@@ -97,11 +97,13 @@ const Index = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-2">
                 <Button variant="cta" size="xl" asChild>
-                  <a href={`tel:${siteConfig.phone}`>
-                    <Phone className="h-5 w-5" />
-                    Call {siteConfig.primaryKeyword} : {siteConfig.phone}
-                  </a>
-                </Button>
+  <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-2">
+    <Phone className="h-5 w-5" />
+    <span>
+      Call {siteConfig.primaryKeyword}: {siteConfig.displayPhone}
+    </span>
+  </a>
+</Button>
                 <Button
                   variant="outline"
                   size="xl"
