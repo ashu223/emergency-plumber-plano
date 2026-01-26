@@ -1,3 +1,6 @@
+import { siteConfig } from "@/lib/city.config";
+import { plumberSchema } from "@/lib/plumberSchema";
+
 import {
   Phone,
   Shield,
@@ -17,9 +20,6 @@ import { LeadForm } from "@/components/LeadForm";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SEO } from "@/components/SEO";
 import heroImage from "@/assets/hero-plumber.jpg";
-
-const PHONE_NUMBER = "(469) 581-3414";
-const PHONE_LINK = "tel:+14695813414";
 
 const services = [
   {
@@ -55,15 +55,17 @@ const services = [
   },
 ];
 
-const cities = ["Houston", "Dallas", "Austin", "San Antonio", "Fort Worth", "El Paso", "Corpus Christi", "Lubbock"];
+{siteConfig.nearbyAreas.map((city) => (
+  <div key={city} className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-3">
+    <MapPin className="h-4 w-4 text-accent" />
+    <span className="font-medium">{city}</span>
+  </div>
+))}
 
 const Index = () => {
   return (
     <>
-      <SEO
-        title="Emergency Plumber Texas | 24/7 Local Plumbing Services"
-        description="Trusted Texas plumbers available 24/7. Fast response, licensed, affordable. Call (817) 555-1234 now!"
-      />
+      <SEO schema={plumberSchema()} />
 
       {/* Hero Section */}
       <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center">
@@ -86,19 +88,18 @@ const Index = () => {
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Emergency Plumber in Houston, TX – Available 24/7
+                {siteConfig.primaryKeyword} in {siteConfig.city}, {siteConfig.state} – Available 24/7
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Fast, reliable emergency plumbing services in Houston, TX.
-                Leaks, clogs, water heaters & sewer repairs available 24/7.
+                {siteConfig.serviceDescription} Serving {siteConfig.city}, {siteConfig.state}.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-2">
                 <Button variant="cta" size="xl" asChild>
-                  <a href={PHONE_LINK}>
+                  <a href={`tel:${siteConfig.phone}`>
                     <Phone className="h-5 w-5" />
-                    Call Emergency Plumber Houston : {PHONE_NUMBER}
+                    Call {siteConfig.primaryKeyword} : {siteConfig.phone}
                   </a>
                 </Button>
                 <Button
