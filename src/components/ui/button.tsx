@@ -18,7 +18,8 @@ const buttonVariants = cva(
         // CTA variants for plumbing site
         cta: "cta-gradient text-white font-bold shadow-elevated hover:shadow-floating hover:scale-[1.02] active:scale-[0.98]",
         ctaOutline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
-        phone: "cta-gradient text-white font-bold shadow-elevated phone-pulse hover:scale-105",
+        phone:
+        "bg-orange-600 text-white hover:bg-orange-700 flex items-center gap-2 px-6 py-3 whitespace-nowrap text-base font-semibold",
         trust: "bg-trust/10 text-trust border border-trust/20 hover:bg-trust/20",
       },
       size: {
