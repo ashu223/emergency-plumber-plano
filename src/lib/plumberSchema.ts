@@ -1,15 +1,30 @@
-export const plumberSchema = (city: string, state: string) => ({
+import { siteConfig } from "./city.config";
+
+export const plumberSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Plumber",
-  name: `Emergency Plumber ${city} – Plumbing Help Desk`,
-  telephone: "+1-469-581-3414",
+
+  name: `${siteConfig.primaryKeyword} – ${siteConfig.brand}`,
+
+  url: siteConfig.domain,
+  telephone: siteConfig.phone,
+  priceRange: "$$",
+
+  description: `${siteConfig.primaryKeyword}. ${siteConfig.serviceDescription}`,
+
   areaServed: {
     "@type": "City",
-    name: city,
-    addressRegion: state,
+    name: siteConfig.city,
+    addressRegion: siteConfig.state,
     addressCountry: "US"
   },
-  openingHours: "Mo-Su 00:00-23:59",
-  priceRange: "$$",
-  description: `24/7 emergency plumber in ${city}, ${state} providing fast plumbing repairs for leaks, drains, water heaters and sewer issues.`
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: siteConfig.city,
+    addressRegion: siteConfig.state,
+    addressCountry: "US"
+  },
+
+  openingHours: "Mo-Su 00:00-23:59"
 });
