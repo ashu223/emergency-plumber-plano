@@ -116,7 +116,7 @@ export const LeadForm = () => {
         <Button variant="phone" size="lg" asChild>
           <a href={`tel:${siteConfig.phone.tel}`}>
             <Phone className="h-5 w-5" />
-            {siteConfig.phone.display}
+            CALL {siteConfig.phone.display}
           </a>
         </Button>
       </div>
