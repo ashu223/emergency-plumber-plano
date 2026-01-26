@@ -113,7 +113,7 @@ export const LeadForm = () => {
         <p className="text-sm text-muted-foreground mb-2">
           Or call us directly:
         </p>
-        <Button variant="cta" size="lg" asChild>
+        <Button variant="phone" size="lg" asChild>
   <a
     href={`tel:${siteConfig.phone.tel}`}
     className="flex items-center gap-2 whitespace-nowrap"
