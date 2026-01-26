@@ -114,11 +114,14 @@ export const LeadForm = () => {
           Or call us directly:
         </p>
         <Button variant="phone" size="lg" asChild>
-          <a href={`tel:${siteConfig.phone.tel}`}>
-            <Phone className="h-5 w-5" />
-            CALL {siteConfig.phone.display}
-          </a>
-        </Button>
+  <a
+    href={`tel:${siteConfig.phone.tel}`}
+    className="flex items-center gap-2 whitespace-nowrap"
+  >
+    <Phone className="h-5 w-5" />
+    <span>CALL {siteConfig.phone.display}</span>
+  </a>
+</Button>
       </div>
     </div>
   );
