@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Phone, Send, CheckCircle } from "lucide-react";
+import { siteConfig } from "@/lib/city.config";
+
 
 export const LeadForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -112,9 +114,9 @@ export const LeadForm = () => {
           Or call us directly:
         </p>
         <Button variant="phone" size="lg" asChild>
-          <a href="tel:+14695813414">
+          <a href={`tel:${siteConfig.phone.tel}`}>
             <Phone className="h-5 w-5" />
-            (469) 581-3414
+            {siteConfig.phone.display}
           </a>
         </Button>
       </div>
