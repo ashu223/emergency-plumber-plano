@@ -7,7 +7,7 @@ interface SEOProps {
 }
 
 export const SEO = ({ title, description, canonical }: SEOProps) => {
-  const fullTitle = `${title} | Plumbing Help Desk`;
+  const fullTitle = `${title} | Emergency Plumber Houston TX | 24/7 Fast Plumbing Service`;
   
   return (
     <Helmet>
