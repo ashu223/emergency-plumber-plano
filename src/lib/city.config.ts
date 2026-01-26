@@ -5,12 +5,12 @@ export const siteConfig = {
   country: "US",
 
   // 🔑 KEYWORDS
-  primaryKeyword: "emergency plumber houston",
-  secondaryKeyword: "emergency plumber houston tx",
+  primaryKeyword: "Emergency Plumber Houston",
+  secondaryKeyword: "Emergency Plumber Houston TX",
 
   // 🏢 BUSINESS
-  businessName: "Plumbing Help Desk",
-  domain: "https://www.theplumbinghelpdesk.com",
+  businessName: "Emergency Plumber Houston",
+  domain: "https://emergency-plumber-houston.pages.dev",
 
   // 📞 PHONE
   phone: "+18663820802",
