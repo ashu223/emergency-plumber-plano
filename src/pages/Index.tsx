@@ -86,18 +86,19 @@ const Index = () => {
               </div>
 
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Call Now for 24/7 Emergency Plumbing in Texas
+                Emergency Plumber in Houston, TX – Available 24/7
               </h1>
 
               <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
-                Speak with a licensed local plumber now. Fast emergency response, available 24/7.
+                Fast, reliable emergency plumbing services in Houston, TX.
+                Leaks, clogs, water heaters & sewer repairs available 24/7.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-2">
                 <Button variant="cta" size="xl" asChild>
                   <a href={PHONE_LINK}>
                     <Phone className="h-5 w-5" />
-                    CALL NOW: {PHONE_NUMBER}
+                    Call Emergency Plumber Houston : {PHONE_NUMBER}
                   </a>
                 </Button>
                 <Button
