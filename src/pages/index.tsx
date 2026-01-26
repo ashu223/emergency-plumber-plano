@@ -200,8 +200,8 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {cities.map((city) => (
-              <div key={city} className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-3">
+            {siteConfig.nearbyAreas.map((city) => (
+              <div key={area} className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-3">
                 <MapPin className="h-4 w-4 text-accent" />
                 <span className="font-medium">{city}</span>
               </div>
