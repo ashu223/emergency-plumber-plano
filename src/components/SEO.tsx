@@ -1,21 +1,24 @@
 import { Helmet } from "react-helmet-async";
+import { siteConfig } from "@/lib/city.config";
 
 interface SEOProps {
-  title: string;
-  description: string;
-  canonical?: string;
-  schema?: object; // 👈 ADD THIS
+  page?: string; // optional page modifier
+  schema?: object;
 }
 
-export const SEO = ({ title, description, canonical, schema }: SEOProps) => {
-  const fullTitle = `${title} | Emergency Plumber Houston TX | 24/7 Fast Plumbing Service`;
+export const SEO = ({ page, schema }: SEOProps) => {
+  const titleBase = siteConfig.primaryKeyword;
+  const fullTitle = page
+    ? `${page} | ${titleBase}`
+    : `${titleBase} | ${siteConfig.secondaryKeyword}`;
+
+  const description = `${siteConfig.primaryKeyword} – ${siteConfig.serviceDescription} Serving ${siteConfig.city}, ${siteConfig.state}. Call now.`;
 
   return (
     <Helmet>
-      {/* Basic SEO */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      {canonical && <link rel="canonical" href={canonical} />}
+      <link rel="canonical" href={siteConfig.domain} />
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
@@ -27,7 +30,7 @@ export const SEO = ({ title, description, canonical, schema }: SEOProps) => {
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
 
-      {/* ✅ LOCAL BUSINESS SCHEMA */}
+      {/* Schema */}
       {schema && (
         <script type="application/ld+json">
           {JSON.stringify(schema)}
