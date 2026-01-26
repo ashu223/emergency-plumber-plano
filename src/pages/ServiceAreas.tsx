@@ -1,48 +1,14 @@
 import { MapPin, Phone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-
-const PHONE_LINK = "tel:+14695813414";
-
-const regions = [
-  {
-    name: "Dallas-Fort Worth Metroplex",
-    cities: ["Dallas", "Fort Worth", "Arlington", "Plano", "Irving", "Garland", "McKinney", "Frisco", "Denton", "Richardson"],
-    description: "The DFW area is our home base. We connect customers with plumbing professionals throughout the Metroplex, from downtown Dallas to the growing suburbs of Frisco and McKinney."
-  },
-  {
-    name: "Greater Houston Area",
-    cities: ["Houston", "The Woodlands", "Sugar Land", "Pearland", "Katy", "League City", "Baytown", "Pasadena", "Galveston", "Conroe"],
-    description: "As Texas's largest metro, Houston demands reliable plumbing service. We help homeowners find local plumbers in the entire Greater Houston area including Galveston and The Woodlands."
-  },
-  {
-    name: "Central Texas / Austin",
-    cities: ["Austin", "San Marcos", "Round Rock", "Cedar Park", "Georgetown", "Pflugerville", "Kyle", "Leander", "Bastrop", "Taylor"],
-    description: "Keep Austin flowing! We connect with plumbing professionals in the capital region from Georgetown to San Marcos and everywhere in between."
-  },
-  {
-    name: "San Antonio & Hill Country",
-    cities: ["San Antonio", "New Braunfels", "Boerne", "Seguin", "Kerrville", "Fredericksburg", "Universal City", "Schertz", "Cibolo", "Helotes"],
-    description: "From the Alamo City to the beautiful Hill Country, We connect customers with plumbing professionals throughout the San Antonio metro area."
-  },
-  {
-    name: "West Texas",
-    cities: ["El Paso", "Midland", "Odessa", "Lubbock", "Amarillo", "Abilene", "San Angelo", "Wichita Falls", "Big Spring", "Sweetwater"],
-    description: "Even in the wide-open spaces of West Texas, quality plumbing service is just a phone call away. Plumbing help is just a phone call away."
-  },
-  {
-    name: "South Texas & Rio Grande Valley",
-    cities: ["Corpus Christi", "McAllen", "Brownsville", "Laredo", "Harlingen", "Edinburg", "Mission", "Pharr", "Kingsville", "Victoria"],
-    description: "From the Gulf Coast to the Rio Grande Valley, We help homeowners find local plumbers."
-  }
-];
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const ServiceAreas = () => {
   return (
     <>
       <SEO 
-        title="Service Areas - Plumbing Services Across Texas"
-        description="Plumbing Help Desk serves all major Texas cities: Houston, Dallas, Austin, San Antonio, Fort Worth, El Paso, and more. Call (469) 581-3414."
+        title={`Service Areas - ${siteConfig.businessName}`}
+        description={`${siteConfig.businessName} serves ${siteConfig.city} and surrounding areas: ${siteConfig.nearbyAreas.slice(0, 5).join(", ")}. Call ${siteConfig.displayPhone}.`}
       />
 
       {/* Hero */}
@@ -50,15 +16,15 @@ const ServiceAreas = () => {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Service Areas Across Texas
+              {siteConfig.headings.serviceAreasH1}
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              From El Paso to Beaumont, Amarillo to Brownsville — Plumbing Help Desk provides fast, reliable service across the Lone Star State.
+              {siteConfig.headings.serviceAreasSubtitle}
             </p>
             <Button variant="cta" size="xl" asChild>
-              <a href={PHONE_LINK}>
+              <a href={getPhoneLink()}>
                 <Phone className="h-5 w-5" />
-                Check Your Area: (469) 581-3414
+                Check Your Area: {siteConfig.displayPhone}
               </a>
             </Button>
           </div>
@@ -68,8 +34,8 @@ const ServiceAreas = () => {
       {/* Quick Coverage */}
       <section className="py-12 bg-secondary">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {["Houston", "Dallas", "Austin", "San Antonio", "Fort Worth", "El Paso"].map((city) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {siteConfig.nearbyAreas.slice(0, 5).map((city) => (
               <div key={city} className="bg-card rounded-lg px-4 py-3 text-center shadow-soft">
                 <MapPin className="h-5 w-5 text-accent mx-auto mb-1" />
                 <span className="font-semibold text-sm">{city}</span>
@@ -84,10 +50,10 @@ const ServiceAreas = () => {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Complete Texas Coverage
+              Complete {siteConfig.city} Area Coverage
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              No matter where you are in Texas, professional plumbing help is just a call away.
+              No matter where you are in the {siteConfig.city} area, professional plumbing help is just a call away.
             </p>
             <p className="text-sm text-muted-foreground/70 mt-3 max-w-2xl mx-auto">
               Availability and service details are determined by independent service providers.
@@ -95,7 +61,7 @@ const ServiceAreas = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {regions.map((region, i) => (
+            {siteConfig.regions.map((region, i) => (
               <div key={i} className="bg-card rounded-xl p-6 shadow-soft border border-border">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="h-10 w-10 rounded-lg hero-gradient flex items-center justify-center flex-shrink-0">
@@ -116,7 +82,7 @@ const ServiceAreas = () => {
                   ))}
                 </div>
                 <Button variant="ctaOutline" size="sm" asChild>
-                  <a href={PHONE_LINK}>
+                  <a href={getPhoneLink()}>
                     <Phone className="h-4 w-4" />
                     Call to Get Connected
                   </a>
@@ -132,7 +98,7 @@ const ServiceAreas = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-              Local Plumbers Who Know Texas
+              Local Plumbers Who Know {siteConfig.city}
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
               The service professionals we connect you with live and work in the communities they serve.
@@ -140,7 +106,7 @@ const ServiceAreas = () => {
             <div className="grid sm:grid-cols-3 gap-4">
               {[
                 "Fast local response",
-                "Know Texas codes",
+                `Know ${siteConfig.state} codes`,
                 "Community focused"
               ].map((item, i) => (
                 <div key={i} className="flex items-center justify-center gap-2 bg-card rounded-lg px-4 py-3">
@@ -157,15 +123,15 @@ const ServiceAreas = () => {
       <section className="py-16 lg:py-20">
         <div className="container text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Don't See Your City?
+            Don't See Your Area?
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             We're expanding our coverage every day. Call us to check if we serve your area — chances are, we do!
           </p>
           <Button variant="phone" size="xl" asChild>
-            <a href={PHONE_LINK}>
+            <a href={getPhoneLink()}>
               <Phone className="h-5 w-5" />
-              Call (469) 581-3414
+              Call {siteConfig.displayPhone}
             </a>
           </Button>
         </div>

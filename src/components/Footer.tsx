@@ -1,8 +1,6 @@
 import { Phone, Mail, MapPin, Clock, Shield, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const PHONE_NUMBER = "(469) 581-3414";
-const PHONE_LINK = "tel:+14695813414";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -39,15 +37,15 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="h-10 w-10 rounded-lg bg-primary-foreground flex items-center justify-center">
-                <span className="text-xl font-bold text-primary">PH</span>
+                <span className="text-xl font-bold text-primary">EP</span>
               </div>
               <div>
-                <span className="font-display font-bold text-lg">Plumbing</span>
-                <span className="block text-sm opacity-80 -mt-1">Help Desk</span>
+                <span className="font-display font-bold text-lg">{siteConfig.primaryKeyword}</span>
+                <span className="block text-sm opacity-80 -mt-1">{siteConfig.city}, {siteConfig.state}</span>
               </div>
             </div>
             <p className="text-sm opacity-80 mb-4">
-              Connecting customers with licensed and insured independent plumbers.
+              {siteConfig.footerTagline}
             </p>
             <div className="flex gap-3">
               <div className="flex items-center gap-1 text-xs bg-white/10 px-2 py-1 rounded">
@@ -99,24 +97,24 @@ export const Footer = () => {
           <div>
             <h3 className="font-display font-bold text-lg mb-4">Contact Us</h3>
             <div className="space-y-3">
-              <a href={PHONE_LINK} className="flex items-center gap-3 hover:text-accent transition-colors">
+              <a href={getPhoneLink()} className="flex items-center gap-3 hover:text-accent transition-colors">
                 <Phone className="h-5 w-5 text-accent" />
-                <span className="font-semibold">{PHONE_NUMBER}</span>
+                <span className="font-semibold">{siteConfig.displayPhone}</span>
               </a>
               <a
-                href="mailto:support@theplumbinghelpdesk.com"
+                href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-3 hover:text-accent transition-colors"
               >
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-sm">support@theplumbinghelpdesk.com</span>
+                <span className="text-sm">{siteConfig.email}</span>
               </a>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-sm opacity-80">1617 Park Pl Ave, Fort Worth, TX 76110</span>
+                <span className="text-sm opacity-80">{siteConfig.address.full}</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-accent" />
-                <span className="text-sm opacity-80">24/7 Emergency Service</span>
+                <span className="text-sm opacity-80">{siteConfig.hoursDisplay}</span>
               </div>
             </div>
           </div>
@@ -128,7 +126,7 @@ export const Footer = () => {
         <div className="container py-6">
           <div className="flex flex-col items-center gap-4">
             <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
-              <p className="text-sm opacity-80">© {currentYear} Plumbing Help Desk. All rights reserved.</p>
+              <p className="text-sm opacity-80">© {currentYear} {siteConfig.businessName}. All rights reserved.</p>
               <div className="flex items-center gap-4">
                 {legalLinks.map((link) => (
                   <Link
@@ -142,7 +140,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-xs opacity-70 text-center">
-              Plumbing Help Desk is a referral and lead generation service. We do not perform plumbing services directly.
+              {siteConfig.disclaimer}
             </p>
           </div>
         </div>

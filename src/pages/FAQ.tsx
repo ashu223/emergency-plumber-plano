@@ -1,18 +1,17 @@
-import { Phone, ChevronDown } from "lucide-react";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
-
-const PHONE_LINK = "tel:+14695813414";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const faqs = [
   {
-    question: "What cities in Texas do you serve?",
-    answer: "Plumbing Help Desk connects customers with independent plumbing professionals across Texas, including Houston, Dallas, Fort Worth, Austin, San Antonio, El Paso, Corpus Christi, Lubbock, Amarillo, and many surrounding areas. Service availability depends on independent providers. Call us to confirm coverage in your area."
+    question: `What areas in ${siteConfig.state} do you serve?`,
+    answer: `${siteConfig.businessName} connects customers with independent plumbing professionals across ${siteConfig.state}, including ${siteConfig.city} and surrounding areas like ${siteConfig.nearbyAreas.slice(0, 5).join(", ")}. Service availability depends on independent providers. Call us to confirm coverage in your area.`
   },
   {
     question: "Are the plumbers you connect me with licensed and insured?",
-    answer: "Yes. The independent plumbing professionals in our network hold valid Texas state plumbing licenses and maintain their own insurance coverage, including liability and workers' compensation, as required by law. You may request license or insurance details directly from the service provider."
+    answer: `Yes. The independent plumbing professionals in our network hold valid ${siteConfig.state} state plumbing licenses and maintain their own insurance coverage, including liability and workers' compensation, as required by law. You may request license or insurance details directly from the service provider.`
   },
   {
     question: "Do you offer 24/7 emergency plumbing services?",
@@ -20,7 +19,7 @@ const faqs = [
   },
   {
     question: "How fast is emergency response time?",
-    answer: "Emergency response times are determined by the independent service provider and your location. In major metro areas, many providers offer rapid response, often within 30–60 minutes. Rural response times may vary."
+    answer: `Emergency response times are determined by the independent service provider and your location. In ${siteConfig.city} and surrounding areas, many providers offer rapid response, often within 30–60 minutes.`
   },
   {
     question: "Do you provide free estimates?",
@@ -32,7 +31,7 @@ const faqs = [
   },
   {
     question: "Do you guarantee the work?",
-    answer: "Any warranties or guarantees are provided directly by the independent plumbing professional who performs the work. Plumbing Help Desk does not provide warranties or guarantees for third-party services."
+    answer: `Any warranties or guarantees are provided directly by the independent plumbing professional who performs the work. ${siteConfig.businessName} does not provide warranties or guarantees for third-party services.`
   },
   {
     question: "Can you help with commercial plumbing?",
@@ -40,7 +39,7 @@ const faqs = [
   },
   {
     question: "What should I do if I have a burst pipe?",
-    answer: "First, shut off your main water supply to prevent further damage. Then call us immediately at (469) 581-3414 so we can connect you with an available emergency plumbing professional in your area."
+    answer: `First, shut off your main water supply to prevent further damage. Then call us immediately at ${siteConfig.displayPhone} so we can connect you with an available emergency plumbing professional in your area.`
   },
   {
     question: "Do you install tankless water heaters?",
@@ -52,8 +51,8 @@ const FAQ = () => {
   return (
     <>
       <SEO 
-        title="FAQ - Common Plumbing Questions Answered"
-        description="Get answers to common plumbing questions: service areas, emergency response, pricing, and more. Plumbing Help Desk - Call (469) 581-3414."
+        title={`FAQ - ${siteConfig.businessName}`}
+        description={`Get answers to common plumbing questions: service areas, emergency response, pricing, and more. ${siteConfig.businessName} - Call ${siteConfig.displayPhone}.`}
       />
 
       {/* Hero */}
@@ -61,10 +60,10 @@ const FAQ = () => {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Frequently Asked Questions
+              {siteConfig.headings.faqH1}
             </h1>
             <p className="text-lg md:text-xl opacity-90">
-              Got questions? We've got answers. If you don't see what you're looking for, give us a call — we're happy to help.
+              {siteConfig.headings.faqSubtitle}
             </p>
           </div>
         </div>
@@ -104,9 +103,9 @@ const FAQ = () => {
             Our team is available 24/7 to help connect you with an independent plumbing professional. Call anytime to get started.
           </p>
           <Button variant="phone" size="xl" asChild>
-            <a href={PHONE_LINK}>
+            <a href={getPhoneLink()}>
               <Phone className="h-5 w-5" />
-              Call (469) 581-3414
+              Call {siteConfig.displayPhone}
             </a>
           </Button>
         </div>

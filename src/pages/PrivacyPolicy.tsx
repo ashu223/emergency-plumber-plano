@@ -1,11 +1,12 @@
 import { SEO } from "@/components/SEO";
+import { siteConfig } from "@/lib/city.config";
 
 const PrivacyPolicy = () => {
   return (
     <>
       <SEO 
-        title="Privacy Policy"
-        description="Privacy Policy for Plumbing Help Desk. Learn how we collect, use, and protect your personal information."
+        title={`Privacy Policy - ${siteConfig.businessName}`}
+        description={`Privacy Policy for ${siteConfig.businessName}. Learn how we collect, use, and protect your personal information.`}
       />
 
       {/* Hero */}
@@ -27,7 +28,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Introduction</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Plumbing Help Desk ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our plumbing services in the State of Texas.
+                  {siteConfig.businessName} ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our plumbing services in {siteConfig.city}, {siteConfig.state}.
                 </p>
               </div>
 
@@ -70,7 +71,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="font-display text-xl font-bold mb-3">Call Information & Lead Generation Disclosure</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Plumbing Help Desk operates as a lead generation and referral service. When you call the phone number displayed on our website, your call may be routed to a third-party plumbing service provider or independent contractor who can assist with your request. Calls may be monitored or recorded for quality assurance, training, and compliance purposes.
+                  {siteConfig.businessName} operates as a lead generation and referral service. When you call the phone number displayed on our website, your call may be routed to a third-party plumbing service provider or independent contractor who can assist with your request. Calls may be monitored or recorded for quality assurance, training, and compliance purposes.
                 </p>
               </div>
 
@@ -123,10 +124,10 @@ const PrivacyPolicy = () => {
                   If you have questions about this Privacy Policy or wish to exercise your rights, please contact us at:
                 </p>
                 <div className="mt-3 text-muted-foreground">
-                  <p><strong>Plumbing Help Desk</strong></p>
-                  <p>1617 Park Pl Ave, Fort Worth, TX 76110</p>
-                  <p>Phone: (469) 581-3414</p>
-                  <p>Email: support@theplumbinghelpdesk.com</p>
+                  <p><strong>{siteConfig.businessName}</strong></p>
+                  <p>{siteConfig.address.full}</p>
+                  <p>Phone: {siteConfig.displayPhone}</p>
+                  <p>Email: {siteConfig.email}</p>
                 </div>
               </div>
 

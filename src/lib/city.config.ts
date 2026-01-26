@@ -1,36 +1,96 @@
 export const siteConfig = {
-  // 📍 LOCATION
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📍 LOCATION - Change these to target a new city
+  // ═══════════════════════════════════════════════════════════════════════════
   city: "Houston",
   state: "TX",
   country: "US",
 
-  // 🔑 KEYWORDS
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🔑 KEYWORDS - Primary & secondary SEO keywords
+  // ═══════════════════════════════════════════════════════════════════════════
   primaryKeyword: "Emergency Plumber",
-  secondaryKeyword: "Emergency Plumber",
+  secondaryKeyword: "24/7 Plumbing Service",
 
-  // 🏢 BUSINESS
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🏢 BUSINESS INFO
+  // ═══════════════════════════════════════════════════════════════════════════
   businessName: "Emergency Plumber Houston",
   brand: "Emergency Plumber Houston",
   domain: "https://emergency-plumber-houston.pages.dev",
+  email: "support@emergencyplumberhouston.com",
+  address: {
+    street: "1234 Main St",
+    city: "Houston",
+    state: "TX",
+    zip: "77001",
+    full: "1234 Main St, Houston, TX 77001",
+  },
 
-  // 📞 PHONE
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📞 PHONE - Update phone number here (updates entire site)
+  // ═══════════════════════════════════════════════════════════════════════════
   phone: "+18663820802",
   displayPhone: "(866) 382-0802",
 
+  // ═══════════════════════════════════════════════════════════════════════════
   // 🕒 HOURS
+  // ═══════════════════════════════════════════════════════════════════════════
   openingHours: "Mo-Su 00:00-23:59",
+  hoursDisplay: "24/7 Emergency Service",
 
-  // 🧠 SEO
-  metaTitle:
-    "Emergency Plumber Houston TX | 24/7 Fast Plumbing Service",
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🧠 SEO - Meta title & description (used in <head>)
+  // ═══════════════════════════════════════════════════════════════════════════
+  metaTitle: "Emergency Plumber Houston TX | 24/7 Fast Plumbing Service",
   metaDescription:
     "Need an emergency plumber in Houston, TX? 24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues. Call now.",
 
-  // 🛠️ PAGE CONTENT
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📝 PAGE HEADINGS - H1/H2 content for each page
+  // ═══════════════════════════════════════════════════════════════════════════
+  headings: {
+    // Home page
+    homeH1: "Emergency Plumber in Houston, TX – Available 24/7",
+    homeSubtitle: "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
+    whyChooseH2: "Why Choose Emergency Plumber in Houston, TX?",
+    servicesH2: "Emergency Plumber Services in Houston, TX",
+    serviceAreasH2: "Emergency Plumber Near Houston, TX",
+    leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
+
+    // About page
+    aboutH1: "About Emergency Plumber Houston",
+    aboutSubtitle: "Houston's trusted emergency plumbing service connecting homeowners with licensed professionals.",
+
+    // Services page
+    servicesH1: "Plumbing Services Available Through Our Network",
+    servicesSubtitle: "We connect Houston homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
+
+    // Service Areas page
+    serviceAreasH1: "Service Areas Across Houston & Texas",
+    serviceAreasSubtitle: "From downtown Houston to the suburbs — we provide fast, reliable plumbing service connections.",
+
+    // Contact page
+    contactH1: "Contact Us",
+    contactSubtitle: "Need Plumbing Help? Get Connected 24/7. Call anytime to get connected with a licensed plumber.",
+
+    // FAQ page
+    faqH1: "Frequently Asked Questions",
+    faqSubtitle: "Got questions? We've got answers. If you don't see what you're looking for, give us a call.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🛠️ PAGE CONTENT - Descriptions and copy
+  // ═══════════════════════════════════════════════════════════════════════════
   serviceDescription:
     "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
+  
+  footerTagline: "Connecting customers with licensed and insured independent plumbers.",
+  disclaimer: "Emergency Plumber Houston is a referral and lead generation service. We do not perform plumbing services directly.",
 
-  // 📍 NEARBY AREAS
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📍 NEARBY AREAS - Displayed on homepage and service areas page
+  // ═══════════════════════════════════════════════════════════════════════════
   nearbyAreas: [
     "Downtown Houston",
     "Midtown",
@@ -42,4 +102,23 @@ export const siteConfig = {
     "Pasadena",
     "Pearland",
   ],
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🗺️ REGIONS - For service areas page
+  // ═══════════════════════════════════════════════════════════════════════════
+  regions: [
+    {
+      name: "Greater Houston Area",
+      cities: ["Houston", "The Woodlands", "Sugar Land", "Pearland", "Katy", "League City", "Baytown", "Pasadena", "Galveston", "Conroe"],
+      description: "We provide fast, reliable plumbing service connections throughout the Greater Houston area."
+    },
+    {
+      name: "Houston Metro Suburbs",
+      cities: ["Spring", "Cypress", "Humble", "Kingwood", "Missouri City", "Friendswood", "Deer Park", "La Porte", "Seabrook", "Webster"],
+      description: "Serving all Houston suburban communities with 24/7 emergency plumbing connections."
+    },
+  ],
 };
+
+// Helper to generate phone link
+export const getPhoneLink = () => `tel:${siteConfig.phone}`;

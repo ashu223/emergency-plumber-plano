@@ -1,24 +1,23 @@
 import { Shield, Award, Clock, Users, CheckCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-
-const PHONE_LINK = "tel:+14695813414";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const About = () => {
   return (
     <>
       <SEO
-        title="About Us - Licensed Texas Plumbers"
-        description="Plumbing Help Desk: Licensed, insured, and serving Texas for over 15 years. Learn about our team and commitment to quality plumbing service."
+        title={`About Us - ${siteConfig.businessName}`}
+        description={`${siteConfig.businessName}: Licensed, insured plumbers serving ${siteConfig.city}, ${siteConfig.state}. Learn about our commitment to quality plumbing service.`}
       />
 
       {/* Hero */}
       <section className="hero-gradient text-primary-foreground py-16 lg:py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">About Plumbing Help Desk</h1>
+            <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">{siteConfig.headings.aboutH1}</h1>
             <p className="text-lg md:text-xl opacity-90">
-              Plumbing Help Desk helps Texas homeowners get connected with independent, licensed plumbing professionals.
+              {siteConfig.headings.aboutSubtitle}
             </p>
           </div>
         </div>
@@ -29,7 +28,7 @@ const About = () => {
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { number: "Texas-Wide Coverage", label: "Serving major cities and surrounding areas" },
+              { number: `${siteConfig.city} Coverage`, label: "Serving the metro and surrounding areas" },
               { number: "Transparent Connections", label: "No hidden referral fees" },
               { number: "Quick Match System", label: "Matched with available plumbers fast" },
               { number: "Emergency Ready", label: "Available day & night 24/7" },
@@ -51,7 +50,7 @@ const About = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Plumbing Help Desk was created to simplify how Texas homeowners find reliable plumbing help. Instead
+                  {siteConfig.businessName} was created to simplify how {siteConfig.city} homeowners find reliable plumbing help. Instead
                   of calling multiple companies, customers can submit one request and get connected with an available,
                   independent plumbing professional in their area.
                 </p>
@@ -99,13 +98,13 @@ const About = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Independent Plumbing Professionals</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Service providers in our network are independent businesses who maintain their own licensing and
-              insurance. Plumbing Help Desk does not employ or supervise plumbers.
+              insurance. {siteConfig.businessName} does not employ or supervise plumbers.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "State Licensed", desc: "Service providers in our network maintain valid Texas state plumbing licenses" },
+              { title: "State Licensed", desc: `Service providers maintain valid ${siteConfig.state} state plumbing licenses` },
               { title: "Fully Insured", desc: "Independent providers maintain their own liability and worker's compensation coverage" },
               { title: "Background Checked", desc: "Providers are vetted before being added to the network" },
             ].map((item, i) => (
@@ -124,12 +123,12 @@ const About = () => {
         <div className="container text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready to Experience the Difference?</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Connect with independent plumbing professionals serving Texas.
+            Connect with independent plumbing professionals serving {siteConfig.city}, {siteConfig.state}.
           </p>
           <Button variant="phone" size="xl" asChild>
-            <a href={PHONE_LINK}>
+            <a href={getPhoneLink()}>
               <Phone className="h-5 w-5" />
-              Call (469) 581-3414
+              Call {siteConfig.displayPhone}
             </a>
           </Button>
         </div>

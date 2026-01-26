@@ -1,8 +1,7 @@
 import { Droplets, Wrench, Thermometer, PipetteIcon, Building2, Search, Phone, CheckCircle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-
-const PHONE_LINK = "tel:+14695813414";
+import { siteConfig, getPhoneLink } from "@/lib/city.config";
 
 const services = [
   {
@@ -26,7 +25,7 @@ const services = [
   {
     icon: Thermometer,
     title: "Water Heater Repair & Replacement",
-    description: "No hot water? We help connect customers with licensed plumbing professionals who handle repair and replacement of all types of water heaters…",
+    description: "No hot water? We help connect customers with licensed plumbing professionals who handle repair and replacement of all types of water heaters.",
     features: ["All brands serviced", "Tankless specialists", "Energy-efficient options", "Same-day installation"]
   },
   {
@@ -44,7 +43,7 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Plumbing Solutions",
-    description: "Keep your business running with our commercial plumbing services. We serve restaurants, offices, retail spaces, and industrial facilities across Texas.",
+    description: "Keep your business running with our commercial plumbing services. We serve restaurants, offices, retail spaces, and industrial facilities.",
     features: ["Minimal disruption", "Code compliance", "Scheduled maintenance", "Emergency response"]
   }
 ];
@@ -53,8 +52,8 @@ const Services = () => {
   return (
     <>
       <SEO 
-        title="Plumbing Services - Emergency Repairs, Drain Cleaning & More"
-        description="Full-service plumbing in Texas: emergency repairs, leak detection, drain cleaning, water heater service, and more. Call (469) 581-3414 for service."
+        title={`Plumbing Services - ${siteConfig.businessName}`}
+        description={`Full-service plumbing in ${siteConfig.city}, ${siteConfig.state}: emergency repairs, leak detection, drain cleaning, water heater service, and more. Call ${siteConfig.displayPhone} for service.`}
       />
 
       {/* Hero */}
@@ -62,19 +61,19 @@ const Services = () => {
         <div className="container">
           <div className="max-w-3xl">
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Plumbing Services Available Through Our Network
+              {siteConfig.headings.servicesH1}
             </h1>
             <p className="text-lg md:text-xl opacity-90 mb-8">
-              Plumbing Help Desk helps Texas homeowners get connected with independent, licensed plumbing professionals for a wide range of residential and commercial plumbing needs.
+              {siteConfig.headings.servicesSubtitle}
             </p>
             <Button variant="cta" size="xl" asChild>
-              <a href={PHONE_LINK}>
+              <a href={getPhoneLink()}>
                 <Phone className="h-5 w-5" />
                 Call for Plumbing Help
               </a>
             </Button>
             <p className="text-sm opacity-60 mt-4">
-              Plumbing Help Desk does not perform plumbing services directly. We connect customers with independent service providers.
+              {siteConfig.disclaimer}
             </p>
           </div>
         </div>
@@ -110,7 +109,7 @@ const Services = () => {
                     ))}
                   </div>
                   <Button variant="cta" asChild>
-                    <a href={PHONE_LINK}>
+                    <a href={getPhoneLink()}>
                       <Phone className="h-4 w-4" />
                       {service.title.includes('Commercial') ? 'Call for Plumbing Help' : 'Call to Get Connected'}
                     </a>
@@ -137,9 +136,9 @@ const Services = () => {
             Independent plumbing professionals in our network are available 24/7. Call now to get connected.
           </p>
           <Button variant="cta" size="xl" asChild>
-            <a href={PHONE_LINK}>
+            <a href={getPhoneLink()}>
               <Phone className="h-5 w-5" />
-              (469) 581-3414
+              {siteConfig.displayPhone}
             </a>
           </Button>
         </div>
@@ -149,7 +148,7 @@ const Services = () => {
       <section className="py-6 bg-muted/50 border-t">
         <div className="container">
           <p className="text-xs text-muted-foreground text-center max-w-4xl mx-auto">
-            Plumbing Help Desk is a referral and lead generation service. We connect customers with independent plumbing professionals. We do not perform plumbing services directly and do not employ plumbers.
+            {siteConfig.disclaimer}
           </p>
         </div>
       </section>
