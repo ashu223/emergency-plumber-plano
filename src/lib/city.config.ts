@@ -6,7 +6,7 @@ export const siteConfig = {
 
   // 🔑 KEYWORDS
   primaryKeyword: "Emergency Plumber",
-  secondaryKeyword: "Emergency Plumber Houston TX",
+  secondaryKeyword: "Emergency Plumber",
 
   // 🏢 BUSINESS
   businessName: "Emergency Plumber Houston",
