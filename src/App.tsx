@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import StickyCallButton from "@/components/StickyCallButton";
 
 // Lazy load pages for code splitting
-const Index = lazy(() => import("./pages/Index"));
+const Index = lazy(() => import("./pages/index"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
 const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
