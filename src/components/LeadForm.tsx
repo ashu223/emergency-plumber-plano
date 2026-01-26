@@ -41,10 +41,10 @@ export const LeadForm = () => {
           Need immediate help? Call us now:
         </p>
         <a
-          href={`tel:${siteConfig.phone.tel}`}
+          href={`tel:${siteConfig.phone}`}
           className="text-accent font-bold text-lg hover:underline"
         >
-          {siteConfig.phone.display}
+          {siteConfig.displayPhone}
         </a>
       </div>
     );
@@ -114,14 +114,14 @@ export const LeadForm = () => {
           Or call us directly:
         </p>
         <Button variant="phone" size="lg" asChild>
-  <a
-    href={`tel:${siteConfig.phone.tel}`}
-    className="flex items-center gap-2 whitespace-nowrap"
-  >
-    <Phone className="h-5 w-5" />
-    <span>CALL {siteConfig.phone.display}</span>
-  </a>
-</Button>
+          <a
+            href={`tel:${siteConfig.phone}`}
+            className="flex items-center gap-2 whitespace-nowrap"
+          >
+            <Phone className="h-5 w-5" />
+            <span>CALL {siteConfig.displayPhone}</span>
+          </a>
+        </Button>
       </div>
     </div>
   );

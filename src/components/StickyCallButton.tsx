@@ -6,9 +6,9 @@ export const StickyCallButton = () => {
   return (
     <div className="sticky-cta">
       <Button variant="phone" size="xl" className="w-full" asChild>
-        <a href={`tel:${siteConfig.phone.tel}`}>
+        <a href={`tel:${siteConfig.phone}`}>
           <Phone className="h-5 w-5" />
-          CALL {siteConfig.phone.display}
+          CALL {siteConfig.displayPhone}
         </a>
       </Button>
     </div>

@@ -10,6 +10,7 @@ export const siteConfig = {
 
   // 🏢 BUSINESS
   businessName: "Emergency Plumber Houston",
+  brand: "Emergency Plumber Houston",
   domain: "https://emergency-plumber-houston.pages.dev",
 
   // 📞 PHONE
