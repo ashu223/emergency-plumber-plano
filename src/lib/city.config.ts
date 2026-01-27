@@ -16,15 +16,15 @@ export const siteConfig = {
   // 🏢 BUSINESS INFO
   // ═══════════════════════════════════════════════════════════════════════════
   businessName: "Emergency Plumber Dallas",
-  brand: "Emergency Plumber Houston",
+  brand: "Emergency Plumber Dallas",
   domain: "https://emergency-plumber-houston.pages.dev",
   email: "support@emergencyplumberhouston.com",
   address: {
     street: "1234 Main St",
-    city: "Houston",
+    city: "Dallas",
     state: "TX",
     zip: "77001",
-    full: "1234 Main St, Houston, TX 77001",
+    full: "1234 Main St, Dallas, TX 77001",
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
