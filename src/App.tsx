@@ -8,6 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyCallButton from "@/components/StickyCallButton";
+import { plumberSchema } from "@/lib/plumberSchema";
 
 // Lazy load pages for code splitting
 const Index = lazy(() => import("./pages/index"));
@@ -26,6 +27,12 @@ const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(plumberSchema()),
+          }}
+        />
         <Toaster />
         <Sonner />
         <BrowserRouter>
