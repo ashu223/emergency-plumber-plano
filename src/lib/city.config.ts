@@ -51,7 +51,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   headings: {
     // Home page
-    homeH1: "Emergency Plumber in Houston, TX – Available 24/7",
+    homeH1: "Emergency Plumber in Dallas, TX – Available 24/7",
     homeSubtitle:
       "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
     whyChooseH2: "Why Choose Emergency Plumber in Houston, TX?",
