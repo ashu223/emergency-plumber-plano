@@ -148,6 +148,22 @@ export const siteConfig = {
       ],
       description: "Serving all Houston suburban communities with 24/7 emergency plumbing connections.",
     },
+    {
+      name: "Dallas Metro Suburbs",
+      cities: [
+        "Spring",
+        "Cypress",
+        "Humble",
+        "Kingwood",
+        "Missouri City",
+        "Friendswood",
+        "Deer Park",
+        "La Porte",
+        "Seabrook",
+        "Webster",
+      ],
+      description: "Serving all Houston suburban communities with 24/7 emergency plumbing connections.",
+    },
   ],
 };
 
