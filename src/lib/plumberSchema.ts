@@ -2,15 +2,19 @@ import { siteConfig } from "./city.config";
 
 export const plumberSchema = () => ({
   "@context": "https://schema.org",
-  "@type": "Plumber",
+  "@type": ["LocalBusiness", "Plumber"],
 
-  name: `${siteConfig.primaryKeyword} – ${siteConfig.brand}`,
+  "@id": `${siteConfig.domain}#plumber`,
+
+  name: `${siteConfig.brand} – Emergency Plumber in ${siteConfig.city}, ${siteConfig.state}`,
 
   url: siteConfig.domain,
+
   telephone: siteConfig.phone,
+
   priceRange: "$$",
 
-  description: `${siteConfig.primaryKeyword}. ${siteConfig.serviceDescription}`,
+  description: `Need an emergency plumber in ${siteConfig.city}, ${siteConfig.state}? ${siteConfig.serviceDescription}`,
 
   areaServed: {
     "@type": "City",
@@ -26,5 +30,20 @@ export const plumberSchema = () => ({
     addressCountry: "US"
   },
 
-  openingHours: "Mo-Su 00:00-23:59"
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      opens: "00:00",
+      closes: "23:59"
+    }
+  ]
 });
