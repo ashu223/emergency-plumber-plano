@@ -1,6 +1,7 @@
 import { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { getPhoneLink } from "@/lib/city.config";
 
 interface ServiceCardProps {
   icon: LucideIcon;
@@ -17,7 +18,7 @@ export const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps
       <h3 className="font-display font-bold text-lg mb-2">{title}</h3>
       <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{description}</p>
       <Button variant="ctaOutline" size="sm" asChild>
-        <a href="tel:+14695813414">
+        <a href={getPhoneLink()}>
           <Phone className="h-4 w-4" />
           Call Now
         </a>
