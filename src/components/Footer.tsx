@@ -1,35 +1,36 @@
 import { Phone, Mail, MapPin, Clock, Shield, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { siteConfig, getPhoneLink } from "@/lib/city.config";
-
-const quickLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
-  { href: "/services", label: "Services" },
-  { href: "/service-areas", label: "Service Areas" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact Us" },
-];
-
-const services = [
-  "Emergency Plumbing",
-  "Leak Detection",
-  "Drain Cleaning",
-  "Water Heater Repair",
-  "Pipe Repair",
-  "Sewer Services",
-];
-
-const legalLinks = [
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-of-service", label: "Terms of Service" },
-];
-
+const quickLinks = [{
+  href: "/",
+  label: "Home"
+}, {
+  href: "/about",
+  label: "About Us"
+}, {
+  href: "/services",
+  label: "Services"
+}, {
+  href: "/service-areas",
+  label: "Service Areas"
+}, {
+  href: "/faq",
+  label: "FAQ"
+}, {
+  href: "/contact",
+  label: "Contact Us"
+}];
+const services = ["Emergency Plumbing", "Leak Detection", "Drain Cleaning", "Water Heater Repair", "Pipe Repair", "Sewer Services"];
+const legalLinks = [{
+  href: "/privacy-policy",
+  label: "Privacy Policy"
+}, {
+  href: "/terms-of-service",
+  label: "Terms of Service"
+}];
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       {/* Main footer */}
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -44,9 +45,7 @@ export const Footer = () => {
                 <span className="block text-sm opacity-80 -mt-1">{siteConfig.city}, {siteConfig.state}</span>
               </div>
             </div>
-            <p className="text-sm opacity-80 mb-4">
-              {siteConfig.footerTagline}
-            </p>
+            
             <div className="flex gap-3">
               <div className="flex items-center gap-1 text-xs bg-white/10 px-2 py-1 rounded">
                 <Shield className="h-4 w-4" />
@@ -63,16 +62,11 @@ export const Footer = () => {
           <div>
             <h3 className="font-display font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
-                  >
+              {quickLinks.map(link => <li key={link.href}>
+                  <Link to={link.href} className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors">
                     {link.label}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -80,16 +74,11 @@ export const Footer = () => {
           <div>
             <h3 className="font-display font-bold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service}>
-                  <Link
-                    to="/services"
-                    className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
-                  >
+              {services.map(service => <li key={service}>
+                  <Link to="/services" className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors">
                     {service}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -101,10 +90,7 @@ export const Footer = () => {
                 <Phone className="h-5 w-5 text-accent" />
                 <span className="font-semibold">{siteConfig.displayPhone}</span>
               </a>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="flex items-center gap-3 hover:text-accent transition-colors"
-              >
+              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-3 hover:text-accent transition-colors">
                 <Mail className="h-5 w-5 text-accent" />
                 <span className="text-sm">{siteConfig.email}</span>
               </a>
@@ -128,15 +114,9 @@ export const Footer = () => {
             <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
               <p className="text-sm opacity-80">© {currentYear} {siteConfig.businessName}. All rights reserved.</p>
               <div className="flex items-center gap-4">
-                {legalLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors"
-                  >
+                {legalLinks.map(link => <Link key={link.href} to={link.href} className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-colors">
                     {link.label}
-                  </Link>
-                ))}
+                  </Link>)}
               </div>
             </div>
             <p className="text-xs opacity-70 text-center">
@@ -145,8 +125,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
