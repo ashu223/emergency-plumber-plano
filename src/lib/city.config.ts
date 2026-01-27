@@ -25,11 +25,11 @@ export const siteConfig = {
   domain: "https://emergency-plumber-houston.pages.dev",
   email: "support@emergencyplumberhouston.com",
   address: {
-    street: "1234 Main St",
+    street: "",
     city: "Dallas",
     state: "TX",
     zip: "77001",
-    full: "1234 Main St, Dallas, TX 77001",
+    full: "Dallas, TX 77001",
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
