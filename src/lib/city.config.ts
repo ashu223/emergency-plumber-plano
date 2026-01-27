@@ -109,7 +109,6 @@ export const siteConfig = {
     "Katy",
     "Sugar Land",
     "Pasadena",
-    "Pearland",
   ],
 
   // ═══════════════════════════════════════════════════════════════════════════
