@@ -42,9 +42,9 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 🧠 SEO - Meta title & description (used in <head>)
   // ═══════════════════════════════════════════════════════════════════════════
-  metaTitle: "Emergency Plumber Houston TX | 24/7 Fast Plumbing Service",
+  metaTitle: "Emergency Plumber Dallas TX | 24/7 Fast Plumbing Service",
   metaDescription:
-    "Need an emergency plumber in Houston, TX? 24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues. Call now.",
+    "Need an emergency plumber in Dallas, TX? 24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues. Call now.",
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 📝 PAGE HEADINGS - H1/H2 content for each page
@@ -54,24 +54,24 @@ export const siteConfig = {
     homeH1: "Emergency Plumber in Dallas, TX – Available 24/7",
     homeSubtitle:
       "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
-    whyChooseH2: "Why Choose Emergency Plumber in Houston, TX?",
-    servicesH2: "Emergency Plumber Services in Houston, TX",
-    serviceAreasH2: "Emergency Plumber Near Houston, TX",
+    whyChooseH2: "Why Choose Emergency Plumber in Dallas, TX?",
+    servicesH2: "Emergency Plumber Services in Dallas, TX",
+    serviceAreasH2: "Emergency Plumber Near Dallas, TX",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
 
     // About page
-    aboutH1: "About Emergency Plumber Houston",
-    aboutSubtitle: "Houston's trusted emergency plumbing service connecting homeowners with licensed professionals.",
+    aboutH1: "About Emergency Plumber Dallas",
+    aboutSubtitle: "Dallas's trusted emergency plumbing service connecting homeowners with licensed professionals.",
 
     // Services page
     servicesH1: "Plumbing Services Available Through Our Network",
     servicesSubtitle:
-      "We connect Houston homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
+      "We connect Dallas homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
 
     // Service Areas page
-    serviceAreasH1: "Service Areas Across Houston & Texas",
+    serviceAreasH1: "Service Areas Across Dallas & Texas",
     serviceAreasSubtitle:
-      "From downtown Houston to the suburbs — we provide fast, reliable plumbing service connections.",
+      "From downtown Dallas to the suburbs — we provide fast, reliable plumbing service connections.",
 
     // Contact page
     contactH1: "Contact Us",
