@@ -2,14 +2,9 @@ import { MapPin, Phone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { siteConfig, getPhoneLink } from "@/lib/city.config";
-
 const ServiceAreas = () => {
-  return (
-    <>
-      <SEO 
-        title={`Service Areas - ${siteConfig.businessName}`}
-        description={`${siteConfig.businessName} serves ${siteConfig.city} and surrounding areas: ${siteConfig.nearbyAreas.slice(0, 5).join(", ")}. Call ${siteConfig.displayPhone}.`}
-      />
+  return <>
+      <SEO title={`Service Areas - ${siteConfig.businessName}`} description={`${siteConfig.businessName} serves ${siteConfig.city} and surrounding areas: ${siteConfig.nearbyAreas.slice(0, 5).join(", ")}. Call ${siteConfig.displayPhone}.`} />
 
       {/* Hero */}
       <section className="hero-gradient text-primary-foreground py-16 lg:py-20">
@@ -35,12 +30,10 @@ const ServiceAreas = () => {
       <section className="py-12 bg-secondary">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {siteConfig.nearbyAreas.slice(0, 5).map((city) => (
-              <div key={city} className="bg-card rounded-lg px-4 py-3 text-center shadow-soft">
+            {siteConfig.nearbyAreas.slice(0, 5).map(city => <div key={city} className="bg-card rounded-lg px-4 py-3 text-center shadow-soft">
                 <MapPin className="h-5 w-5 text-accent mx-auto mb-1" />
                 <span className="font-semibold text-sm">{city}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -55,14 +48,11 @@ const ServiceAreas = () => {
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               No matter where you are in the {siteConfig.city} area, professional plumbing help is just a call away.
             </p>
-            <p className="text-sm text-muted-foreground/70 mt-3 max-w-2xl mx-auto">
-              Availability and service details are determined by independent service providers.
-            </p>
+            
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {siteConfig.regions.map((region, i) => (
-              <div key={i} className="bg-card rounded-xl p-6 shadow-soft border border-border">
+            {siteConfig.regions.map((region, i) => <div key={i} className="bg-card rounded-xl p-6 shadow-soft border border-border">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="h-10 w-10 rounded-lg hero-gradient flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-5 w-5 text-primary-foreground" />
@@ -75,11 +65,9 @@ const ServiceAreas = () => {
                   {region.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {region.cities.map((city) => (
-                    <span key={city} className="text-xs bg-secondary px-2 py-1 rounded">
+                  {region.cities.map(city => <span key={city} className="text-xs bg-secondary px-2 py-1 rounded">
                       {city}
-                    </span>
-                  ))}
+                    </span>)}
                 </div>
                 <Button variant="ctaOutline" size="sm" asChild>
                   <a href={getPhoneLink()}>
@@ -87,8 +75,7 @@ const ServiceAreas = () => {
                     Call to Get Connected
                   </a>
                 </Button>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -100,20 +87,12 @@ const ServiceAreas = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
               Local Plumbers Who Know {siteConfig.city}
             </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              The service professionals we connect you with live and work in the communities they serve.
-            </p>
+            
             <div className="grid sm:grid-cols-3 gap-4">
-              {[
-                "Fast local response",
-                `Know ${siteConfig.state} codes`,
-                "Community focused"
-              ].map((item, i) => (
-                <div key={i} className="flex items-center justify-center gap-2 bg-card rounded-lg px-4 py-3">
+              {["Fast local response", `Know ${siteConfig.state} codes`, "Community focused"].map((item, i) => <div key={i} className="flex items-center justify-center gap-2 bg-card rounded-lg px-4 py-3">
                   <CheckCircle className="h-5 w-5 text-trust" />
                   <span className="font-medium text-sm">{item}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -136,8 +115,6 @@ const ServiceAreas = () => {
           </Button>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default ServiceAreas;
