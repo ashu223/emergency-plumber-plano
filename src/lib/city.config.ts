@@ -15,7 +15,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 🏢 BUSINESS INFO
   // ═══════════════════════════════════════════════════════════════════════════
-  businessName: "Emergency Plumber Houston",
+  businessName: "Emergency Plumber Dallas",
   brand: "Emergency Plumber Houston",
   domain: "https://emergency-plumber-houston.pages.dev",
   email: "support@emergencyplumberhouston.com",
@@ -52,7 +52,8 @@ export const siteConfig = {
   headings: {
     // Home page
     homeH1: "Emergency Plumber in Houston, TX – Available 24/7",
-    homeSubtitle: "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
+    homeSubtitle:
+      "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
     whyChooseH2: "Why Choose Emergency Plumber in Houston, TX?",
     servicesH2: "Emergency Plumber Services in Houston, TX",
     serviceAreasH2: "Emergency Plumber Near Houston, TX",
@@ -64,11 +65,13 @@ export const siteConfig = {
 
     // Services page
     servicesH1: "Plumbing Services Available Through Our Network",
-    servicesSubtitle: "We connect Houston homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
+    servicesSubtitle:
+      "We connect Houston homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
 
     // Service Areas page
     serviceAreasH1: "Service Areas Across Houston & Texas",
-    serviceAreasSubtitle: "From downtown Houston to the suburbs — we provide fast, reliable plumbing service connections.",
+    serviceAreasSubtitle:
+      "From downtown Houston to the suburbs — we provide fast, reliable plumbing service connections.",
 
     // Contact page
     contactH1: "Contact Us",
@@ -84,9 +87,10 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   serviceDescription:
     "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
-  
+
   footerTagline: "Connecting customers with licensed and insured independent plumbers.",
-  disclaimer: "Emergency Plumber Houston is a referral and lead generation service. We do not perform plumbing services directly.",
+  disclaimer:
+    "Emergency Plumber Houston is a referral and lead generation service. We do not perform plumbing services directly.",
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 NEARBY AREAS - Displayed on homepage and service areas page
@@ -109,13 +113,35 @@ export const siteConfig = {
   regions: [
     {
       name: "Greater Houston Area",
-      cities: ["Houston", "The Woodlands", "Sugar Land", "Pearland", "Katy", "League City", "Baytown", "Pasadena", "Galveston", "Conroe"],
-      description: "We provide fast, reliable plumbing service connections throughout the Greater Houston area."
+      cities: [
+        "Houston",
+        "The Woodlands",
+        "Sugar Land",
+        "Pearland",
+        "Katy",
+        "League City",
+        "Baytown",
+        "Pasadena",
+        "Galveston",
+        "Conroe",
+      ],
+      description: "We provide fast, reliable plumbing service connections throughout the Greater Houston area.",
     },
     {
       name: "Houston Metro Suburbs",
-      cities: ["Spring", "Cypress", "Humble", "Kingwood", "Missouri City", "Friendswood", "Deer Park", "La Porte", "Seabrook", "Webster"],
-      description: "Serving all Houston suburban communities with 24/7 emergency plumbing connections."
+      cities: [
+        "Spring",
+        "Cypress",
+        "Humble",
+        "Kingwood",
+        "Missouri City",
+        "Friendswood",
+        "Deer Park",
+        "La Porte",
+        "Seabrook",
+        "Webster",
+      ],
+      description: "Serving all Houston suburban communities with 24/7 emergency plumbing connections.",
     },
   ],
 };
