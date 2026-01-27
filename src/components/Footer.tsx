@@ -37,7 +37,7 @@ export const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="h-10 w-10 rounded-lg bg-primary-foreground flex items-center justify-center">
-                <span className="text-xl font-bold text-primary">EP</span>
+                <span className="text-xl font-bold text-primary">{siteConfig.logoText}</span>
               </div>
               <div>
                 <span className="font-display font-bold text-lg">{siteConfig.primaryKeyword}</span>

@@ -45,7 +45,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-lg hero-gradient flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">EP</span>
+              <span className="text-xl font-bold text-primary-foreground">{siteConfig.logoText}</span>
             </div>
             <div className="hidden sm:block">
               <span className="font-display font-bold text-lg text-primary">{siteConfig.primaryKeyword}</span>
