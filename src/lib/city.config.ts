@@ -91,7 +91,6 @@ export const siteConfig = {
   // 🛠️ PAGE CONTENT - Descriptions and copy
   // ═══════════════════════════════════════════════════════════════════════════
 
-  footerTagline: "Connecting customers with licensed and insured independent plumbers.",
   disclaimer:
     "Emergency Plumber Houston is a referral and lead generation service. We do not perform plumbing services directly.",
 
