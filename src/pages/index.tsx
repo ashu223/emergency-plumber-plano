@@ -6,31 +6,23 @@ import { LeadForm } from "@/components/LeadForm";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SEO } from "@/components/SEO";
 import heroImage from "@/assets/hero-plumber.jpg";
-const services = [{
-  icon: Droplets,
-  title: "Emergency Leak Repair",
-  description: "Fast connection to plumbers for water leaks, 24/7. We stop the damage and fix it right the first time."
-}, {
-  icon: Wrench,
-  title: "Drain Cleaning",
-  description: "Professional drain unclogging and cleaning services for sinks, toilets, and main lines."
-}, {
-  icon: Thermometer,
-  title: "Water Heater Repair",
-  description: "Expert water heater repair and replacement. Tankless and traditional systems."
-}, {
-  icon: PipetteIcon,
-  title: "Pipe Replacement",
-  description: "Complete pipe repair and repiping services for aging or damaged plumbing systems."
-}, {
-  icon: Building2,
-  title: "Commercial Plumbing",
-  description: "Full-service commercial plumbing for businesses, restaurants, and office buildings."
-}, {
-  icon: Wrench,
-  title: "Sewer Line Services",
-  description: "Sewer inspection, repair, and replacement using the latest technology."
-}];
+// Map service titles to icons
+const serviceIcons: Record<string, typeof Droplets> = {
+  "Emergency Leak Repair": Droplets,
+  "Drain Cleaning": Wrench,
+  "Water Heater Repair": Thermometer,
+  "Pipe Replacement": PipetteIcon,
+  "Commercial Plumbing": Building2,
+  "Sewer Line Services": Wrench,
+};
+
+// Map why choose feature titles to icons
+const featureIcons: Record<string, typeof Clock> = {
+  "Fast Response": Clock,
+  "Licensed Professionals": Shield,
+  "Service Guarantees": Award,
+  "Transparent Estimates": CheckCircle,
+};
 const Index = () => {
   return <>
       <SEO title={siteConfig.metaTitle} description={siteConfig.metaDescription} schema={plumberSchema()} />
@@ -100,34 +92,23 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.whyChooseH2}</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We're the trusted choice for homeowners and businesses in {siteConfig.city}, {siteConfig.state}.
+              {siteConfig.headings.whyChooseSubtitle}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[{
-            icon: Clock,
-            title: "Fast Response",
-            desc: "Quick connection to available plumbers"
-          }, {
-            icon: Shield,
-            title: "Licensed Professionals",
-            desc: "Independent, third-party providers"
-          }, {
-            icon: Award,
-            title: "Service Guarantees",
-            desc: "Offered by service providers"
-          }, {
-            icon: CheckCircle,
-            title: "Transparent Estimates",
-            desc: "Pricing shared by service providers before work begins"
-          }].map((item, i) => <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft card-hover">
-                <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="h-7 w-7 text-primary" />
+            {siteConfig.whyChooseFeatures.map((item, i) => {
+              const Icon = featureIcons[item.title] || CheckCircle;
+              return (
+                <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft card-hover">
+                  <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <Icon className="h-7 w-7 text-primary" />
+                  </div>
+                  <h3 className="font-display font-bold text-lg mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-sm">{item.desc}</p>
                 </div>
-                <h3 className="font-display font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </div>)}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -138,12 +119,15 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.servicesH2}</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              We connect customers with independent plumbing professionals for the following services:
+              {siteConfig.headings.servicesSubtitle}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, i) => <ServiceCard key={i} {...service} />)}
+            {siteConfig.services.map((service, i) => {
+              const Icon = serviceIcons[service.title] || Wrench;
+              return <ServiceCard key={i} icon={Icon} title={service.title} description={service.description} />;
+            })}
           </div>
         </div>
       </section>

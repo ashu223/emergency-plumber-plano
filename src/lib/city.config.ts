@@ -60,7 +60,9 @@ export const siteConfig = {
     homeSubtitle:
       "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
     whyChooseH2: "Why Choose Emergency Plumber in Dallas, TX?",
+    whyChooseSubtitle: "We're the trusted choice for homeowners and businesses in Dallas, TX.",
     servicesH2: "Emergency Plumber Services in Dallas, TX",
+    servicesSubtitle: "We connect customers with independent plumbing professionals for the following services:",
     serviceAreasH2: "Emergency Plumber Near Dallas, TX",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
 
@@ -70,7 +72,7 @@ export const siteConfig = {
 
     // Services page
     servicesH1: "Plumbing Services Available Through Our Network",
-    servicesSubtitle:
+    servicesPageSubtitle:
       "We connect Dallas homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
 
     // Service Areas page
@@ -86,6 +88,28 @@ export const siteConfig = {
     faqH1: "Frequently Asked Questions",
     faqSubtitle: "Got questions? We've got answers. If you don't see what you're looking for, give us a call.",
   },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ✅ WHY CHOOSE US - Feature boxes on homepage
+  // ═══════════════════════════════════════════════════════════════════════════
+  whyChooseFeatures: [
+    { title: "Fast Response", desc: "Quick connection to available plumbers" },
+    { title: "Licensed Professionals", desc: "Independent, third-party providers" },
+    { title: "Service Guarantees", desc: "Offered by service providers" },
+    { title: "Transparent Estimates", desc: "Pricing shared by service providers before work begins" },
+  ],
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🔧 SERVICES - Service cards on homepage
+  // ═══════════════════════════════════════════════════════════════════════════
+  services: [
+    { title: "Emergency Leak Repair", description: "Fast connection to plumbers for water leaks, 24/7. We stop the damage and fix it right the first time." },
+    { title: "Drain Cleaning", description: "Professional drain unclogging and cleaning services for sinks, toilets, and main lines." },
+    { title: "Water Heater Repair", description: "Expert water heater repair and replacement. Tankless and traditional systems." },
+    { title: "Pipe Replacement", description: "Complete pipe repair and repiping services for aging or damaged plumbing systems." },
+    { title: "Commercial Plumbing", description: "Full-service commercial plumbing for businesses, restaurants, and office buildings." },
+    { title: "Sewer Line Services", description: "Sewer inspection, repair, and replacement using the latest technology." },
+  ],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 🛠️ PAGE CONTENT - Descriptions and copy
