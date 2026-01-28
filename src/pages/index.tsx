@@ -196,6 +196,24 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* External Link Section */}
+      <section className="py-6 bg-secondary border-t border-border">
+        <div className="container">
+          <p className="text-center text-sm text-muted-foreground">
+            {siteConfig.external.text}{" "}
+            <a 
+              href={siteConfig.external.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline font-medium"
+            >
+              {siteConfig.external.anchorText}
+            </a>
+            {siteConfig.external.textAfter}
+          </p>
+        </div>
+      </section>
     </>;
 };
 export default Index;
