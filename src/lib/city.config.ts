@@ -90,8 +90,6 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 🛠️ PAGE CONTENT - Descriptions and copy
   // ═══════════════════════════════════════════════════════════════════════════
-  serviceDescription:
-    "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
 
   footerTagline: "Connecting customers with licensed and insured independent plumbers.",
   disclaimer:
