@@ -64,6 +64,7 @@ export const siteConfig = {
     servicesH2: "Emergency Plumber Services in Dallas, TX",
     servicesSubtitle: "We connect customers with independent plumbing professionals for the following services:",
     serviceAreasH2: "Emergency Plumber Near Dallas, TX",
+    serviceAreasSubtext: "Serving Dallas and surrounding areas with fast, reliable plumbing service connections.",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
 
     // About page

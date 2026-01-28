@@ -138,7 +138,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.serviceAreasH2}</h2>
             <p className="opacity-90 text-lg max-w-2xl mx-auto">
-              Serving {siteConfig.city} and surrounding areas with fast, reliable plumbing service connections.
+              {siteConfig.headings.serviceAreasSubtext}
             </p>
           </div>
 
