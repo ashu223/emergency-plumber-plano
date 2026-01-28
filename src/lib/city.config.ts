@@ -91,8 +91,20 @@ export const siteConfig = {
   // 🛠️ PAGE CONTENT - Descriptions and copy
   // ═══════════════════════════════════════════════════════════════════════════
 
+  serviceDescription: "24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues.",
+
   disclaimer:
     "Emergency Plumber Houston is a referral and lead generation service. We do not perform plumbing services directly.",
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🔗 EXTERNAL - External link section above footer
+  // ═══════════════════════════════════════════════════════════════════════════
+  external: {
+    text: "Homeowners can learn more about water-efficient plumbing practices and leak prevention through the",
+    anchorText: "EPA WaterSense program",
+    url: "https://www.epa.gov/watersense",
+    textAfter: ", which promotes sustainable water use across the United States.",
+  },
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 NEARBY AREAS - Displayed on homepage and service areas page
