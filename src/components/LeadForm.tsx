@@ -54,10 +54,10 @@ export const LeadForm = () => {
     <div className="bg-card rounded-xl p-6 md:p-8 shadow-elevated">
       <div className="text-center mb-6">
         <h3 className="font-display font-bold text-xl md:text-2xl mb-2">
-          Get a Call Back Now
+          {siteConfig.headings.leadFormCardTitle}
         </h3>
         <p className="text-muted-foreground text-sm">
-          Fill out the form and we'll call you within 15 minutes
+          {siteConfig.headings.leadFormCardSubtitle}
         </p>
       </div>
 
