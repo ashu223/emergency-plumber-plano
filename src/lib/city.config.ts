@@ -65,7 +65,8 @@ export const siteConfig = {
     serviceAreasH2: "Emergency Plumber Near Dallas, TX",
     serviceAreasSubtext: "Serving Dallas and surrounding areas with fast, reliable plumbing service connections.",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
-    leadFormSubtitle: "Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15 minutes. Available 24/7 for emergencies.",
+    leadFormSubtitle:
+      "Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15 minutes. Available 24/7 for emergencies.",
     leadFormCardTitle: "Get a Call Back Now",
     leadFormCardSubtitle: "Fill out the form and we'll call you within 15 minutes",
 
@@ -76,8 +77,7 @@ export const siteConfig = {
 
     // Services page
     servicesH1: "Plumbing Services Available Through Our Network",
-    servicesSubtitle:
-      "We connect customers with independent plumbing professionals for the following services:",
+    servicesSubtitle: "We connect customers with independent plumbing professionals for the following services:",
     servicesCtaH2: "Need Plumbing Service Today?",
 
     // Service Areas page
@@ -119,10 +119,14 @@ export const siteConfig = {
 
   aboutCredentials: {
     title: "Independent Plumbing Professionals",
-    subtitle: "Service providers in our network are independent businesses who maintain their own licensing and insurance. Emergency Plumber Dallas does not employ or supervise plumbers.",
+    subtitle:
+      "Service providers in our network are independent businesses who maintain their own licensing and insurance. Emergency Plumber Dallas does not employ or supervise plumbers.",
     items: [
       { title: "State Licensed", desc: "Service providers maintain valid TX state plumbing licenses" },
-      { title: "Fully Insured", desc: "Independent providers maintain their own liability and worker's compensation coverage" },
+      {
+        title: "Fully Insured",
+        desc: "Independent providers maintain their own liability and worker's compensation coverage",
+      },
       { title: "Background Checked", desc: "Providers are vetted before being added to the network" },
     ],
   },
@@ -151,12 +155,31 @@ export const siteConfig = {
   // 🔧 SERVICES - Service cards on homepage
   // ═══════════════════════════════════════════════════════════════════════════
   services: [
-    { title: "Emergency Leak Repair", description: "Fast connection to plumbers for water leaks, 24/7. We stop the damage and fix it right the first time." },
-    { title: "Drain Cleaning", description: "Professional drain unclogging and cleaning services for sinks, toilets, and main lines." },
-    { title: "Water Heater Repair", description: "Expert water heater repair and replacement. Tankless and traditional systems." },
-    { title: "Pipe Replacement", description: "Complete pipe repair and repiping services for aging or damaged plumbing systems." },
-    { title: "Commercial Plumbing", description: "Full-service commercial plumbing for businesses, restaurants, and office buildings." },
-    { title: "Sewer Line Services", description: "Sewer inspection, repair, and replacement using the latest technology." },
+    {
+      title: "Emergency Leak Repair",
+      description:
+        "Fast connection to plumbers for water leaks, 24/7. We stop the damage and fix it right the first time.",
+    },
+    {
+      title: "Drain Cleaning",
+      description: "Professional drain unclogging and cleaning services for sinks, toilets, and main lines.",
+    },
+    {
+      title: "Water Heater Repair",
+      description: "Expert water heater repair and replacement. Tankless and traditional systems.",
+    },
+    {
+      title: "Pipe Replacement",
+      description: "Complete pipe repair and repiping services for aging or damaged plumbing systems.",
+    },
+    {
+      title: "Commercial Plumbing",
+      description: "Full-service commercial plumbing for businesses, restaurants, and office buildings.",
+    },
+    {
+      title: "Sewer Line Services",
+      description: "Sewer inspection, repair, and replacement using the latest technology.",
+    },
   ],
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -166,43 +189,55 @@ export const siteConfig = {
     {
       icon: "AlertTriangle",
       title: "Emergency Plumbing Repairs",
-      description: "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
+      description:
+        "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
       features: ["30-minute average response", "Available 24/7/365", "Emergency leak containment", "Immediate repairs"],
     },
     {
       icon: "Search",
       title: "Leak Detection & Repair",
-      description: "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
-      features: ["Non-invasive detection", "Electronic leak locators", "Slab leak specialists", "Insurance documentation"],
+      description:
+        "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
+      features: [
+        "Non-invasive detection",
+        "Electronic leak locators",
+        "Slab leak specialists",
+        "Insurance documentation",
+      ],
     },
     {
       icon: "Droplets",
       title: "Drain Cleaning & Unclogging",
-      description: "We help connect customers with plumbing professionals offering drain cleaning and unclogging services.",
+      description:
+        "We help connect customers with plumbing professionals offering drain cleaning and unclogging services.",
       features: ["Hydro-jetting available", "Camera inspection", "Root removal", "Preventive maintenance"],
     },
     {
       icon: "Thermometer",
       title: "Water Heater Repair & Replacement",
-      description: "No hot water? We help connect customers with licensed plumbing professionals who handle repair and replacement of all types of water heaters.",
+      description:
+        "No hot water? We help connect customers with licensed plumbing professionals who handle repair and replacement of all types of water heaters.",
       features: ["All brands serviced", "Tankless specialists", "Energy-efficient options", "Same-day installation"],
     },
     {
       icon: "PipetteIcon",
       title: "Pipe Repair & Repiping",
-      description: "Whether you need a quick pipe repair or complete home repiping, our experts handle it all. We work with copper, PEX, PVC, and galvanized pipes.",
+      description:
+        "Whether you need a quick pipe repair or complete home repiping, our experts handle it all. We work with copper, PEX, PVC, and galvanized pipes.",
       features: ["Trenchless options", "Whole-home repiping", "Frozen pipe repair", "Pipe insulation"],
     },
     {
       icon: "Wrench",
       title: "Sewer Line Services",
-      description: "Complete sewer line solutions from inspection to replacement. We use video camera technology to diagnose issues and provide the most cost-effective solutions.",
+      description:
+        "Complete sewer line solutions from inspection to replacement. We use video camera technology to diagnose issues and provide the most cost-effective solutions.",
       features: ["Video inspection", "Trenchless repair", "Root intrusion removal", "Line replacement"],
     },
     {
       icon: "Building2",
       title: "Commercial Plumbing Solutions",
-      description: "Keep your business running with our commercial plumbing services. We serve restaurants, offices, retail spaces, and industrial facilities.",
+      description:
+        "Keep your business running with our commercial plumbing services. We serve restaurants, offices, retail spaces, and industrial facilities.",
       features: ["Minimal disruption", "Code compliance", "Scheduled maintenance", "Emergency response"],
     },
   ],
@@ -229,16 +264,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 NEARBY AREAS - Displayed on homepage and service areas page
   // ═══════════════════════════════════════════════════════════════════════════
-  nearbyAreas: [
-    "Downtown Houston",
-    "Midtown",
-    "The Heights",
-    "River Oaks",
-    "Montrose",
-    "Katy",
-    "Sugar Land",
-    "Pasadena",
-  ],
+  nearbyAreas: ["Houston", "Midtown", "The Heights", "River Oaks", "Montrose", "Katy", "Sugar Land", "Pasadena"],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 🗺️ REGIONS - For service areas page
