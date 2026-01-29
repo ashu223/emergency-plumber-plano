@@ -73,6 +73,7 @@ export const siteConfig = {
     // About page
     aboutH1: "About Emergency Plumber Dallas",
     aboutSubtitle: "Dallas's trusted emergency plumbing service connecting homeowners with licensed professionals.",
+    aboutCtaH2: "Ready to Experience the Difference?",
 
     // Services page
     servicesH1: "Plumbing Services Available Through Our Network",
@@ -91,6 +92,39 @@ export const siteConfig = {
     // FAQ page
     faqH1: "Frequently Asked Questions",
     faqSubtitle: "Got questions? We've got answers. If you don't see what you're looking for, give us a call.",
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 📖 ABOUT PAGE CONTENT
+  // ═══════════════════════════════════════════════════════════════════════════
+  aboutStats: [
+    { number: "Dallas Coverage", label: "Serving the metro and surrounding areas" },
+    { number: "Transparent Connections", label: "No hidden referral fees" },
+    { number: "Quick Match System", label: "Matched with available plumbers fast" },
+    { number: "Emergency Ready", label: "Available day & night 24/7" },
+  ],
+
+  aboutStory: [
+    "Emergency Plumber Dallas was created to simplify how Dallas homeowners find reliable plumbing help. Instead of calling multiple companies, customers can submit one request and get connected with an available, independent plumbing professional in their area.",
+    "We operate as a referral and lead generation service and do not perform plumbing services directly. Service providers in our network are independent businesses that maintain their own licensing, insurance, pricing, and warranties.",
+    "Our goal is to make the connection process fast, transparent, and stress-free—especially during urgent plumbing situations.",
+  ],
+
+  aboutValues: [
+    { title: "Integrity", desc: "Honest and transparent connection process with no hidden referral fees" },
+    { title: "Excellence", desc: "Helping customers get matched with qualified plumbing professionals" },
+    { title: "Reliability", desc: "Fast response and consistent connection availability" },
+    { title: "Respect", desc: "Customer-first approach when connecting homeowners with service providers" },
+  ],
+
+  aboutCredentials: {
+    title: "Independent Plumbing Professionals",
+    subtitle: "Service providers in our network are independent businesses who maintain their own licensing and insurance. Emergency Plumber Dallas does not employ or supervise plumbers.",
+    items: [
+      { title: "State Licensed", desc: "Service providers maintain valid TX state plumbing licenses" },
+      { title: "Fully Insured", desc: "Independent providers maintain their own liability and worker's compensation coverage" },
+      { title: "Background Checked", desc: "Providers are vetted before being added to the network" },
+    ],
   },
 
   // ═══════════════════════════════════════════════════════════════════════════

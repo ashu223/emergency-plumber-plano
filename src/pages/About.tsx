@@ -22,22 +22,12 @@ const About = () => {
       <section className="py-12 bg-secondary">
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {[{
-            number: `${siteConfig.city} Coverage`,
-            label: "Serving the metro and surrounding areas"
-          }, {
-            number: "Transparent Connections",
-            label: "No hidden referral fees"
-          }, {
-            number: "Quick Match System",
-            label: "Matched with available plumbers fast"
-          }, {
-            number: "Emergency Ready",
-            label: "Available day & night 24/7"
-          }].map((stat, i) => <div key={i} className="text-center">
+            {siteConfig.aboutStats.map((stat, i) => (
+              <div key={i} className="text-center">
                 <div className="font-display text-sm md:text-base font-bold text-accent mb-1">{stat.number}</div>
                 <div className="text-muted-foreground text-sm">{stat.label}</div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -49,51 +39,30 @@ const About = () => {
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  {siteConfig.businessName} was created to simplify how {siteConfig.city} homeowners find reliable plumbing help. Instead
-                  of calling multiple companies, customers can submit one request and get connected with an available,
-                  independent plumbing professional in their area.
-                </p>
-                <p>
-                  We operate as a referral and lead generation service and do not perform plumbing services directly.
-                  Service providers in our network are independent businesses that maintain their own licensing,
-                  insurance, pricing, and warranties.
-                </p>
-                <p>
-                  Our goal is to make the connection process fast, transparent, and stress-free—especially during urgent
-                  plumbing situations.
-                </p>
+                {siteConfig.aboutStory.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
               </div>
             </div>
 
             <div className="bg-secondary rounded-2xl p-8">
               <h3 className="font-display text-2xl font-bold mb-6">Our Values</h3>
               <div className="space-y-4">
-                {[{
-                icon: Shield,
-                title: "Integrity",
-                desc: "Honest and transparent connection process with no hidden referral fees"
-              }, {
-                icon: Award,
-                title: "Excellence",
-                desc: "Helping customers get matched with qualified plumbing professionals"
-              }, {
-                icon: Clock,
-                title: "Reliability",
-                desc: "Fast response and consistent connection availability"
-              }, {
-                icon: Users,
-                title: "Respect",
-                desc: "Customer-first approach when connecting homeowners with service providers"
-              }].map((value, i) => <div key={i} className="flex gap-4">
-                    <div className="h-12 w-12 rounded-lg hero-gradient flex items-center justify-center flex-shrink-0">
-                      <value.icon className="h-6 w-6 text-primary-foreground" />
+                {siteConfig.aboutValues.map((value, i) => {
+                  const icons = [Shield, Award, Clock, Users];
+                  const Icon = icons[i];
+                  return (
+                    <div key={i} className="flex gap-4">
+                      <div className="h-12 w-12 rounded-lg hero-gradient flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold">{value.title}</h4>
+                        <p className="text-sm text-muted-foreground">{value.desc}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold">{value.title}</h4>
-                      <p className="text-sm text-muted-foreground">{value.desc}</p>
-                    </div>
-                  </div>)}
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -104,28 +73,20 @@ const About = () => {
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Independent Plumbing Professionals</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.aboutCredentials.title}</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Service providers in our network are independent businesses who maintain their own licensing and
-              insurance. {siteConfig.businessName} does not employ or supervise plumbers.
+              {siteConfig.aboutCredentials.subtitle}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {[{
-            title: "State Licensed",
-            desc: `Service providers maintain valid ${siteConfig.state} state plumbing licenses`
-          }, {
-            title: "Fully Insured",
-            desc: "Independent providers maintain their own liability and worker's compensation coverage"
-          }, {
-            title: "Background Checked",
-            desc: "Providers are vetted before being added to the network"
-          }].map((item, i) => <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft">
+            {siteConfig.aboutCredentials.items.map((item, i) => (
+              <div key={i} className="bg-card rounded-xl p-6 text-center shadow-soft">
                 <CheckCircle className="h-10 w-10 text-trust mx-auto mb-4" />
                 <h3 className="font-display font-bold text-lg mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -133,7 +94,7 @@ const About = () => {
       {/* CTA */}
       <section className="py-16 lg:py-20">
         <div className="container text-center">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Ready to Experience the Difference?</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.aboutCtaH2}</h2>
           
           <Button variant="phone" size="xl" asChild>
             <a href={getPhoneLink()}>
