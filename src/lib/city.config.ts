@@ -62,7 +62,6 @@ export const siteConfig = {
     whyChooseH2: "Why Choose Emergency Plumber in Dallas, TX?",
     whyChooseSubtitle: "We're the trusted choice for homeowners and businesses in Dallas, TX.",
     servicesH2: "Emergency Plumber Services in Dallas, TX",
-    servicesSubtitle: "We connect customers with independent plumbing professionals for the following services:",
     serviceAreasH2: "Emergency Plumber Near Dallas, TX",
     serviceAreasSubtext: "Serving Dallas and surrounding areas with fast, reliable plumbing service connections.",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
@@ -77,8 +76,9 @@ export const siteConfig = {
 
     // Services page
     servicesH1: "Plumbing Services Available Through Our Network",
-    servicesPageSubtitle:
-      "We connect Dallas homeowners with independent, licensed plumbing professionals for all residential and commercial needs.",
+    servicesSubtitle:
+      "We connect customers with independent plumbing professionals for the following services:",
+    servicesCtaH2: "Need Plumbing Service Today?",
 
     // Service Areas page
     serviceAreasH1: "Service Areas Across Dallas & Texas",
@@ -157,6 +157,54 @@ export const siteConfig = {
     { title: "Pipe Replacement", description: "Complete pipe repair and repiping services for aging or damaged plumbing systems." },
     { title: "Commercial Plumbing", description: "Full-service commercial plumbing for businesses, restaurants, and office buildings." },
     { title: "Sewer Line Services", description: "Sewer inspection, repair, and replacement using the latest technology." },
+  ],
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🔧 SERVICES PAGE - Full service details for /services page
+  // ═══════════════════════════════════════════════════════════════════════════
+  servicesPage: [
+    {
+      icon: "AlertTriangle",
+      title: "Emergency Plumbing Repairs",
+      description: "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
+      features: ["30-minute average response", "Available 24/7/365", "Emergency leak containment", "Immediate repairs"],
+    },
+    {
+      icon: "Search",
+      title: "Leak Detection & Repair",
+      description: "We help connect homeowners with independent plumbing professionals who can handle emergency plumbing issues such as burst pipes, leaks, and backups.",
+      features: ["Non-invasive detection", "Electronic leak locators", "Slab leak specialists", "Insurance documentation"],
+    },
+    {
+      icon: "Droplets",
+      title: "Drain Cleaning & Unclogging",
+      description: "We help connect customers with plumbing professionals offering drain cleaning and unclogging services.",
+      features: ["Hydro-jetting available", "Camera inspection", "Root removal", "Preventive maintenance"],
+    },
+    {
+      icon: "Thermometer",
+      title: "Water Heater Repair & Replacement",
+      description: "No hot water? We help connect customers with licensed plumbing professionals who handle repair and replacement of all types of water heaters.",
+      features: ["All brands serviced", "Tankless specialists", "Energy-efficient options", "Same-day installation"],
+    },
+    {
+      icon: "PipetteIcon",
+      title: "Pipe Repair & Repiping",
+      description: "Whether you need a quick pipe repair or complete home repiping, our experts handle it all. We work with copper, PEX, PVC, and galvanized pipes.",
+      features: ["Trenchless options", "Whole-home repiping", "Frozen pipe repair", "Pipe insulation"],
+    },
+    {
+      icon: "Wrench",
+      title: "Sewer Line Services",
+      description: "Complete sewer line solutions from inspection to replacement. We use video camera technology to diagnose issues and provide the most cost-effective solutions.",
+      features: ["Video inspection", "Trenchless repair", "Root intrusion removal", "Line replacement"],
+    },
+    {
+      icon: "Building2",
+      title: "Commercial Plumbing Solutions",
+      description: "Keep your business running with our commercial plumbing services. We serve restaurants, offices, retail spaces, and industrial facilities.",
+      features: ["Minimal disruption", "Code compliance", "Scheduled maintenance", "Emergency response"],
+    },
   ],
 
   // ═══════════════════════════════════════════════════════════════════════════
