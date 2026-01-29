@@ -273,7 +273,7 @@ export const siteConfig = {
     {
       name: "Greater Houston Area",
       cities: [
-        "Houston",
+        "Downtown Houston",
         "The Woodlands",
         "Sugar Land",
         "Pearland",
