@@ -164,15 +164,16 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.leadFormH2}</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15
-                minutes. Available 24/7 for emergencies.
+                {siteConfig.headings.leadFormSubtitle}
               </p>
 
               <div className="space-y-4">
-                {["Free estimates on all services", "No hidden fees or surprise charges", "Same-day service available", "Licensed and insured technicians"].map((item, i) => <div key={i} className="flex items-center gap-3">
+                {siteConfig.leadFormBenefits.map((item, i) => (
+                  <div key={i} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-trust" />
                     <span>{item}</span>
-                  </div>)}
+                  </div>
+                ))}
               </div>
             </div>
 

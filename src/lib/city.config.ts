@@ -66,6 +66,9 @@ export const siteConfig = {
     serviceAreasH2: "Emergency Plumber Near Dallas, TX",
     serviceAreasSubtext: "Serving Dallas and surrounding areas with fast, reliable plumbing service connections.",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
+    leadFormSubtitle: "Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15 minutes. Available 24/7 for emergencies.",
+    leadFormCardTitle: "Get a Call Back Now",
+    leadFormCardSubtitle: "Fill out the form and we'll call you within 15 minutes",
 
     // About page
     aboutH1: "About Emergency Plumber Dallas",
@@ -98,6 +101,16 @@ export const siteConfig = {
     { title: "Licensed Professionals", desc: "Independent, third-party providers" },
     { title: "Service Guarantees", desc: "Offered by service providers" },
     { title: "Transparent Estimates", desc: "Pricing shared by service providers before work begins" },
+  ],
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ✅ LEAD FORM BENEFITS - Bullet points next to lead form
+  // ═══════════════════════════════════════════════════════════════════════════
+  leadFormBenefits: [
+    "Free estimates on all services",
+    "No hidden fees or surprise charges",
+    "Same-day service available",
+    "Licensed and insured technicians",
   ],
 
   // ═══════════════════════════════════════════════════════════════════════════
