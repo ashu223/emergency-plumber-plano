@@ -6,29 +6,24 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { SEO } from "@/components/SEO";
 import { siteConfig, getPhoneLink } from "@/lib/city.config";
-
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
     setIsSubmitting(false);
     toast({
       title: "Message Sent!",
-      description: "We'll get back to you within 24 hours.",
+      description: "We'll get back to you within 24 hours."
     });
     (e.target as HTMLFormElement).reset();
   };
-
-  return (
-    <>
-      <SEO
-        title={`Contact Us - ${siteConfig.businessName}`}
-        description={`Contact ${siteConfig.businessName} for fast plumbing service. Call ${siteConfig.displayPhone} or fill out our form. Available 24/7 for emergencies.`}
-      />
+  return <>
+      <SEO title={`Contact Us - ${siteConfig.businessName}`} description={`Contact ${siteConfig.businessName} for fast plumbing service. Call ${siteConfig.displayPhone} or fill out our form. Available 24/7 for emergencies.`} />
 
       {/* Hero */}
       <section className="hero-gradient text-primary-foreground py-16 lg:py-20">
@@ -98,16 +93,9 @@ const Contact = () => {
 
               {/* Google Map - Uses city/state from config */}
               <div className="rounded-xl h-64 overflow-hidden border border-border">
-                <iframe
-                  title={`Map of ${siteConfig.city}, ${siteConfig.state}`}
-                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(`${siteConfig.city}, ${siteConfig.state}, ${siteConfig.country}`)}`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <iframe title={`Map of ${siteConfig.city}, ${siteConfig.state}`} src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(`${siteConfig.city}, ${siteConfig.state}, ${siteConfig.country}`)}`} width="100%" height="100%" style={{
+                border: 0
+              }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
               </div>
             </div>
 
@@ -115,7 +103,7 @@ const Contact = () => {
             <div className="bg-card rounded-xl p-6 md:p-8 shadow-elevated border border-border">
               <h2 className="font-display text-2xl font-bold mb-2">Send Us a Message</h2>
               <p className="text-muted-foreground mb-2">Fill out the form and we'll get back to you within 24 hours.</p>
-              <p className="text-xs text-muted-foreground/60 mb-6">By submitting this form, you agree to be contacted by {siteConfig.businessName} or an independent plumbing professional regarding your request.</p>
+              
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -138,21 +126,13 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className="text-sm font-medium mb-1 block">Message *</label>
-                  <Textarea
-                    placeholder="Describe your plumbing issue..."
-                    required
-                    className="min-h-[120px] resize-none"
-                  />
+                  <Textarea placeholder="Describe your plumbing issue..." required className="min-h-[120px] resize-none" />
                 </div>
                 <Button type="submit" variant="cta" size="xl" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    "Sending..."
-                  ) : (
-                    <>
+                  {isSubmitting ? "Sending..." : <>
                       <Send className="h-5 w-5" />
                       Request Plumbing Help
-                    </>
-                  )}
+                    </>}
                 </Button>
               </form>
 
@@ -169,8 +149,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default Contact;
