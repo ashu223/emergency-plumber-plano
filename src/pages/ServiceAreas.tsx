@@ -43,12 +43,11 @@ const ServiceAreas = () => {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-              Complete {siteConfig.city} Area Coverage
+              {siteConfig.headings.serviceAreasCoverageH2}
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              No matter where you are in the {siteConfig.city} area, professional plumbing help is just a call away.
+              {siteConfig.headings.serviceAreasCoverageSubtitle}
             </p>
-            
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -85,11 +84,11 @@ const ServiceAreas = () => {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-              Local Plumbers Who Know {siteConfig.city}
+              {siteConfig.headings.serviceAreasLocalH2}
             </h2>
             
             <div className="grid sm:grid-cols-3 gap-4">
-              {["Fast local response", `Know ${siteConfig.state} codes`, "Community focused"].map((item, i) => <div key={i} className="flex items-center justify-center gap-2 bg-card rounded-lg px-4 py-3">
+              {siteConfig.headings.serviceAreasLocalFeatures.map((item, i) => <div key={i} className="flex items-center justify-center gap-2 bg-card rounded-lg px-4 py-3">
                   <CheckCircle className="h-5 w-5 text-trust" />
                   <span className="font-medium text-sm">{item}</span>
                 </div>)}
@@ -102,10 +101,10 @@ const ServiceAreas = () => {
       <section className="py-16 lg:py-20">
         <div className="container text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-            Don't See Your Area?
+            {siteConfig.headings.serviceAreasCtaH2}
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            We're expanding our coverage every day. Call us to check if we serve your area — chances are, we do!
+            {siteConfig.headings.serviceAreasCtaSubtitle}
           </p>
           <Button variant="phone" size="xl" asChild>
             <a href={getPhoneLink()}>
