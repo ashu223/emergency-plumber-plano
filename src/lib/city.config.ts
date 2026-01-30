@@ -94,6 +94,8 @@ export const siteConfig = {
     // Contact page
     contactH1: "Contact Us",
     contactSubtitle: "Need Plumbing Help? Get Connected 24/7. Call anytime to get connected with a licensed plumber.",
+    contactFormSubtitle: "Fill out the form and we'll get back to you within 24 hours.",
+    contactCtaText: "Need immediate help? Call now:",
 
     // FAQ page
     faqH1: "Frequently Asked Questions",
