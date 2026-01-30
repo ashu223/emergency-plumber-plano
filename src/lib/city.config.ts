@@ -84,6 +84,12 @@ export const siteConfig = {
     serviceAreasH1: "Service Areas Across Dallas & Texas",
     serviceAreasSubtitle:
       "From downtown Dallas to the suburbs — we provide fast, reliable plumbing service connections.",
+    serviceAreasCoverageH2: "Complete Dallas Area Coverage",
+    serviceAreasCoverageSubtitle: "No matter where you are in the Dallas area, professional plumbing help is just a call away.",
+    serviceAreasLocalH2: "Local Plumbers Who Know Dallas",
+    serviceAreasLocalFeatures: ["Fast local response", "Know TX codes", "Community focused"],
+    serviceAreasCtaH2: "Don't See Your Area?",
+    serviceAreasCtaSubtitle: "We're expanding our coverage every day. Call us to check if we serve your area — chances are, we do!",
 
     // Contact page
     contactH1: "Contact Us",
