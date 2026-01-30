@@ -96,12 +96,18 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="bg-secondary rounded-xl h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-primary/30 mx-auto mb-2" />
-                  <p className="text-muted-foreground text-sm">Map: {siteConfig.city}, {siteConfig.state}</p>
-                </div>
+              {/* Google Map - Uses city/state from config */}
+              <div className="rounded-xl h-64 overflow-hidden border border-border">
+                <iframe
+                  title={`Map of ${siteConfig.city}, ${siteConfig.state}`}
+                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(`${siteConfig.city}, ${siteConfig.state}, ${siteConfig.country}`)}`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
 
