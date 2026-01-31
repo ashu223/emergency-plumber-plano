@@ -401,6 +401,10 @@ export const siteConfig = {
       subtitle: "Fast, reliable emergency plumbing services for Houston residents. We connect you with licensed professionals ready to help day or night.",
       articleTitle: "Professional Plumbing Services in Houston",
       articleSubtitle: "Your trusted source for emergency plumbing connections in the Houston area.",
+      internalLink: {
+        anchorText: "Emergency Plumber in Houston",
+        url: "/"
+      },
       articleContent: [
         "Houston, Texas, is one of the largest and most dynamic cities in the United States, home to millions of residents and businesses that depend on reliable plumbing infrastructure every single day. From the historic neighborhoods near downtown to the sprawling suburban developments in the outer reaches of Harris County, plumbing emergencies can strike at any moment—and when they do, having access to fast, professional help is absolutely essential.",
         "Emergency Plumber Houston connects homeowners and business owners with independent, licensed plumbing professionals who understand the unique challenges of the Houston area. Whether you're dealing with a burst pipe in the middle of the night, a clogged drain that won't budge, or a water heater that has stopped working entirely, our network of skilled technicians is ready to respond quickly and efficiently.",
@@ -416,6 +420,10 @@ export const siteConfig = {
       subtitle: "Serving Midtown residents with fast emergency plumbing connections. Licensed professionals available around the clock.",
       articleTitle: "Expert Plumbing Services in Midtown",
       articleSubtitle: "Reliable plumbing solutions for Midtown homes and businesses.",
+      internalLink: {
+        anchorText: "Emergency Plumber in Midtown",
+        url: "/"
+      },
       articleContent: [
         "Midtown is one of Houston's most vibrant and densely populated neighborhoods, featuring a dynamic mix of high-rise apartments, historic townhomes, trendy restaurants, and bustling nightlife venues. This urban environment creates unique plumbing challenges that require experienced professionals who understand the complexities of both residential and commercial systems in close proximity.",
         "The aging infrastructure in parts of Midtown means that many buildings still rely on older plumbing systems that may be more prone to leaks, clogs, and other issues. Cast iron pipes, galvanized steel lines, and outdated fixtures are common in historic properties, and these require specialized knowledge to repair or replace properly. Our network of licensed professionals has extensive experience working with older plumbing systems.",
@@ -431,6 +439,10 @@ export const siteConfig = {
       subtitle: "Quality emergency plumbing connections for The Heights neighborhood. Trusted professionals ready to help anytime.",
       articleTitle: "Trusted Plumbing Services in The Heights",
       articleSubtitle: "Preserving the charm of The Heights with expert plumbing care.",
+      internalLink: {
+        anchorText: "Emergency Plumber in The Heights",
+        url: "/"
+      },
       articleContent: [
         "The Heights is one of Houston's most beloved neighborhoods, known for its beautiful historic homes, tree-lined streets, and strong sense of community. This charming area features a unique mix of restored Victorian-era houses, classic bungalows, and modern new construction, each with distinct plumbing needs that require experienced professional attention.",
         "Historic homes in The Heights often feature original plumbing systems that have served faithfully for decades but may now need updating or repair. Cast iron drain lines, galvanized supply pipes, and antique fixtures are common in these properties. Our network of licensed professionals has specialized experience working with historic plumbing systems, ensuring repairs are made properly while preserving the character of your home.",
@@ -446,6 +458,10 @@ export const siteConfig = {
       subtitle: "Premium emergency plumbing services for River Oaks residents. Expert professionals available 24/7.",
       articleTitle: "Premium Plumbing Services in River Oaks",
       articleSubtitle: "Exceptional plumbing care for River Oaks' finest properties.",
+      internalLink: {
+        anchorText: "Emergency Plumber in River Oaks",
+        url: "/"
+      },
       articleContent: [
         "River Oaks stands as one of Houston's most prestigious neighborhoods, home to stunning estates, manicured gardens, and some of the city's most valuable real estate. Properties in this exclusive area demand the highest standards of service and craftsmanship, and plumbing is no exception. Emergency Plumber Houston connects River Oaks residents with top-tier licensed professionals who understand the unique requirements of luxury homes.",
         "The grand homes of River Oaks feature complex plumbing systems that may include multiple water heaters, extensive irrigation networks, pool and spa equipment, and sophisticated fixtures imported from around the world. These systems require professionals with specialized experience and the knowledge to work with high-end materials and components properly.",
@@ -461,6 +477,10 @@ export const siteConfig = {
       subtitle: "Trusted emergency plumbing connections for Montrose. Professional service when you need it most.",
       articleTitle: "Reliable Plumbing Services in Montrose",
       articleSubtitle: "Serving the diverse plumbing needs of the Montrose community.",
+      internalLink: {
+        anchorText: "Emergency Plumber in Montrose",
+        url: "/"
+      },
       articleContent: [
         "Montrose is one of Houston's most eclectic and culturally rich neighborhoods, featuring an exciting mix of historic bungalows, mid-century apartments, modern townhomes, and thriving businesses. This diversity extends to the area's plumbing systems, which range from century-old original installations to cutting-edge modern construction. Emergency Plumber Houston connects Montrose residents with professionals who can handle any plumbing challenge.",
         "The historic homes that give Montrose its character often come with aging plumbing that needs careful attention. Original cast iron pipes, outdated fixtures, and decades-old water heaters are common in these properties. Our network professionals have extensive experience updating and repairing older plumbing systems while respecting the historic nature of these beloved homes.",
@@ -476,6 +496,10 @@ export const siteConfig = {
       subtitle: "Fast emergency plumbing connections for Katy residents. Licensed professionals ready around the clock.",
       articleTitle: "Professional Plumbing Services in Katy",
       articleSubtitle: "Quality plumbing solutions for Katy homes and businesses.",
+      internalLink: {
+        anchorText: "Emergency Plumber in Katy",
+        url: "/"
+      },
       articleContent: [
         "Katy, Texas, has grown from a small railroad town into one of the Houston area's most desirable suburban communities. With excellent schools, family-friendly neighborhoods, and convenient access to Houston's employment centers, Katy attracts thousands of new residents each year. This growth has created strong demand for reliable plumbing services, and Emergency Plumber Houston is here to connect Katy residents with qualified professionals.",
         "The master-planned communities that define much of Katy feature modern homes with contemporary plumbing systems. While newer construction typically means fewer problems related to aging infrastructure, these homes still require regular maintenance and occasional repairs. Water heaters, garbage disposals, water softeners, and other fixtures all need professional attention from time to time.",
@@ -491,6 +515,10 @@ export const siteConfig = {
       subtitle: "Reliable emergency plumbing connections for Sugar Land. Expert help available day and night.",
       articleTitle: "Expert Plumbing Services in Sugar Land",
       articleSubtitle: "Trusted plumbing professionals serving the Sugar Land community.",
+      internalLink: {
+        anchorText: "Emergency Plumber in Sugar Land",
+        url: "/"
+      },
       articleContent: [
         "Sugar Land has earned its reputation as one of the best places to live in Texas, consistently ranking among the top cities for quality of life, safety, and family-friendliness. This thriving Fort Bend County community features beautiful neighborhoods, excellent amenities, and a strong sense of community pride. Emergency Plumber Houston is proud to connect Sugar Land residents with qualified plumbing professionals who share these high standards.",
         "The diverse housing stock in Sugar Land ranges from established neighborhoods with mature landscaping to brand-new construction in developing areas. Each type of property presents unique plumbing considerations. Older homes may need updates to aging pipes and fixtures, while newer homes require proper maintenance to keep modern systems running smoothly.",
@@ -506,6 +534,10 @@ export const siteConfig = {
       subtitle: "Dependable emergency plumbing connections for Pasadena. Professional help when you need it.",
       articleTitle: "Dependable Plumbing Services in Pasadena",
       articleSubtitle: "Serving Pasadena with professional plumbing solutions.",
+      internalLink: {
+        anchorText: "Emergency Plumber in Pasadena",
+        url: "/"
+      },
       articleContent: [
         "Pasadena, Texas, is a hardworking community with deep roots in the petrochemical industry and a strong sense of local pride. Located just southeast of Houston, Pasadena offers affordable housing, convenient access to employment centers, and a community-oriented atmosphere that residents value. Emergency Plumber Houston connects Pasadena residents with reliable plumbing professionals who understand the needs of this diverse community.",
         "The housing stock in Pasadena includes many mid-century homes that have served families for generations. These properties often feature older plumbing systems that may include galvanized steel pipes, cast iron drains, and dated fixtures. Our network professionals have extensive experience working with older plumbing systems and can make repairs that extend the life of your home's infrastructure.",
@@ -521,6 +553,10 @@ export const siteConfig = {
     subtitle: string;
     articleTitle: string;
     articleSubtitle: string;
+    internalLink?: {
+      anchorText: string;
+      url: string;
+    };
     articleContent: string[];
   }>,
 };
