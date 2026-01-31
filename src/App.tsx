@@ -21,6 +21,16 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+// Area pages
+const Houston = lazy(() => import("./pages/areas/Houston"));
+const Midtown = lazy(() => import("./pages/areas/Midtown"));
+const TheHeights = lazy(() => import("./pages/areas/TheHeights"));
+const RiverOaks = lazy(() => import("./pages/areas/RiverOaks"));
+const Montrose = lazy(() => import("./pages/areas/Montrose"));
+const Katy = lazy(() => import("./pages/areas/Katy"));
+const SugarLand = lazy(() => import("./pages/areas/SugarLand"));
+const Pasadena = lazy(() => import("./pages/areas/Pasadena"));
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -49,6 +59,15 @@ const App = () => (
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                   <Route path="/terms-of-service" element={<TermsOfService />} />
+                  {/* Area pages */}
+                  <Route path="/areas/houston" element={<Houston />} />
+                  <Route path="/areas/midtown" element={<Midtown />} />
+                  <Route path="/areas/the-heights" element={<TheHeights />} />
+                  <Route path="/areas/river-oaks" element={<RiverOaks />} />
+                  <Route path="/areas/montrose" element={<Montrose />} />
+                  <Route path="/areas/katy" element={<Katy />} />
+                  <Route path="/areas/sugar-land" element={<SugarLand />} />
+                  <Route path="/areas/pasadena" element={<Pasadena />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>
