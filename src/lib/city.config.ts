@@ -539,8 +539,8 @@ export const siteConfig = {
       articleTitle: "Dependable Plumbing Services in Pasadena",
       articleSubtitle: "Serving Pasadena with professional plumbing solutions.",
       internalLink: {
-        anchorText: "Emergency Plumber in Pasadenaa",
-        url: "/",
+        anchorText: "Emergency Plumber in Pasadena",
+        url: "https://www.google.com/",
       },
       articleContent: [
         "Pasadena, Texas, is a hardworking community with deep roots in the petrochemical industry and a strong sense of local pride. Located just southeast of Houston, Pasadena offers affordable housing, convenient access to employment centers, and a community-oriented atmosphere that residents value. Emergency Plumber Houston connects Pasadena residents with reliable plumbing professionals who understand the needs of this diverse community.",
