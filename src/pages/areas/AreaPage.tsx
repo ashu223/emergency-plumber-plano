@@ -1,4 +1,5 @@
 import { Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { siteConfig, getPhoneLink } from "@/lib/city.config";
@@ -61,6 +62,18 @@ const AreaPage = ({ areaName }: AreaPageProps) => {
                   {paragraph}
                 </p>
               ))}
+              {areaConfig.internalLink && (
+                <p className="mb-6 leading-relaxed">
+                  Looking for reliable plumbing help? Learn more about our{" "}
+                  <Link 
+                    to={areaConfig.internalLink.url} 
+                    className="text-primary hover:underline font-medium"
+                  >
+                    {areaConfig.internalLink.anchorText}
+                  </Link>{" "}
+                  services and get connected with licensed professionals today.
+                </p>
+              )}
             </div>
           </div>
         </div>
