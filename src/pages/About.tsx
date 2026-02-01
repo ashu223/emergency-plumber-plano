@@ -96,7 +96,7 @@ const About = () => {
         <div className="container text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">{siteConfig.headings.aboutCtaH2}</h2>
           
-          <Button variant="phone" size="xl" asChild>
+          <Button variant="phone" size="xl" className="w-auto" asChild>
             <a href={getPhoneLink()}>
               <Phone className="h-5 w-5" />
               Call {siteConfig.displayPhone}
