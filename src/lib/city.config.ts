@@ -336,7 +336,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 NEARBY AREAS - Displayed on homepage and service areas page
   // ═══════════════════════════════════════════════════════════════════════════
-  nearbyAreas: ["Frisco", "McKinney", "Allen", "Richardson", "The Colony", "Sachse", "SWylie", "Little Elm"],
+  nearbyAreas: ["Frisco", "McKinney", "Allen", "Richardson", "The Colony", "Sachse", "Wylie", "Little Elm"],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 🗺️ REGIONS - For service areas page
