@@ -64,14 +64,14 @@ const AreaPage = ({ areaName }: AreaPageProps) => {
               ))}
               {areaConfig.internalLink && (
                 <p className="mb-6 leading-relaxed">
-                  Looking for reliable plumbing help? Learn more about our{" "}
+                  {areaConfig.internalLink.textBefore}{" "}
                   <Link 
                     to={areaConfig.internalLink.url} 
                     className="text-primary hover:underline font-medium"
                   >
                     {areaConfig.internalLink.anchorText}
                   </Link>{" "}
-                  services and get connected with licensed professionals today.
+                  {areaConfig.internalLink.textAfter}
                 </p>
               )}
             </div>

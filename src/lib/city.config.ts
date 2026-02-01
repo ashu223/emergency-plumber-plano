@@ -387,8 +387,10 @@ export const siteConfig = {
       articleTitle: "Professional Plumbing Services in Houston",
       articleSubtitle: "Your trusted source for emergency plumbing connections in the Houston area.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in Houston",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "Houston, Texas, is one of the largest and most dynamic cities in the United States, home to millions of residents and businesses that depend on reliable plumbing infrastructure every single day. From the historic neighborhoods near downtown to the sprawling suburban developments in the outer reaches of Harris County, plumbing emergencies can strike at any moment—and when they do, having access to fast, professional help is absolutely essential.",
@@ -407,8 +409,10 @@ export const siteConfig = {
       articleTitle: "Expert Plumbing Services in Midtown",
       articleSubtitle: "Reliable plumbing solutions for Midtown homes and businesses.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in Midtown",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "Midtown is one of Houston's most vibrant and densely populated neighborhoods, featuring a dynamic mix of high-rise apartments, historic townhomes, trendy restaurants, and bustling nightlife venues. This urban environment creates unique plumbing challenges that require experienced professionals who understand the complexities of both residential and commercial systems in close proximity.",
@@ -427,8 +431,10 @@ export const siteConfig = {
       articleTitle: "Trusted Plumbing Services in The Heights",
       articleSubtitle: "Preserving the charm of The Heights with expert plumbing care.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in The Heights",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "The Heights is one of Houston's most beloved neighborhoods, known for its beautiful historic homes, tree-lined streets, and strong sense of community. This charming area features a unique mix of restored Victorian-era houses, classic bungalows, and modern new construction, each with distinct plumbing needs that require experienced professional attention.",
@@ -446,8 +452,10 @@ export const siteConfig = {
       articleTitle: "Premium Plumbing Services in River Oaks",
       articleSubtitle: "Exceptional plumbing care for River Oaks' finest properties.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in River Oaks",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "River Oaks stands as one of Houston's most prestigious neighborhoods, home to stunning estates, manicured gardens, and some of the city's most valuable real estate. Properties in this exclusive area demand the highest standards of service and craftsmanship, and plumbing is no exception. Emergency Plumber Houston connects River Oaks residents with top-tier licensed professionals who understand the unique requirements of luxury homes.",
@@ -465,8 +473,10 @@ export const siteConfig = {
       articleTitle: "Reliable Plumbing Services in Montrose",
       articleSubtitle: "Serving the diverse plumbing needs of the Montrose community.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in Montrose",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "Montrose is one of Houston's most eclectic and culturally rich neighborhoods, featuring an exciting mix of historic bungalows, mid-century apartments, modern townhomes, and thriving businesses. This diversity extends to the area's plumbing systems, which range from century-old original installations to cutting-edge modern construction. Emergency Plumber Houston connects Montrose residents with professionals who can handle any plumbing challenge.",
@@ -485,8 +495,10 @@ export const siteConfig = {
       articleTitle: "Professional Plumbing Services in Katy",
       articleSubtitle: "Quality plumbing solutions for Katy homes and businesses.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in Katy",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "Katy, Texas, has grown from a small railroad town into one of the Houston area's most desirable suburban communities. With excellent schools, family-friendly neighborhoods, and convenient access to Houston's employment centers, Katy attracts thousands of new residents each year. This growth has created strong demand for reliable plumbing services, and Emergency Plumber Houston is here to connect Katy residents with qualified professionals.",
@@ -504,8 +516,10 @@ export const siteConfig = {
       articleTitle: "Expert Plumbing Services in Sugar Land",
       articleSubtitle: "Trusted plumbing professionals serving the Sugar Land community.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in Sugar Land",
         url: "/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "Sugar Land has earned its reputation as one of the best places to live in Texas, consistently ranking among the top cities for quality of life, safety, and family-friendliness. This thriving Fort Bend County community features beautiful neighborhoods, excellent amenities, and a strong sense of community pride. Emergency Plumber Houston is proud to connect Sugar Land residents with qualified plumbing professionals who share these high standards.",
@@ -523,8 +537,10 @@ export const siteConfig = {
       articleTitle: "Dependable Plumbing Services in Pasadena",
       articleSubtitle: "Serving Pasadena with professional plumbing solutions.",
       internalLink: {
+        textBefore: "Looking for reliable plumbing help? Learn more about our",
         anchorText: "Emergency Plumber in Pasadena",
         url: "https://www.google.com/",
+        textAfter: "services and get connected with licensed professionals today.",
       },
       articleContent: [
         "Pasadena, Texas, is a hardworking community with deep roots in the petrochemical industry and a strong sense of local pride. Located just southeast of Houston, Pasadena offers affordable housing, convenient access to employment centers, and a community-oriented atmosphere that residents value. Emergency Plumber Houston connects Pasadena residents with reliable plumbing professionals who understand the needs of this diverse community.",
@@ -544,8 +560,10 @@ export const siteConfig = {
       articleTitle: string;
       articleSubtitle: string;
       internalLink?: {
+        textBefore: string;
         anchorText: string;
         url: string;
+        textAfter: string;
       };
       articleContent: string[];
     }
