@@ -49,7 +49,7 @@ const FAQ = () => {
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             {siteConfig.headings.faqCtaSubtitle}
           </p>
-          <Button variant="phone" size="xl" asChild>
+          <Button variant="phone" size="xl" className="w-auto" asChild>
             <a href={getPhoneLink()}>
               <Phone className="h-5 w-5" />
               Call {siteConfig.displayPhone}
