@@ -64,11 +64,11 @@ export const siteConfig = {
     servicesH2: "Emergency Plumber Services in Plano, TX",
     serviceAreasH2: "Emergency Plumber Near Plano, TX",
     serviceAreasSubtext: "Serving Plano and surrounding areas with fast, reliable plumbing service connections.",
-    leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
+    leadFormH2: "Plumbing emergency? Get a fast call back from us!",
     leadFormSubtitle:
-      "Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15 minutes. Available 24/7 for emergencies.",
+      "Complete the form and a licensed, independent plumbing professional may contact you within 15 minutes. Emergency service available 24/7.",
     leadFormCardTitle: "Get a Call Back Now",
-    leadFormCardSubtitle: "Fill out the form and we'll call you within 15 minutes",
+    leadFormCardSubtitle: "Complete the form and we’ll contact you within 15 minutes.",
 
     // About page
     aboutH1: "About Emergency Plumber Plano",
