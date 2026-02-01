@@ -49,7 +49,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   metaTitle: "Emergency Plumber Plano TX | 24/7 Fast Plumbing Service",
   metaDescription:
-    "Need an emergency plumber in Plano, TX? 24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues. Call now.",
+    "Fast 24/7 plumbing repairs in Plano, TX for leaks, drains, water heaters, and sewer problems. Your trusted emergency plumber—call now.",
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 📝 PAGE HEADINGS - H1/H2 content for each page
@@ -58,7 +58,7 @@ export const siteConfig = {
     // Home page
     homeH1: "Emergency Plumber in Plano, TX – Available 24/7",
     homeSubtitle:
-      "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
+      "Emergency plumbing available 24/7 with quick service for leak repair, drain cleaning, water heaters, and sewer lines.",
     whyChooseH2: "Why Choose Emergency Plumber in Plano, TX?",
     whyChooseSubtitle: "We're the trusted choice for homeowners and businesses in Plano, TX.",
     servicesH2: "Emergency Plumber Services in Plano, TX",
@@ -336,14 +336,14 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 NEARBY AREAS - Displayed on homepage and service areas page
   // ═══════════════════════════════════════════════════════════════════════════
-  nearbyAreas: ["Houston", "Midtown", "The Heights", "River Oaks", "Montrose", "Katy", "Sugar Land", "Pasadena"],
+  nearbyAreas: ["Frisco", "McKinney", "Allen", "Richardson", "The Colony", "Sachse", "SWylie", "Little Elm"],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 🗺️ REGIONS - For service areas page
   // ═══════════════════════════════════════════════════════════════════════════
   regions: [
     {
-      name: "Greater Houston Area",
+      name: "West Plano",
       cities: [
         "Downtown Houston",
         "The Woodlands",
@@ -356,10 +356,10 @@ export const siteConfig = {
         "Galveston",
         "Conroe",
       ],
-      description: "We provide fast, reliable plumbing service connections throughout the Greater Houston area.",
+      description: "We deliver fast, dependable plumbing service across the West Plano area.",
     },
     {
-      name: "Houston Metro Suburbs",
+      name: "North Plano",
       cities: [
         "Spring",
         "Cypress",
@@ -372,7 +372,7 @@ export const siteConfig = {
         "Seabrook",
         "Webster",
       ],
-      description: "Serving all Houston suburban communities with 24/7 emergency plumbing connections.",
+      description: "Providing 24/7 emergency plumbing connections across all North Plano communities.",
     },
   ],
 
