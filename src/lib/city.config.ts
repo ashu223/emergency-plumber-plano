@@ -321,7 +321,7 @@ export const siteConfig = {
   serviceDescription: "24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues.",
 
   disclaimer:
-    "Emergency Plumber Houston is a referral and lead generation service. We do not perform plumbing services directly.",
+    "This site is a free service to assist homeowners in connecting with local service contractors. All contractors are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.",
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 🔗 EXTERNAL - External link section above footer
