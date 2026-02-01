@@ -2,18 +2,14 @@ import { Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { siteConfig, getPhoneLink } from "@/lib/city.config";
+import { siteConfig, getAreaPageConfig, getPhoneLink } from "@/lib/city.config";
 
 interface AreaPageProps {
   areaName: string;
 }
 
 const AreaPage = ({ areaName }: AreaPageProps) => {
-  const areaConfig = siteConfig.areaPages[areaName];
-  
-  if (!areaConfig) {
-    return <div className="container py-16 text-center">Area not found</div>;
-  }
+  const areaConfig = getAreaPageConfig(areaName);
 
   return (
     <>
