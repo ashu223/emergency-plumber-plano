@@ -30,6 +30,7 @@ const Montrose = lazy(() => import("./pages/areas/Montrose"));
 const Katy = lazy(() => import("./pages/areas/Katy"));
 const SugarLand = lazy(() => import("./pages/areas/SugarLand"));
 const Pasadena = lazy(() => import("./pages/areas/Pasadena"));
+const AreaBySlug = lazy(() => import("./pages/areas/AreaBySlug"));
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,8 @@ const App = () => (
                   <Route path="/areas/katy" element={<Katy />} />
                   <Route path="/areas/sugar-land" element={<SugarLand />} />
                   <Route path="/areas/pasadena" element={<Pasadena />} />
+                  {/* Dynamic area pages (supports new cities added in city.config.ts) */}
+                  <Route path="/areas/:slug" element={<AreaBySlug />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>

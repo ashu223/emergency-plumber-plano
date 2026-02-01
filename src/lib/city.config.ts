@@ -572,3 +572,44 @@ export const siteConfig = {
 
 // Helper to generate phone link
 export const getPhoneLink = () => `tel:${siteConfig.phone}`;
+
+export type AreaPageConfig = {
+  h1: string;
+  subtitle: string;
+  articleTitle: string;
+  articleSubtitle: string;
+  internalLink?: {
+    textBefore: string;
+    anchorText: string;
+    url: string;
+    textAfter: string;
+  };
+  articleContent: string[];
+};
+
+const createDefaultAreaPageConfig = (areaName: string): AreaPageConfig => {
+  return {
+    h1: `${siteConfig.primaryKeyword} in ${areaName}, ${siteConfig.state} - Available 24/7`,
+    subtitle: `Fast, reliable emergency plumbing connections for ${areaName}. Licensed professionals available day or night.`,
+    articleTitle: `Professional Plumbing Services in ${areaName}`,
+    articleSubtitle: `Your trusted source for emergency plumbing connections in ${areaName}, ${siteConfig.state}.`,
+    internalLink: {
+      textBefore: "Looking for reliable plumbing help? Learn more about our",
+      anchorText: `${siteConfig.primaryKeyword} in ${areaName}`,
+      url: "/",
+      textAfter: "services and get connected with licensed professionals today.",
+    },
+    articleContent: [
+      `${areaName}, ${siteConfig.state} homeowners and businesses depend on plumbing systems every day—and when something goes wrong, you need help fast. Whether it's a sudden leak, a clogged drain, or a water heater that stops working, getting connected with a qualified professional quickly can prevent costly damage.`,
+      `We connect customers in ${areaName} with independent, licensed plumbing professionals who can handle urgent issues 24/7. From troubleshooting the problem to recommending the right repair, you can expect clear communication and professional service.`,
+      `Common emergency calls in ${areaName} include burst or leaking pipes, overflowing toilets, sewer line backups, and major drain blockages. Many problems escalate quickly, so it's important to reach a professional as soon as possible.`,
+      `Water heaters are another frequent concern. If your water heater is leaking, not producing hot water, or making unusual noises, a licensed plumber can inspect the unit and advise on repair or replacement options based on your setup.`,
+      `If you suspect a sewer or main line issue (slow drains throughout the home, gurgling sounds, or odors), professional diagnostics and proper cleaning methods can restore flow and help prevent repeat backups.`,
+      `When you call ${siteConfig.businessName}, we help you get connected with a qualified independent plumbing professional serving ${areaName}. Our goal is to make it easy to reach reliable help quickly—especially when the situation can't wait.`,
+    ],
+  };
+};
+
+export const getAreaPageConfig = (areaName: string): AreaPageConfig => {
+  return (siteConfig.areaPages?.[areaName] as AreaPageConfig | undefined) ?? createDefaultAreaPageConfig(areaName);
+};
