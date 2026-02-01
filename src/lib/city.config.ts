@@ -336,7 +336,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 NEARBY AREAS - Displayed on homepage and service areas page
   // ═══════════════════════════════════════════════════════════════════════════
-  nearbyAreas: ["Houston", "Midtown", "The Heights", "River Oaks", "Montrose", "Katy", "Sugar Land", "Pasadena"],
+  nearbyAreas: ["Plano", "Midtown", "The Heights", "River Oaks", "Montrose", "Katy", "Sugar Land", "Pasadena"],
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 🗺️ REGIONS - For service areas page
