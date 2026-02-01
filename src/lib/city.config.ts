@@ -7,7 +7,7 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 📍 LOCATION - Change these to target a new city
   // ═══════════════════════════════════════════════════════════════════════════
-  city: "Dallas",
+  city: "Plano",
   state: "TX",
   country: "US",
 
@@ -20,16 +20,16 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 🏢 BUSINESS INFO
   // ═══════════════════════════════════════════════════════════════════════════
-  businessName: "Emergency Plumber Dallas",
-  brand: "Emergency Plumber Dallas",
-  domain: "https://emergency-plumber-houston.pages.dev",
-  email: "support@emergencyplumberhouston.com",
+  businessName: "Emergency Plumber Plano",
+  brand: "Emergency Plumber Plano",
+  domain: "https://emergency-plumber-Plano.pages.dev",
+  email: "support@emergencyplumberplano.com",
   address: {
     street: "",
-    city: "Dallas",
+    city: "Plano",
     state: "TX",
-    zip: "77001",
-    full: "Dallas, TX 77001",
+    zip: "75023",
+    full: "Plano, TX 75023",
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
@@ -47,23 +47,23 @@ export const siteConfig = {
   // ═══════════════════════════════════════════════════════════════════════════
   // 🧠 SEO - Meta title & description (used in <head>)
   // ═══════════════════════════════════════════════════════════════════════════
-  metaTitle: "Emergency Plumber Dallas TX | 24/7 Fast Plumbing Service",
+  metaTitle: "Emergency Plumber Plano TX | 24/7 Fast Plumbing Service",
   metaDescription:
-    "Need an emergency plumber in Dallas, TX? 24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues. Call now.",
+    "Need an emergency plumber in Plano, TX? 24/7 fast plumbing repairs for leaks, drains, water heaters & sewer issues. Call now.",
 
   // ═══════════════════════════════════════════════════════════════════════════
   // 📝 PAGE HEADINGS - H1/H2 content for each page
   // ═══════════════════════════════════════════════════════════════════════════
   headings: {
     // Home page
-    homeH1: "Emergency Plumber in Dallas, TX – Available 24/7",
+    homeH1: "Emergency Plumber in Plano, TX – Available 24/7",
     homeSubtitle:
       "Fast 24/7 emergency plumbing services including leak repair, drain cleaning, water heaters and sewer line repairs.",
-    whyChooseH2: "Why Choose Emergency Plumber in Dallas, TX?",
-    whyChooseSubtitle: "We're the trusted choice for homeowners and businesses in Dallas, TX.",
-    servicesH2: "Emergency Plumber Services in Dallas, TX",
-    serviceAreasH2: "Emergency Plumber Near Dallas, TX",
-    serviceAreasSubtext: "Serving Dallas and surrounding areas with fast, reliable plumbing service connections.",
+    whyChooseH2: "Why Choose Emergency Plumber in Plano, TX?",
+    whyChooseSubtitle: "We're the trusted choice for homeowners and businesses in Plano, TX.",
+    servicesH2: "Emergency Plumber Services in Plano, TX",
+    serviceAreasH2: "Emergency Plumber Near Plano, TX",
+    serviceAreasSubtext: "Serving Plano and surrounding areas with fast, reliable plumbing service connections.",
     leadFormH2: "Need an Emergency Plumber? We'll Call You Back!",
     leadFormSubtitle:
       "Fill out the form and a licensed, independent plumbing professional may contact you shortly within 15 minutes. Available 24/7 for emergencies.",
@@ -71,7 +71,7 @@ export const siteConfig = {
     leadFormCardSubtitle: "Fill out the form and we'll call you within 15 minutes",
 
     // About page
-    aboutH1: "About Emergency Plumber Dallas",
+    aboutH1: "About Emergency Plumber Plano",
     aboutSubtitle: "Dallas's trusted emergency plumbing service connecting homeowners with licensed professionals.",
     aboutCtaH2: "Ready to Experience the Difference?",
 
@@ -81,13 +81,13 @@ export const siteConfig = {
     servicesCtaH2: "Need Plumbing Service Today?",
 
     // Service Areas page
-    serviceAreasH1: "Service Areas Across Dallas & Texas",
+    serviceAreasH1: "Service Areas Across Plano & Texas",
     serviceAreasSubtitle:
-      "From downtown Dallas to the suburbs — we provide fast, reliable plumbing service connections.",
-    serviceAreasCoverageH2: "Complete Dallas Area Coverage",
+      "From downtown Plano to the suburbs — we provide fast, reliable plumbing service connections.",
+    serviceAreasCoverageH2: "Complete Plano Area Coverage",
     serviceAreasCoverageSubtitle:
-      "No matter where you are in the Dallas area, professional plumbing help is just a call away.",
-    serviceAreasLocalH2: "Local Plumbers Who Know Dallas",
+      "No matter where you are in the Plano area, professional plumbing help is just a call away.",
+    serviceAreasLocalH2: "Local Plumbers Who Know Plano",
     serviceAreasLocalFeatures: ["Fast local response", "Know TX codes", "Community focused"],
     serviceAreasCtaH2: "Don't See Your Area?",
     serviceAreasCtaSubtitle:
@@ -117,7 +117,7 @@ export const siteConfig = {
     {
       question: "What areas in TX do you serve?",
       answer:
-        "Emergency Plumber Dallas connects customers with independent plumbing professionals across TX, including Dallas and surrounding areas like Houston, Midtown, The Heights, River Oaks, Montrose. Service availability depends on independent providers. Call us to confirm coverage in your area.",
+        "Emergency Plumber Plano connects customers with independent plumbing professionals across TX, including Dallas and surrounding areas like Houston, Midtown, The Heights, River Oaks, Montrose. Service availability depends on independent providers. Call us to confirm coverage in your area.",
     },
     {
       question: "Are the plumbers you connect me with licensed and insured?",
@@ -170,14 +170,14 @@ export const siteConfig = {
   // 📖 ABOUT PAGE CONTENT
   // ═══════════════════════════════════════════════════════════════════════════
   aboutStats: [
-    { number: "Dallas Coverage", label: "Serving the metro and surrounding areas" },
+    { number: "Plano Coverage", label: "Serving the metro and surrounding areas" },
     { number: "Transparent Connections", label: "No hidden referral fees" },
     { number: "Quick Match System", label: "Matched with available plumbers fast" },
     { number: "Emergency Ready", label: "Available day & night 24/7" },
   ],
 
   aboutStory: [
-    "Emergency Plumber Dallas was created to simplify how Dallas homeowners find reliable plumbing help. Instead of calling multiple companies, customers can submit one request and get connected with an available, independent plumbing professional in their area.",
+    "Emergency Plumber Plano was created to simplify how Dallas homeowners find reliable plumbing help. Instead of calling multiple companies, customers can submit one request and get connected with an available, independent plumbing professional in their area.",
     "We operate as a referral and lead generation service and do not perform plumbing services directly. Service providers in our network are independent businesses that maintain their own licensing, insurance, pricing, and warranties.",
     "Our goal is to make the connection process fast, transparent, and stress-free—especially during urgent plumbing situations.",
   ],
@@ -192,7 +192,7 @@ export const siteConfig = {
   aboutCredentials: {
     title: "Independent Plumbing Professionals",
     subtitle:
-      "Service providers in our network are independent businesses who maintain their own licensing and insurance. Emergency Plumber Dallas does not employ or supervise plumbers.",
+      "Service providers in our network are independent businesses who maintain their own licensing and insurance. Emergency Plumber Plano does not employ or supervise plumbers.",
     items: [
       { title: "State Licensed", desc: "Service providers maintain valid TX state plumbing licenses" },
       {
