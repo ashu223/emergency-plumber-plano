@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.theplumbinghelpdesk.com/sitemap.xml
+Sitemap: https://emergency-plumber-plano.pages.dev/sitemap.xml
